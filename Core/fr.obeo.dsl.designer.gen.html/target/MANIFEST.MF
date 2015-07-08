@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Export-Package: fr.obeo.dsl.designer.gen.html.main,fr.obeo.dsl.designe
+ r.gen.html.services
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.sirius,org.eclips
+ e.sirius.diagram,org.eclipse.sirius.diagram.ui,org.eclipse.sirius.tab
+ le,org.eclipse.sirius.tree,org.eclipse.emf.ecore,org.eclipse.emf.ecor
+ e.xmi,org.eclipse.ocl,org.eclipse.ocl.ecore,org.eclipse.acceleo.commo
+ n,org.eclipse.acceleo.parser;resolution:=optional,org.eclipse.acceleo
+ .model,org.eclipse.acceleo.profiler,org.eclipse.acceleo.engine,org.ec
+ lipse.core.resources,org.eclipse.gmf.runtime.diagram.ui,org.eclipse.g
+ mf.runtime.diagram.ui.render,org.apache.commons.lang,org.eclipse.siri
+ us.ui,org.eclipse.emf.edit.ui
+Bundle-Vendor: %providerName
+Eclipse-LazyStart: true
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201506240948
+Bundle-Name: %pluginName
+Bundle-Activator: fr.obeo.dsl.designer.gen.html.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: fr.obeo.dsl.designer.gen.html
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+

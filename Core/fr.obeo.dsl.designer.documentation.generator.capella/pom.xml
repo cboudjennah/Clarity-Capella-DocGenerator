@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+ <parent>
+  <groupId>GenDoc</groupId>
+  <artifactId>fr.obeo.dsl.gendoc.capella.parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <relativePath>../fr.obeo.dsl.gendoc.capella.parent/pom.xml</relativePath>
+ </parent>
+ <groupId>GenDoc</groupId>
+ <artifactId>fr.obeo.dsl.designer.documentation.generator.capella</artifactId>
+ <version>1.0.0-SNAPSHOT</version>
+ <packaging>eclipse-plugin</packaging>
+ 
+ 
+  <build>
+    <plugins>
+      <!-- Compile Acceleo3 modules -->
+      <plugin>
+        <groupId>org.eclipse.acceleo</groupId>
+        <artifactId>maven</artifactId>
+        <version>3.2.1</version>
+        <executions>
+          <execution>
+            <phase>compile</phase>
+            <goals>
+              <goal>acceleo-compile</goal>
+            </goals>
+          </execution>
+        </executions>
+      <configuration>
+          <useBinaryResources>false</useBinaryResources>
+          <usePlatformResourcePath>true</usePlatformResourcePath>
+          <acceleoProject>
+            <root>${project.basedir}</root>
+            <entries>
+              <entry>
+                <input>src</input>
+                <output>target/classes</output>
+              </entry>
+            </entries>
+          </acceleoProject>
+          <packagesToRegister>
+          
+         	<packageToRegister>org.eclipse.sirius.diagram.DiagramPackage</packageToRegister>
+         	
+         	<packageToRegister>org.eclipse.sirius.viewpoint.ViewpointPackage</packageToRegister>
+         	
+         	<packageToRegister>org.eclipse.sirius.description.contribution.ContributionPackage</packageToRegister>
+          
+            <packageToRegister>org.polarsys.capella.core.data.capellacommon.CapellacommonPackage</packageToRegister>
+         
+            <packageToRegister>org.polarsys.capella.core.data.capellacore.CapellacorePackage</packageToRegister>
+        
+            <packageToRegister>org.polarsys.capella.core.data.capellamodeller.CapellamodellerPackage</packageToRegister>
+        
+            <packageToRegister>org.polarsys.capella.core.data.cs.CsPackage</packageToRegister>
+       
+            <packageToRegister>org.polarsys.capella.core.data.epbs.EpbsPackage</packageToRegister>  
+          
+            <packageToRegister>org.polarsys.capella.core.data.fa.FaPackage</packageToRegister>
+            
+            <packageToRegister>org.polarsys.capella.core.data.information.InformationPackage</packageToRegister>
+         
+            <packageToRegister>org.polarsys.capella.core.data.information.communication.CommunicationPackage</packageToRegister>
+        
+            <packageToRegister>org.polarsys.capella.core.data.information.datatype.DatatypePackage</packageToRegister>
+        
+            <packageToRegister>org.polarsys.capella.core.data.information.datavalue.DatavaluePackage</packageToRegister>
+       
+            <packageToRegister>org.polarsys.capella.core.data.interaction.InteractionPackage</packageToRegister>  
+          
+            <packageToRegister>org.polarsys.capella.core.data.la.LaPackage</packageToRegister>
+             
+            <packageToRegister>org.polarsys.capella.core.data.oa.OaPackage</packageToRegister>
+             
+            <packageToRegister>org.polarsys.capella.core.data.pa.PaPackage</packageToRegister>
+            
+            <packageToRegister>org.polarsys.capella.core.data.requirement.RequirementPackage</packageToRegister>
+            
+            <packageToRegister>org.polarsys.capella.core.data.sharedmodel.SharedmodelPackage</packageToRegister>
+      </packagesToRegister>
+    </configuration>
+  </plugin>
+
+      
+    </plugins>
+  </build>
+</project>

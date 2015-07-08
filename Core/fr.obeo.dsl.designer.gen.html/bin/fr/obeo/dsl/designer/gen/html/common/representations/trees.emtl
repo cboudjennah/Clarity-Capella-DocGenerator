@@ -1,0 +1,1179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="trees" nsURI="fr::obeo::dsl::designer::gen::html::common::representations::trees" startHeaderPosition="29" endHeaderPosition="155">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/tree/1.0.0#/"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/tree/1.0.0#//description"/>
+    </input>
+    <imports href="../../services/stringUtils.emtl#/0"/>
+    <imports href="../../services/pathServices.emtl#/0"/>
+    <imports href="../../services/labelProviderServices.emtl#/0"/>
+    <imports href="common.emtl#/0"/>
+    <imports href="../../services/representationsServices.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="476" endPosition="507" value=" Generate HTML head for a tree "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateHead" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;title>Tree - "/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &lt;small>"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//description/TreeDescription"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree/description"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//description/IdentifiedElement/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/small>&lt;/title>&#xA;&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery.min.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery-ui.custom.min.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/dynatree/skin/ui.dynatree.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; id=&quot;skinSheet&quot;>&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/dynatree/jquery.dynatree.min.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/bootstrap/bootstrap.css&quot; rel=&quot;stylesheet&quot;>&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/specific/global.css&quot; rel=&quot;stylesheet&quot;>&#xA;&#xA;&lt;script type=&quot;text/javascript&quot;>&#xA;&#x9;$(function(){&#xA;&#x9;&#x9;$(&quot;#tree&quot;).dynatree({&#xA;&#x9;&#x9;&#x9;imagePath : '"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getIconsFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateHead/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;&#x9;&#x9;&#x9;onActivate: function(node) {&#xA;&#x9;&#x9;&#x9;&#x9;// Use &lt;a> href and target attributes to load the content:&#xA;&#x9;&#x9;&#x9;&#x9;if( node.data.href ){&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;// Open target&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;window.open(node.data.href, node.data.target);&#xA;&#x9;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;});&#xA;&#x9;});&#xA;&lt;/script>"/>
+      <parameter name="tree">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="1961" endPosition="2071" value=" Generate HTML body for a tree.&#xA;&#x9;&#x9;The main job consists in generating a DynaTree using the DTreeItem elements "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateBody" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;h1>Tree - "/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateBody/tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateBody/tree">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/h1>&#xA;&lt;div id=&quot;tree&quot;>&#xA;&#x9;&lt;ul id=&quot;treeData&quot; style=&quot;display: none;&quot;>&#xA;"/>
+      <body xsi:type="mtl:ForBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/genTreeItem">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/generateBody/@body.3/treeItem">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+          </argument>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <loopVariable name="treeItem">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+        </loopVariable>
+        <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/27/OrderedSet(DTreeItem)">
+          <source xsi:type="ocl.ecore:VariableExp" name="tree" referredVariable="/0/generateBody/tree">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItemContainer/ownedTreeItems"/>
+        </iterSet>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/ul>&#xA;&lt;/div>"/>
+      <parameter name="tree">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="2347" endPosition="2484" value=" Generate tree part for a DTreeItem and its children.&#xA;&#x9;&#x9;The &quot;level&quot; integer is used to automatically expand the first level in the tree. "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="genTreeItem">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;li data=&quot;{icon:'"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/labelProviderServices.emtl#/0/getImage"/>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/genTreeItem/treeItem">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+          </source>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DSemanticDecorator/target"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'"/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", expand:true"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="level" referredVariable="/0/genTreeItem/level">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </source>
+          <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/%3C="/>
+        </ifExpr>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="}&quot;>&lt;a href=&quot;"/>
+      <body xsi:type="mtl:TemplateInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="common.emtl#/0/propertiesPageUrl"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/genTreeItem/treeItem">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; target=&quot;properties&quot;>"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/genTreeItem/treeItem">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/a>"/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/li>"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp" eType="/27/OrderedSet(DTreeItem)">
+            <source xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/genTreeItem/treeItem">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItemContainer/ownedTreeItems"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)_Class/isEmpty"/>
+        </ifExpr>
+        <else>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;ul>&#xA;"/>
+          <body xsi:type="mtl:ForBlock">
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+            <body xsi:type="mtl:TemplateInvocation" definition="/0/genTreeItem">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <argument xsi:type="ocl.ecore:VariableExp" name="childTreeItem" referredVariable="/0/genTreeItem/@body.9/@else/@body.1/childTreeItem">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+              </argument>
+              <argument xsi:type="ocl.ecore:OperationCallExp">
+                <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="level" referredVariable="/0/genTreeItem/level">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                </source>
+                <argument xsi:type="ocl.ecore:IntegerLiteralExp" integerSymbol="1">
+                  <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+                </argument>
+                <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer_Class/+"/>
+              </argument>
+            </body>
+            <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+            <loopVariable name="childTreeItem">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+            </loopVariable>
+            <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/27/OrderedSet(DTreeItem)">
+              <source xsi:type="ocl.ecore:VariableExp" name="treeItem" referredVariable="/0/genTreeItem/treeItem">
+                <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItemContainer/ownedTreeItems"/>
+            </iterSet>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&lt;/ul>&#xA;&lt;/li>&#xA;"/>
+        </else>
+      </body>
+      <parameter name="treeItem">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+      </parameter>
+      <parameter name="level">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateHead">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateHead"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateBody">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateBody"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="tree">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="genTreeItem">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/genTreeItem"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="treeItem">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+        </eParameters>
+        <eParameters name="level">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="escapeHtml">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="element">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+        <eParameters name="message">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getIconsFullPath">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/pathServices.emtl#/0/getIconsFullPath"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getResourcesFullPath">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getRepresentationsRelativeToRootPath">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getImage">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/labelProviderServices.emtl#/0/getImage"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="propertiesPageUrl">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="common.emtl#/0/propertiesPageUrl"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="elt">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DTree_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DTreeItem_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DRepresentation_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DRepresentationElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DAnalysis_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DSemanticDiagram_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ecore:EPackage name="collections">
+    <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(DTreeItem)" instanceClassName="java.util.LinkedHashSet">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ocl.ecore:SetType" instanceClassName="java.util.Set">
+      <elementType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTree"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/tree/1.0.0#//DTreeItem"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
+      <details key="start" value="468"/>
+      <details key="end" value="509"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateHead">
+      <details key="start" value="510"/>
+      <details key="end" value="1951"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateHead/@body.0">
+      <details key="start" value="555"/>
+      <details key="end" value="569"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateHead/@body.1">
+      <details key="start" value="570"/>
+      <details key="end" value="596"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateHead/@body.1/tree">
+      <details key="start" value="570"/>
+      <details key="end" value="574"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateHead/@body.1/@argument.1">
+      <details key="start" value="586"/>
+      <details key="end" value="595"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateHead/@body.1/@argument.1/tree">
+      <details key="start" value="586"/>
+      <details key="end" value="590"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateHead/@body.2">
+      <details key="start" value="598"/>
+      <details key="end" value="606"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateHead/@body.3">
+      <details key="start" value="607"/>
+      <details key="end" value="645"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateHead/@body.3/tree">
+      <details key="start" value="607"/>
+      <details key="end" value="611"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateHead/@body.3/@argument.1">
+      <details key="start" value="623"/>
+      <details key="end" value="644"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateHead/@body.3/@argument.1/@source">
+      <details key="start" value="623"/>
+      <details key="end" value="639"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateHead/@body.3/@argument.1/@source/tree">
+      <details key="start" value="623"/>
+      <details key="end" value="627"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateHead/@body.4">
+      <details key="start" value="647"/>
+      <details key="end" value="678"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateHead/@body.5">
+      <details key="start" value="679"/>
+      <details key="end" value="722"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateHead/@body.5/tree">
+      <details key="start" value="679"/>
+      <details key="end" value="683"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateHead/@body.6">
+      <details key="start" value="725"/>
+      <details key="end" value="752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateHead/@body.6/tree">
+      <details key="start" value="725"/>
+      <details key="end" value="729"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateHead/@body.7">
+      <details key="start" value="754"/>
+      <details key="end" value="823"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateHead/@body.8">
+      <details key="start" value="824"/>
+      <details key="end" value="867"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateHead/@body.8/tree">
+      <details key="start" value="824"/>
+      <details key="end" value="828"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateHead/@body.9">
+      <details key="start" value="870"/>
+      <details key="end" value="897"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateHead/@body.9/tree">
+      <details key="start" value="870"/>
+      <details key="end" value="874"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateHead/@body.10">
+      <details key="start" value="899"/>
+      <details key="end" value="978"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateHead/@body.11">
+      <details key="start" value="979"/>
+      <details key="end" value="1022"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateHead/@body.11/tree">
+      <details key="start" value="979"/>
+      <details key="end" value="983"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateHead/@body.12">
+      <details key="start" value="1025"/>
+      <details key="end" value="1052"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateHead/@body.12/tree">
+      <details key="start" value="1025"/>
+      <details key="end" value="1029"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateHead/@body.13">
+      <details key="start" value="1054"/>
+      <details key="end" value="1148"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateHead/@body.14">
+      <details key="start" value="1149"/>
+      <details key="end" value="1192"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateHead/@body.14/tree">
+      <details key="start" value="1149"/>
+      <details key="end" value="1153"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateHead/@body.15">
+      <details key="start" value="1195"/>
+      <details key="end" value="1222"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateHead/@body.15/tree">
+      <details key="start" value="1195"/>
+      <details key="end" value="1199"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateHead/@body.16">
+      <details key="start" value="1224"/>
+      <details key="end" value="1304"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateHead/@body.17">
+      <details key="start" value="1305"/>
+      <details key="end" value="1348"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateHead/@body.17/tree">
+      <details key="start" value="1305"/>
+      <details key="end" value="1309"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateHead/@body.18">
+      <details key="start" value="1351"/>
+      <details key="end" value="1378"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateHead/@body.18/tree">
+      <details key="start" value="1351"/>
+      <details key="end" value="1355"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateHead/@body.19">
+      <details key="start" value="1380"/>
+      <details key="end" value="1436"/>
+      <details key="line" value="20"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateHead/@body.20">
+      <details key="start" value="1437"/>
+      <details key="end" value="1480"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateHead/@body.20/tree">
+      <details key="start" value="1437"/>
+      <details key="end" value="1441"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateHead/@body.21">
+      <details key="start" value="1483"/>
+      <details key="end" value="1510"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateHead/@body.21/tree">
+      <details key="start" value="1483"/>
+      <details key="end" value="1487"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateHead/@body.22">
+      <details key="start" value="1512"/>
+      <details key="end" value="1640"/>
+      <details key="line" value="21"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/generateHead/@body.23">
+      <details key="start" value="1641"/>
+      <details key="end" value="1684"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateHead/@body.23/tree">
+      <details key="start" value="1641"/>
+      <details key="end" value="1645"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateHead/@body.24">
+      <details key="start" value="1687"/>
+      <details key="end" value="1710"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateHead/@body.24/tree">
+      <details key="start" value="1687"/>
+      <details key="end" value="1691"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateHead/@body.25">
+      <details key="start" value="1712"/>
+      <details key="end" value="1939"/>
+      <details key="line" value="26"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateHead/tree">
+      <details key="start" value="540"/>
+      <details key="end" value="552"/>
+      <details key="line" value="11"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/@ownedModuleElement.2">
+      <details key="start" value="1953"/>
+      <details key="end" value="2073"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateBody">
+      <details key="start" value="2074"/>
+      <details key="end" value="2337"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateBody/@body.0">
+      <details key="start" value="2119"/>
+      <details key="end" value="2130"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateBody/@body.1">
+      <details key="start" value="2131"/>
+      <details key="end" value="2157"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateBody/@body.1/tree">
+      <details key="start" value="2131"/>
+      <details key="end" value="2135"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateBody/@body.1/@argument.1">
+      <details key="start" value="2147"/>
+      <details key="end" value="2156"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateBody/@body.1/@argument.1/tree">
+      <details key="start" value="2147"/>
+      <details key="end" value="2151"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateBody/@body.2">
+      <details key="start" value="2159"/>
+      <details key="end" value="2224"/>
+      <details key="line" value="42"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateBody/@body.3">
+      <details key="start" value="2225"/>
+      <details key="end" value="2311"/>
+      <details key="line" value="45"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateBody/@body.3/@body.0">
+      <details key="start" value="2276"/>
+      <details key="end" value="2277"/>
+      <details key="line" value="46"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateBody/@body.3/@body.1">
+      <details key="start" value="2278"/>
+      <details key="end" value="2301"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateBody/@body.3/@body.1/treeItem">
+      <details key="start" value="2278"/>
+      <details key="end" value="2286"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateBody/@body.3/@body.1/@argument.1">
+      <details key="start" value="2299"/>
+      <details key="end" value="2300"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateBody/@body.3/@body.2">
+      <details key="start" value="2303"/>
+      <details key="end" value="2304"/>
+      <details key="line" value="47"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateBody/@body.3/treeItem">
+      <details key="start" value="2231"/>
+      <details key="end" value="2251"/>
+      <details key="line" value="45"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateBody/@body.3/@iterSet">
+      <details key="start" value="2254"/>
+      <details key="end" value="2273"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateBody/@body.3/@iterSet/tree">
+      <details key="start" value="2254"/>
+      <details key="end" value="2258"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateBody/@body.4">
+      <details key="start" value="2312"/>
+      <details key="end" value="2325"/>
+      <details key="line" value="48"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateBody/tree">
+      <details key="start" value="2104"/>
+      <details key="end" value="2116"/>
+      <details key="line" value="41"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/@ownedModuleElement.4">
+      <details key="start" value="2339"/>
+      <details key="end" value="2486"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/genTreeItem">
+      <details key="start" value="2487"/>
+      <details key="end" value="2926"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/genTreeItem/@body.0">
+      <details key="start" value="2557"/>
+      <details key="end" value="2574"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.72" references="/0/genTreeItem/@body.1">
+      <details key="start" value="2575"/>
+      <details key="end" value="2601"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.73" references="/0/genTreeItem/@body.1/@argument.0">
+      <details key="start" value="2575"/>
+      <details key="end" value="2590"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.74" references="/0/genTreeItem/@body.1/@argument.0/treeItem">
+      <details key="start" value="2575"/>
+      <details key="end" value="2583"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.75" references="/0/genTreeItem/@body.2">
+      <details key="start" value="2603"/>
+      <details key="end" value="2604"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.76" references="/0/genTreeItem/@body.3">
+      <details key="start" value="2604"/>
+      <details key="end" value="2639"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.77" references="/0/genTreeItem/@body.3/@body.0">
+      <details key="start" value="2621"/>
+      <details key="end" value="2634"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.78" references="/0/genTreeItem/@body.3/@ifExpr">
+      <details key="start" value="2608"/>
+      <details key="end" value="2620"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.79" references="/0/genTreeItem/@body.3/@ifExpr/level">
+      <details key="start" value="2609"/>
+      <details key="end" value="2614"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.80" references="/0/genTreeItem/@body.3/@ifExpr/@argument.0">
+      <details key="start" value="2618"/>
+      <details key="end" value="2619"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.81" references="/0/genTreeItem/@body.4">
+      <details key="start" value="2639"/>
+      <details key="end" value="2651"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.82" references="/0/genTreeItem/@body.5">
+      <details key="start" value="2652"/>
+      <details key="end" value="2680"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/genTreeItem/@body.5/treeItem">
+      <details key="start" value="2652"/>
+      <details key="end" value="2660"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/genTreeItem/@body.6">
+      <details key="start" value="2682"/>
+      <details key="end" value="2704"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/genTreeItem/@body.7">
+      <details key="start" value="2705"/>
+      <details key="end" value="2718"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/genTreeItem/@body.7/treeItem">
+      <details key="start" value="2705"/>
+      <details key="end" value="2713"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/genTreeItem/@body.8">
+      <details key="start" value="2720"/>
+      <details key="end" value="2724"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/genTreeItem/@body.9">
+      <details key="start" value="2724"/>
+      <details key="end" value="2914"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/genTreeItem/@body.9/@body.0">
+      <details key="start" value="2765"/>
+      <details key="end" value="2770"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/genTreeItem/@body.9/@ifExpr">
+      <details key="start" value="2728"/>
+      <details key="end" value="2764"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/genTreeItem/@body.9/@ifExpr/@source">
+      <details key="start" value="2729"/>
+      <details key="end" value="2752"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.92" references="/0/genTreeItem/@body.9/@ifExpr/@source/treeItem">
+      <details key="start" value="2729"/>
+      <details key="end" value="2737"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.93" references="/0/genTreeItem/@body.9/@else">
+      <details key="start" value="2770"/>
+      <details key="end" value="2909"/>
+      <details key="line" value="55"/>
+    </eAnnotations>
+    <eAnnotations source="positions.94" references="/0/genTreeItem/@body.9/@else/@body.0">
+      <details key="start" value="2777"/>
+      <details key="end" value="2783"/>
+      <details key="line" value="56"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/genTreeItem/@body.9/@else/@body.1">
+      <details key="start" value="2785"/>
+      <details key="end" value="2895"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/genTreeItem/@body.9/@else/@body.1/@body.0">
+      <details key="start" value="2845"/>
+      <details key="end" value="2847"/>
+      <details key="line" value="58"/>
+    </eAnnotations>
+    <eAnnotations source="positions.97" references="/0/genTreeItem/@body.9/@else/@body.1/@body.1">
+      <details key="start" value="2848"/>
+      <details key="end" value="2884"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.98" references="/0/genTreeItem/@body.9/@else/@body.1/@body.1/childTreeItem">
+      <details key="start" value="2848"/>
+      <details key="end" value="2861"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.99" references="/0/genTreeItem/@body.9/@else/@body.1/@body.1/@argument.1">
+      <details key="start" value="2874"/>
+      <details key="end" value="2883"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.100" references="/0/genTreeItem/@body.9/@else/@body.1/@body.1/@argument.1/level">
+      <details key="start" value="2874"/>
+      <details key="end" value="2879"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/genTreeItem/@body.9/@else/@body.1/@body.1/@argument.1/@argument.0">
+      <details key="start" value="2882"/>
+      <details key="end" value="2883"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.102" references="/0/genTreeItem/@body.9/@else/@body.1/@body.2">
+      <details key="start" value="2886"/>
+      <details key="end" value="2887"/>
+      <details key="line" value="59"/>
+    </eAnnotations>
+    <eAnnotations source="positions.103" references="/0/genTreeItem/@body.9/@else/@body.1/childTreeItem">
+      <details key="start" value="2791"/>
+      <details key="end" value="2816"/>
+      <details key="line" value="57"/>
+    </eAnnotations>
+    <eAnnotations source="positions.104" references="/0/genTreeItem/@body.9/@else/@body.1/@iterSet">
+      <details key="start" value="2819"/>
+      <details key="end" value="2842"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/genTreeItem/@body.9/@else/@body.1/@iterSet/treeItem">
+      <details key="start" value="2819"/>
+      <details key="end" value="2827"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/genTreeItem/@body.9/@else/@body.2">
+      <details key="start" value="2896"/>
+      <details key="end" value="2909"/>
+      <details key="line" value="60"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/genTreeItem/treeItem">
+      <details key="start" value="2517"/>
+      <details key="end" value="2537"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/genTreeItem/level">
+      <details key="start" value="2539"/>
+      <details key="end" value="2554"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

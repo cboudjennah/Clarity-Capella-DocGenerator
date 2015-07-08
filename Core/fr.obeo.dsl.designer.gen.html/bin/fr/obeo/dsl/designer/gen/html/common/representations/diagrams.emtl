@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="diagrams" nsURI="fr::obeo::dsl::designer::gen::html::common::representations::diagrams" startHeaderPosition="29" endHeaderPosition="173">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#/"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/style"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/tool"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern"/>
+    </input>
+    <imports href="../../services/representationsServices.emtl#/0"/>
+    <imports href="../../services/stringUtils.emtl#/0"/>
+    <imports href="../../services/pathServices.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="324" endPosition="367" value=" Generate HTML head for a semantic diagram "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateHead" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;title>Diagram - "/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/title>&#xA;&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery.min.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery-ui.custom.min.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&lt;script src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery-zoomable.js&quot; type=&quot;text/javascript&quot;>&lt;/script>&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/bootstrap/bootstrap.css&quot; rel=&quot;stylesheet&quot;>&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/jquery/jquery-ui.custom.css&quot; rel=&quot;stylesheet&quot;>&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/specific/global.css&quot; rel=&quot;stylesheet&quot;>&#xA;&lt;link href=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateHead/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/specific/diagrams.css&quot; rel=&quot;stylesheet&quot;>"/>
+      <parameter name="diagram">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="1530" endPosition="1741" value=" Generate HTML body for a semantic diagram.&#xA;&#x9;&#x9;&#x9;Main job consists in exporting an image with its associated image map.&#xA;&#x9;&#x9;&#x9;This is done thanks to the RepresentationsServices.exportDiagramAndGetImageMap() service. "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateBody" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;h1>Diagram : "/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" &lt;small>"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/DiagramDescription"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+              <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DDiagram/description"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//description/IdentifiedElement/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/small>&lt;/h1>&#xA;&lt;p>&#xA;&#x9;&lt;input type=&quot;button&quot; value=&quot;+&quot; onclick=&quot;$('#image').zoomable('zoomIn')&quot; title=&quot;Zoom in&quot; />&#xA;&#x9;&lt;input type=&quot;button&quot; value=&quot;-&quot; onclick=&quot;$('#image').zoomable('zoomOut')&quot; title=&quot;Zoom out&quot; />&#xA;&#x9;&lt;input type=&quot;button&quot; value=&quot;Reset&quot; onclick=&quot;$('#image').zoomable('reset')&quot; />&#xA;&lt;/p>&#xA;&lt;div id=&quot;image-container&quot;>&#xA;&#x9;&lt;img id=&quot;image&quot; usemap=&quot;#details&quot; src=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/representationsServices.emtl#/0/getDiagramImageFilename"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; alt=&quot;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+        <argument xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+            <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation/name"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&quot; />&#xA;&#x9;"/>
+      <body xsi:type="mtl:QueryInvocation">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <definition href="../../services/representationsServices.emtl#/0/exportDiagramAndGetImageMap"/>
+        <argument xsi:type="ocl.ecore:VariableExp" name="diagram" referredVariable="/0/generateBody/diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </argument>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/div>&#xA;&lt;script language=&quot;javascript&quot;>&#xA;$('#image').zoomable();&#xA;$('#image-container').resizable({&#xA;    ghost: true,&#xA;    helper: &quot;ui-resizable-helper&quot;&#xA;});&#xA;// Change the size of the handle&#xA;$('.ui-icon-gripsmall-diagonal-se').toggleClass('ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se');&#xA;&lt;/script>"/>
+      <parameter name="diagram">
+        <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateHead">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateHead"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="generateBody">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateBody"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="exportDiagramAndGetImageMap">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/representationsServices.emtl#/0/exportDiagramAndGetImageMap"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getDiagramImageFilename">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/representationsServices.emtl#/0/getDiagramImageFilename"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="diagram">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="escapeHtml">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/stringUtils.emtl#/0/escapeHtml"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="element">
+          <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+        </eParameters>
+        <eParameters name="message">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getResourcesFullPath">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/pathServices.emtl#/0/getResourcesFullPath"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="getRepresentationsRelativeToRootPath">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="../../services/pathServices.emtl#/0/getRepresentationsRelativeToRootPath"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="object">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DSemanticDiagram_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DAnalysis_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DRepresentationElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DRepresentation_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
+      <details key="start" value="316"/>
+      <details key="end" value="369"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateHead">
+      <details key="start" value="370"/>
+      <details key="end" value="1520"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateHead/@body.0">
+      <details key="start" value="429"/>
+      <details key="end" value="446"/>
+      <details key="line" value="10"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateHead/@body.1">
+      <details key="start" value="447"/>
+      <details key="end" value="479"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateHead/@body.1/diagram">
+      <details key="start" value="447"/>
+      <details key="end" value="454"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateHead/@body.1/@argument.1">
+      <details key="start" value="466"/>
+      <details key="end" value="478"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateHead/@body.1/@argument.1/diagram">
+      <details key="start" value="466"/>
+      <details key="end" value="473"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateHead/@body.2">
+      <details key="start" value="481"/>
+      <details key="end" value="504"/>
+      <details key="line" value="10"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateHead/@body.3">
+      <details key="start" value="505"/>
+      <details key="end" value="551"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateHead/@body.3/diagram">
+      <details key="start" value="505"/>
+      <details key="end" value="512"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateHead/@body.4">
+      <details key="start" value="554"/>
+      <details key="end" value="584"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateHead/@body.4/diagram">
+      <details key="start" value="554"/>
+      <details key="end" value="561"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateHead/@body.5">
+      <details key="start" value="586"/>
+      <details key="end" value="655"/>
+      <details key="line" value="12"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateHead/@body.6">
+      <details key="start" value="656"/>
+      <details key="end" value="702"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateHead/@body.6/diagram">
+      <details key="start" value="656"/>
+      <details key="end" value="663"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/generateHead/@body.7">
+      <details key="start" value="705"/>
+      <details key="end" value="735"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/generateHead/@body.7/diagram">
+      <details key="start" value="705"/>
+      <details key="end" value="712"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/generateHead/@body.8">
+      <details key="start" value="737"/>
+      <details key="end" value="816"/>
+      <details key="line" value="13"/>
+    </eAnnotations>
+    <eAnnotations source="positions.18" references="/0/generateHead/@body.9">
+      <details key="start" value="817"/>
+      <details key="end" value="863"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.19" references="/0/generateHead/@body.9/diagram">
+      <details key="start" value="817"/>
+      <details key="end" value="824"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.20" references="/0/generateHead/@body.10">
+      <details key="start" value="866"/>
+      <details key="end" value="896"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.21" references="/0/generateHead/@body.10/diagram">
+      <details key="start" value="866"/>
+      <details key="end" value="873"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.22" references="/0/generateHead/@body.11">
+      <details key="start" value="898"/>
+      <details key="end" value="971"/>
+      <details key="line" value="14"/>
+    </eAnnotations>
+    <eAnnotations source="positions.23" references="/0/generateHead/@body.12">
+      <details key="start" value="972"/>
+      <details key="end" value="1018"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.24" references="/0/generateHead/@body.12/diagram">
+      <details key="start" value="972"/>
+      <details key="end" value="979"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.25" references="/0/generateHead/@body.13">
+      <details key="start" value="1021"/>
+      <details key="end" value="1051"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.26" references="/0/generateHead/@body.13/diagram">
+      <details key="start" value="1021"/>
+      <details key="end" value="1028"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.27" references="/0/generateHead/@body.14">
+      <details key="start" value="1053"/>
+      <details key="end" value="1109"/>
+      <details key="line" value="15"/>
+    </eAnnotations>
+    <eAnnotations source="positions.28" references="/0/generateHead/@body.15">
+      <details key="start" value="1110"/>
+      <details key="end" value="1156"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.29" references="/0/generateHead/@body.15/diagram">
+      <details key="start" value="1110"/>
+      <details key="end" value="1117"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.30" references="/0/generateHead/@body.16">
+      <details key="start" value="1159"/>
+      <details key="end" value="1189"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.31" references="/0/generateHead/@body.16/diagram">
+      <details key="start" value="1159"/>
+      <details key="end" value="1166"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.32" references="/0/generateHead/@body.17">
+      <details key="start" value="1191"/>
+      <details key="end" value="1251"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.33" references="/0/generateHead/@body.18">
+      <details key="start" value="1252"/>
+      <details key="end" value="1298"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.34" references="/0/generateHead/@body.18/diagram">
+      <details key="start" value="1252"/>
+      <details key="end" value="1259"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.35" references="/0/generateHead/@body.19">
+      <details key="start" value="1301"/>
+      <details key="end" value="1331"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.36" references="/0/generateHead/@body.19/diagram">
+      <details key="start" value="1301"/>
+      <details key="end" value="1308"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/generateHead/@body.20">
+      <details key="start" value="1333"/>
+      <details key="end" value="1385"/>
+      <details key="line" value="17"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/generateHead/@body.21">
+      <details key="start" value="1386"/>
+      <details key="end" value="1432"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/generateHead/@body.21/diagram">
+      <details key="start" value="1386"/>
+      <details key="end" value="1393"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.40" references="/0/generateHead/@body.22">
+      <details key="start" value="1435"/>
+      <details key="end" value="1465"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.41" references="/0/generateHead/@body.22/diagram">
+      <details key="start" value="1435"/>
+      <details key="end" value="1442"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.42" references="/0/generateHead/@body.23">
+      <details key="start" value="1467"/>
+      <details key="end" value="1508"/>
+      <details key="line" value="18"/>
+    </eAnnotations>
+    <eAnnotations source="positions.43" references="/0/generateHead/diagram">
+      <details key="start" value="400"/>
+      <details key="end" value="426"/>
+      <details key="line" value="9"/>
+    </eAnnotations>
+    <eAnnotations source="positions.44" references="/0/@ownedModuleElement.2">
+      <details key="start" value="1522"/>
+      <details key="end" value="1743"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.45" references="/0/generateBody">
+      <details key="start" value="1744"/>
+      <details key="end" value="2748"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+    <eAnnotations source="positions.46" references="/0/generateBody/@body.0">
+      <details key="start" value="1803"/>
+      <details key="end" value="1817"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.47" references="/0/generateBody/@body.1">
+      <details key="start" value="1818"/>
+      <details key="end" value="1850"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.48" references="/0/generateBody/@body.1/diagram">
+      <details key="start" value="1818"/>
+      <details key="end" value="1825"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.49" references="/0/generateBody/@body.1/@argument.1">
+      <details key="start" value="1837"/>
+      <details key="end" value="1849"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.50" references="/0/generateBody/@body.1/@argument.1/diagram">
+      <details key="start" value="1837"/>
+      <details key="end" value="1844"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.51" references="/0/generateBody/@body.2">
+      <details key="start" value="1852"/>
+      <details key="end" value="1860"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.52" references="/0/generateBody/@body.3">
+      <details key="start" value="1861"/>
+      <details key="end" value="1905"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.53" references="/0/generateBody/@body.3/diagram">
+      <details key="start" value="1861"/>
+      <details key="end" value="1868"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.54" references="/0/generateBody/@body.3/@argument.1">
+      <details key="start" value="1880"/>
+      <details key="end" value="1904"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.55" references="/0/generateBody/@body.3/@argument.1/@source">
+      <details key="start" value="1880"/>
+      <details key="end" value="1899"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.56" references="/0/generateBody/@body.3/@argument.1/@source/diagram">
+      <details key="start" value="1880"/>
+      <details key="end" value="1887"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.57" references="/0/generateBody/@body.4">
+      <details key="start" value="1907"/>
+      <details key="end" value="2262"/>
+      <details key="line" value="25"/>
+    </eAnnotations>
+    <eAnnotations source="positions.58" references="/0/generateBody/@body.5">
+      <details key="start" value="2263"/>
+      <details key="end" value="2309"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateBody/@body.5/diagram">
+      <details key="start" value="2263"/>
+      <details key="end" value="2270"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.60" references="/0/generateBody/@body.6">
+      <details key="start" value="2312"/>
+      <details key="end" value="2345"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateBody/@body.6/diagram">
+      <details key="start" value="2312"/>
+      <details key="end" value="2319"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateBody/@body.7">
+      <details key="start" value="2347"/>
+      <details key="end" value="2354"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateBody/@body.8">
+      <details key="start" value="2355"/>
+      <details key="end" value="2387"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateBody/@body.8/diagram">
+      <details key="start" value="2355"/>
+      <details key="end" value="2362"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateBody/@body.8/@argument.1">
+      <details key="start" value="2374"/>
+      <details key="end" value="2386"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.66" references="/0/generateBody/@body.8/@argument.1/diagram">
+      <details key="start" value="2374"/>
+      <details key="end" value="2381"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.67" references="/0/generateBody/@body.9">
+      <details key="start" value="2389"/>
+      <details key="end" value="2395"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.68" references="/0/generateBody/@body.10">
+      <details key="start" value="2396"/>
+      <details key="end" value="2433"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.69" references="/0/generateBody/@body.10/diagram">
+      <details key="start" value="2396"/>
+      <details key="end" value="2403"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.70" references="/0/generateBody/@body.11">
+      <details key="start" value="2435"/>
+      <details key="end" value="2736"/>
+      <details key="line" value="34"/>
+    </eAnnotations>
+    <eAnnotations source="positions.71" references="/0/generateBody/diagram">
+      <details key="start" value="1774"/>
+      <details key="end" value="1800"/>
+      <details key="line" value="24"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

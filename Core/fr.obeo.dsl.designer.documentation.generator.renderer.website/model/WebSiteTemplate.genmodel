@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.obeo.dsl.designer.documentation.generator.renderer.website/src-gen"
+    modelPluginID="fr.obeo.dsl.designer.documentation.generator.renderer.website"
+    modelName="WebSiteTemplate" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0" copyrightFields="false"
+    usedGenPackages="../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>WebSiteTemplate.ecore</foreignModel>
+  <genPackages prefix="WebSiteTemplate" basePackage="fr.obeo.dsl.designer.documentation.generator.renderer.website"
+      disposableProviderFactory="true" ecorePackage="WebSiteTemplate.ecore#/">
+    <genDataTypes ecoreDataType="WebSiteTemplate.ecore#//URL"/>
+    <genClasses ecoreClass="WebSiteTemplate.ecore#//WebSiteTemplate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WebSiteTemplate.ecore#//WebSiteTemplate/stylesheetFiles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WebSiteTemplate.ecore#//WebSiteTemplate/jsFiles"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference WebSiteTemplate.ecore#//WebSiteTemplate/others"/>
+    </genClasses>
+    <genClasses ecoreClass="WebSiteTemplate.ecore#//ExternalResource">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WebSiteTemplate.ecore#//ExternalResource/from"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WebSiteTemplate.ecore#//ExternalResource/to"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
