@@ -430,6 +430,9 @@ public class ComponentTemplate extends AbstractAcceleoGenerator {
         if (!isInWorkspace(org.polarsys.capella.core.data.interaction.InteractionPackage.class)) {
             resourceSet.getPackageRegistry().put(org.polarsys.capella.core.data.interaction.InteractionPackage.eINSTANCE.getNsURI(), org.polarsys.capella.core.data.interaction.InteractionPackage.eINSTANCE);
         }
+        if (!isInWorkspace(org.polarsys.capella.common.data.activity.ActivityPackage.class)) {
+            resourceSet.getPackageRegistry().put(org.polarsys.capella.common.data.activity.ActivityPackage.eINSTANCE.getNsURI(), org.polarsys.capella.common.data.activity.ActivityPackage.eINSTANCE);
+        }
         if (!isInWorkspace(org.polarsys.capella.common.data.modellingcore.ModellingcorePackage.class)) {
             resourceSet.getPackageRegistry().put(org.polarsys.capella.common.data.modellingcore.ModellingcorePackage.eINSTANCE.getNsURI(), org.polarsys.capella.common.data.modellingcore.ModellingcorePackage.eINSTANCE);
         }

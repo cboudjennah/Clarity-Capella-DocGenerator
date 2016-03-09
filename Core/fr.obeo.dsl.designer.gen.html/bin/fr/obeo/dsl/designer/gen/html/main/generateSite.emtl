@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="generateSite" nsURI="fr::obeo::dsl::designer::gen::html::main::generateSite" startHeaderPosition="29" endHeaderPosition="307">
+  <mtl:Module name="generateSite" nsURI="fr::obeo::dsl::designer::gen::html::main::generateSite" startHeaderPosition="30" endHeaderPosition="313">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
     </input>
@@ -33,10 +33,10 @@
     <imports href="../services/pathServices.emtl#/0"/>
     <imports href="../services/representationsServices.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="826" endPosition="1289" value=" Main entry point. Parameters are :&#xA;&#x9;&#x9;&#x9;- analysis : the root analysis. It's been retrieved if needed in the initialize() method of the generator&#xA;&#x9;&#x9;&#x9;- targetFolder : where the files will be generated&#xA;&#x9;&#x9;&#x9;- imageFileFormat : File format used to export diagrams as images&#xA;&#x9;&#x9;&#x9;- exportProjectDependencies : flag to indicate if the user chose to export the project dependencies&#xA;&#x9;&#x9;&#x9;(exporting project dependencies can be very long, as for the UML metamodel as an example)"/>
+      <body startPosition="841" endPosition="1309" value=" Main entry point. Parameters are :&#xD;&#xA;&#x9;&#x9;&#x9;- analysis : the root analysis. It's been retrieved if needed in the initialize() method of the generator&#xD;&#xA;&#x9;&#x9;&#x9;- targetFolder : where the files will be generated&#xD;&#xA;&#x9;&#x9;&#x9;- imageFileFormat : File format used to export diagrams as images&#xD;&#xA;&#x9;&#x9;&#x9;- exportProjectDependencies : flag to indicate if the user chose to export the project dependencies&#xD;&#xA;&#x9;&#x9;&#x9;(exporting project dependencies can be very long, as for the UML metamodel as an example)"/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateAnalysis" visibility="Public" main="true">
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation" definition="/0/initServices">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="analysis" referredVariable="/0/generateAnalysis/analysis">
@@ -49,7 +49,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="../files/explorerPane.emtl#/0/generateExplorerPane"/>
@@ -60,14 +60,14 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation" definition="/0/generateRepresentations">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="analysis" referredVariable="/0/generateAnalysis/analysis">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation" definition="/0/generateProperties">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="analysis" referredVariable="/0/generateAnalysis/analysis">
@@ -77,7 +77,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <definition href="../files/index.emtl#/0/generateIndex"/>
@@ -85,7 +85,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&#xD;&#xA;"/>
       <body xsi:type="mtl:TemplateInvocation" definition="/0/resetServices">
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <argument xsi:type="ocl.ecore:VariableExp" name="analysis" referredVariable="/0/generateAnalysis/analysis">
@@ -106,7 +106,7 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="1838" endPosition="1881" value=" Call the init methods of services classes "/>
+      <body startPosition="1875" endPosition="1918" value=" Call the init methods of services classes "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="initServices">
       <body xsi:type="mtl:QueryInvocation">
@@ -119,7 +119,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:VoidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclVoid"/>
         <definition href="../services/representationsServices.emtl#/0/initRepresentationsServices"/>
@@ -133,7 +133,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:VoidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclVoid"/>
         <definition href="../services/labelProviderServices.emtl#/0/initLabelProviderServices"/>
@@ -144,7 +144,7 @@
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:QueryInvocation">
         <eType xsi:type="ocl.ecore:VoidType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclVoid"/>
         <definition href="../services/viewpointServices.emtl#/0/initSiriusServices"/>
@@ -166,7 +166,7 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="2219" endPosition="2263" value=" Call the reset methods of services classes "/>
+      <body startPosition="2264" endPosition="2308" value=" Call the reset methods of services classes "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="resetServices">
       <body xsi:type="mtl:QueryInvocation">
@@ -181,7 +181,7 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="2385" endPosition="2429" value=" Generate pages for the representation pane "/>
+      <body startPosition="2435" endPosition="2479" value=" Generate pages for the representation pane "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateRepresentations">
       <body xsi:type="mtl:TemplateInvocation">
@@ -191,7 +191,7 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(String)">
         <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(DRepresentation)">
           <source xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(DView)">
@@ -237,7 +237,7 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="2663" endPosition="2703" value=" Generate pages for the properties pane "/>
+      <body startPosition="2719" endPosition="2759" value=" Generate pages for the properties pane "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateProperties">
       <body xsi:type="mtl:TemplateInvocation">
@@ -247,13 +247,13 @@
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
         </argument>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:ForBlock">
         <body xsi:type="mtl:IfBlock">
           <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
           <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(String)">
             <source xsi:type="ocl.ecore:PropertyCallExp" eType="/30/OrderedSet(EObject)">
-              <source xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/@body.2/childAnalysis">
+              <source xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/%.2/childAnalysis">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
               </source>
               <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis/models"/>
@@ -261,7 +261,7 @@
             <body xsi:type="mtl:TemplateInvocation">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
               <definition href="../files/propertiesPane.emtl#/0/generateAllPropertiesPane"/>
-              <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/@body.2/@body.0/collect/temp4">
+              <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/%.2/%/collect/temp4">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
               </argument>
             </body>
@@ -269,7 +269,7 @@
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
             </iterator>
           </body>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
           <ifExpr xsi:type="ocl.ecore:VariableExp" name="exportProjectDependencies" referredVariable="/0/generateProperties/exportProjectDependencies">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           </ifExpr>
@@ -279,15 +279,15 @@
               <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(String)">
                 <source xsi:type="ocl.ecore:IteratorExp" name="reject" eType="/30/OrderedSet(EObject)">
                   <source xsi:type="ocl.ecore:PropertyCallExp" eType="/30/OrderedSet(EObject)">
-                    <source xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/@body.2/childAnalysis">
+                    <source xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/%.2/childAnalysis">
                       <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
                     </source>
                     <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis/models"/>
                   </source>
                   <body xsi:type="ocl.ecore:OperationCallExp">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="dependencies" eType="/30/Sequence(EObject)" referredVariable="/0/generateProperties/@body.2/@body.0/@else/@body.0/dependencies"/>
-                    <argument xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/model">
+                    <source xsi:type="ocl.ecore:VariableExp" name="dependencies" eType="/30/Sequence(EObject)" referredVariable="/0/generateProperties/%.2/%/%.2/%/dependencies"/>
+                    <argument xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateProperties/%.2/%/%.2/%/collect/reject/model">
                       <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
                     </argument>
                     <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)_Class/includes"/>
@@ -299,7 +299,7 @@
                 <body xsi:type="mtl:TemplateInvocation">
                   <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
                   <definition href="../files/propertiesPane.emtl#/0/generateAllPropertiesPane"/>
-                  <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/temp5">
+                  <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/%.2/%/%.2/%/collect/temp5">
                     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
                   </argument>
                 </body>
@@ -307,7 +307,7 @@
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
                 </iterator>
               </body>
-              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+              <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
               <letVariable name="dependencies" eType="/30/Sequence(EObject)">
                 <initExpression xsi:type="mtl:QueryInvocation" eType="/30/Sequence(EObject)">
                   <definition href="../services/viewpointServices.emtl#/0/getProjectDependencies"/>
@@ -323,14 +323,14 @@
         <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Sequence(String)">
           <source xsi:type="mtl:QueryInvocation" eType="/30/Sequence(DRepresentationElement)">
             <definition href="../services/representationsServices.emtl#/0/getRepresentationElementsWithSpecificSemanticElements"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/@body.2/childAnalysis">
+            <argument xsi:type="ocl.ecore:VariableExp" name="childAnalysis" referredVariable="/0/generateProperties/%.2/childAnalysis">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
             </argument>
           </source>
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <definition href="../files/propertiesPane.emtl#/0/generatePropertiesPane"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/@body.2/collect/temp6">
+            <argument xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/%.2/collect/temp6">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
             </argument>
           </body>
@@ -338,7 +338,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
           </iterator>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <loopVariable name="childAnalysis">
           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
         </loopVariable>
@@ -349,7 +349,7 @@
           </argument>
         </iterSet>
       </body>
-      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
       <body xsi:type="mtl:IfBlock">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;"/>
         <body xsi:type="ocl.ecore:IteratorExp" name="collect" eType="/30/Bag(String)">
@@ -366,7 +366,7 @@
                         </argument>
                       </source>
                       <body xsi:type="ocl.ecore:OperationCallExp" eType="/30/Sequence(DRepresentationElement)" referredOperation="/1/EObject_Class/eAllContents">
-                        <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/temp7">
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp1" referredVariable="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/temp7">
                           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
                         </source>
                         <argument xsi:type="ocl.ecore:TypeExp" eType="/47/DRepresentationElement">
@@ -381,7 +381,7 @@
                       <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                       <source xsi:type="ocl.ecore:OperationCallExp">
                         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-                        <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/temp8">
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/temp8">
                           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
                         </source>
                         <argument xsi:type="ocl.ecore:TypeExp" eType="/47/DEdge">
@@ -391,7 +391,7 @@
                       </source>
                       <argument xsi:type="ocl.ecore:OperationCallExp">
                         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
-                        <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/temp8">
+                        <source xsi:type="ocl.ecore:VariableExp" name="temp2" referredVariable="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/temp8">
                           <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
                         </source>
                         <argument xsi:type="ocl.ecore:TypeExp" eType="/47/DFeatureColumn">
@@ -408,7 +408,7 @@
                   <body xsi:type="mtl:QueryInvocation">
                     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
                     <definition href="../services/representationsServices.emtl#/0/hasSpecificSemanticElements"/>
-                    <argument xsi:type="ocl.ecore:VariableExp" name="temp3" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/select/reject/temp9">
+                    <argument xsi:type="ocl.ecore:VariableExp" name="temp3" referredVariable="/0/generateProperties/%.4/collect/%/collect/select/reject/temp9">
                       <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
                     </argument>
                   </body>
@@ -421,7 +421,7 @@
                   <definition href="../services/viewpointServices.emtl#/0/isInProjectDependencies"/>
                   <argument xsi:type="ocl.ecore:PropertyCallExp">
                     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-                    <source xsi:type="ocl.ecore:VariableExp" name="elt" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/select/elt">
+                    <source xsi:type="ocl.ecore:VariableExp" name="elt" referredVariable="/0/generateProperties/%.4/collect/%/collect/select/elt">
                       <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
                     </source>
                     <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DSemanticDecorator/target"/>
@@ -433,7 +433,7 @@
               </source>
               <body xsi:type="ocl.ecore:PropertyCallExp">
                 <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="temp4" referredVariable="/0/generateProperties/@body.4/collect/@source/collect/temp10">
+                <source xsi:type="ocl.ecore:VariableExp" name="temp4" referredVariable="/0/generateProperties/%.4/collect/%/collect/temp10">
                   <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
                 </source>
                 <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DSemanticDecorator/target"/>
@@ -447,7 +447,7 @@
           <body xsi:type="mtl:TemplateInvocation">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
             <definition href="../files/propertiesPane.emtl#/0/generatePropertiesPane"/>
-            <argument xsi:type="ocl.ecore:VariableExp" name="temp5" referredVariable="/0/generateProperties/@body.4/collect/temp11">
+            <argument xsi:type="ocl.ecore:VariableExp" name="temp5" referredVariable="/0/generateProperties/%.4/collect/temp11">
               <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
             </argument>
           </body>
@@ -455,7 +455,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
           </iterator>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <ifExpr xsi:type="ocl.ecore:OperationCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <source xsi:type="ocl.ecore:VariableExp" name="exportProjectDependencies" referredVariable="/0/generateProperties/exportProjectDependencies">
@@ -1019,332 +1019,332 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="818"/>
-      <details key="end" value="1291"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="833"/>
+      <details key="end" value="1311"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateAnalysis">
-      <details key="start" value="1292"/>
-      <details key="end" value="1828"/>
+      <details key="start" value="1313"/>
+      <details key="end" value="1863"/>
       <details key="line" value="22"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateAnalysis/@body.0">
-      <details key="start" value="1452"/>
-      <details key="end" value="1453"/>
+    <eAnnotations source="positions.2" references="/0/generateAnalysis/%">
+      <details key="start" value="1475"/>
+      <details key="end" value="1477"/>
       <details key="line" value="24"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateAnalysis/@body.1">
-      <details key="start" value="1489"/>
-      <details key="end" value="1541"/>
+    <eAnnotations source="positions.3" references="/0/generateAnalysis/%.1">
+      <details key="start" value="1514"/>
+      <details key="end" value="1566"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateAnalysis/@body.1/analysis">
-      <details key="start" value="1489"/>
-      <details key="end" value="1497"/>
+    <eAnnotations source="positions.4" references="/0/generateAnalysis/%.1/analysis">
+      <details key="start" value="1514"/>
+      <details key="end" value="1522"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateAnalysis/@body.1/targetFolder">
-      <details key="start" value="1511"/>
-      <details key="end" value="1523"/>
+    <eAnnotations source="positions.5" references="/0/generateAnalysis/%.1/targetFolder">
+      <details key="start" value="1536"/>
+      <details key="end" value="1548"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateAnalysis/@body.1/imageFileFormat">
-      <details key="start" value="1525"/>
-      <details key="end" value="1540"/>
+    <eAnnotations source="positions.6" references="/0/generateAnalysis/%.1/imageFileFormat">
+      <details key="start" value="1550"/>
+      <details key="end" value="1565"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateAnalysis/@body.2">
-      <details key="start" value="1543"/>
-      <details key="end" value="1545"/>
+    <eAnnotations source="positions.7" references="/0/generateAnalysis/%.2">
+      <details key="start" value="1568"/>
+      <details key="end" value="1572"/>
       <details key="line" value="27"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateAnalysis/@body.3">
-      <details key="start" value="1575"/>
-      <details key="end" value="1631"/>
+    <eAnnotations source="positions.8" references="/0/generateAnalysis/%.3">
+      <details key="start" value="1603"/>
+      <details key="end" value="1659"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateAnalysis/@body.3/analysis">
-      <details key="start" value="1575"/>
-      <details key="end" value="1583"/>
+    <eAnnotations source="positions.9" references="/0/generateAnalysis/%.3/analysis">
+      <details key="start" value="1603"/>
+      <details key="end" value="1611"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateAnalysis/@body.3/exportProjectDependencies">
-      <details key="start" value="1605"/>
-      <details key="end" value="1630"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateAnalysis/@body.4">
+    <eAnnotations source="positions.10" references="/0/generateAnalysis/%.3/exportProjectDependencies">
       <details key="start" value="1633"/>
-      <details key="end" value="1634"/>
+      <details key="end" value="1658"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateAnalysis/%.4">
+      <details key="start" value="1661"/>
+      <details key="end" value="1663"/>
       <details key="line" value="30"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateAnalysis/@body.5">
-      <details key="start" value="1635"/>
-      <details key="end" value="1669"/>
+    <eAnnotations source="positions.12" references="/0/generateAnalysis/%.5">
+      <details key="start" value="1664"/>
+      <details key="end" value="1698"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/generateAnalysis/@body.5/analysis">
-      <details key="start" value="1635"/>
-      <details key="end" value="1643"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/generateAnalysis/@body.6">
-      <details key="start" value="1671"/>
+    <eAnnotations source="positions.13" references="/0/generateAnalysis/%.5/analysis">
+      <details key="start" value="1664"/>
       <details key="end" value="1672"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/generateAnalysis/%.6">
+      <details key="start" value="1700"/>
+      <details key="end" value="1702"/>
       <details key="line" value="31"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/generateAnalysis/@body.7">
-      <details key="start" value="1673"/>
-      <details key="end" value="1727"/>
+    <eAnnotations source="positions.15" references="/0/generateAnalysis/%.7">
+      <details key="start" value="1703"/>
+      <details key="end" value="1757"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generateAnalysis/@body.7/analysis">
-      <details key="start" value="1673"/>
-      <details key="end" value="1681"/>
+    <eAnnotations source="positions.16" references="/0/generateAnalysis/%.7/analysis">
+      <details key="start" value="1703"/>
+      <details key="end" value="1711"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateAnalysis/@body.7/exportProjectDependencies">
-      <details key="start" value="1701"/>
-      <details key="end" value="1726"/>
+    <eAnnotations source="positions.17" references="/0/generateAnalysis/%.7/exportProjectDependencies">
+      <details key="start" value="1731"/>
+      <details key="end" value="1756"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateAnalysis/@body.8">
-      <details key="start" value="1729"/>
-      <details key="end" value="1730"/>
+    <eAnnotations source="positions.18" references="/0/generateAnalysis/%.8">
+      <details key="start" value="1759"/>
+      <details key="end" value="1761"/>
       <details key="line" value="32"/>
     </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generateAnalysis/@body.9">
-      <details key="start" value="1731"/>
-      <details key="end" value="1755"/>
+    <eAnnotations source="positions.19" references="/0/generateAnalysis/%.9">
+      <details key="start" value="1762"/>
+      <details key="end" value="1786"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/generateAnalysis/@body.9/analysis">
-      <details key="start" value="1731"/>
-      <details key="end" value="1739"/>
+    <eAnnotations source="positions.20" references="/0/generateAnalysis/%.9/analysis">
+      <details key="start" value="1762"/>
+      <details key="end" value="1770"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/generateAnalysis/@body.10">
-      <details key="start" value="1757"/>
-      <details key="end" value="1759"/>
+    <eAnnotations source="positions.21" references="/0/generateAnalysis/%.10">
+      <details key="start" value="1788"/>
+      <details key="end" value="1792"/>
       <details key="line" value="33"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/generateAnalysis/@body.11">
-      <details key="start" value="1790"/>
-      <details key="end" value="1814"/>
+    <eAnnotations source="positions.22" references="/0/generateAnalysis/%.11">
+      <details key="start" value="1824"/>
+      <details key="end" value="1848"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/generateAnalysis/@body.11/analysis">
-      <details key="start" value="1790"/>
-      <details key="end" value="1798"/>
+    <eAnnotations source="positions.23" references="/0/generateAnalysis/%.11/analysis">
+      <details key="start" value="1824"/>
+      <details key="end" value="1832"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.24" references="/0/generateAnalysis/analysis">
-      <details key="start" value="1326"/>
-      <details key="end" value="1346"/>
+      <details key="start" value="1347"/>
+      <details key="end" value="1367"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.25" references="/0/generateAnalysis/targetFolder">
-      <details key="start" value="1348"/>
-      <details key="end" value="1369"/>
+      <details key="start" value="1369"/>
+      <details key="end" value="1390"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/generateAnalysis/imageFileFormat">
-      <details key="start" value="1371"/>
-      <details key="end" value="1395"/>
+      <details key="start" value="1392"/>
+      <details key="end" value="1416"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/generateAnalysis/exportProjectDependencies">
-      <details key="start" value="1397"/>
-      <details key="end" value="1432"/>
+      <details key="start" value="1418"/>
+      <details key="end" value="1453"/>
       <details key="line" value="22"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/@ownedModuleElement.2">
-      <details key="start" value="1830"/>
-      <details key="end" value="1883"/>
+    <eAnnotations source="positions.28" references="/0/%.1">
+      <details key="start" value="1867"/>
+      <details key="end" value="1920"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/initServices">
-      <details key="start" value="1884"/>
-      <details key="end" value="2209"/>
+      <details key="start" value="1922"/>
+      <details key="end" value="2252"/>
       <details key="line" value="39"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/initServices/@body.0">
-      <details key="start" value="1988"/>
-      <details key="end" value="2027"/>
+    <eAnnotations source="positions.30" references="/0/initServices/%">
+      <details key="start" value="2027"/>
+      <details key="end" value="2066"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/initServices/@body.0/analysis">
-      <details key="start" value="1988"/>
-      <details key="end" value="1996"/>
+    <eAnnotations source="positions.31" references="/0/initServices/%/analysis">
+      <details key="start" value="2027"/>
+      <details key="end" value="2035"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/initServices/@body.0/targetFolder">
-      <details key="start" value="2014"/>
-      <details key="end" value="2026"/>
+    <eAnnotations source="positions.32" references="/0/initServices/%/targetFolder">
+      <details key="start" value="2053"/>
+      <details key="end" value="2065"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/initServices/@body.1">
-      <details key="start" value="2029"/>
-      <details key="end" value="2030"/>
+    <eAnnotations source="positions.33" references="/0/initServices/%.1">
+      <details key="start" value="2068"/>
+      <details key="end" value="2070"/>
       <details key="line" value="41"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/initServices/@body.2">
-      <details key="start" value="2031"/>
-      <details key="end" value="2098"/>
+    <eAnnotations source="positions.34" references="/0/initServices/%.2">
+      <details key="start" value="2071"/>
+      <details key="end" value="2138"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/initServices/@body.2/analysis">
-      <details key="start" value="2031"/>
-      <details key="end" value="2039"/>
+    <eAnnotations source="positions.35" references="/0/initServices/%.2/analysis">
+      <details key="start" value="2071"/>
+      <details key="end" value="2079"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/initServices/@body.2/targetFolder">
-      <details key="start" value="2068"/>
-      <details key="end" value="2080"/>
+    <eAnnotations source="positions.36" references="/0/initServices/%.2/targetFolder">
+      <details key="start" value="2108"/>
+      <details key="end" value="2120"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/initServices/@body.2/imageFileFormat">
-      <details key="start" value="2082"/>
-      <details key="end" value="2097"/>
+    <eAnnotations source="positions.37" references="/0/initServices/%.2/imageFileFormat">
+      <details key="start" value="2122"/>
+      <details key="end" value="2137"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/initServices/@body.3">
-      <details key="start" value="2100"/>
-      <details key="end" value="2101"/>
+    <eAnnotations source="positions.38" references="/0/initServices/%.3">
+      <details key="start" value="2140"/>
+      <details key="end" value="2142"/>
       <details key="line" value="42"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/initServices/@body.4">
-      <details key="start" value="2102"/>
-      <details key="end" value="2150"/>
+    <eAnnotations source="positions.39" references="/0/initServices/%.4">
+      <details key="start" value="2143"/>
+      <details key="end" value="2191"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/initServices/@body.4/analysis">
-      <details key="start" value="2102"/>
-      <details key="end" value="2110"/>
+    <eAnnotations source="positions.40" references="/0/initServices/%.4/analysis">
+      <details key="start" value="2143"/>
+      <details key="end" value="2151"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/initServices/@body.4/targetFolder">
-      <details key="start" value="2137"/>
-      <details key="end" value="2149"/>
+    <eAnnotations source="positions.41" references="/0/initServices/%.4/targetFolder">
+      <details key="start" value="2178"/>
+      <details key="end" value="2190"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/initServices/@body.5">
-      <details key="start" value="2152"/>
-      <details key="end" value="2153"/>
+    <eAnnotations source="positions.42" references="/0/initServices/%.5">
+      <details key="start" value="2193"/>
+      <details key="end" value="2195"/>
       <details key="line" value="43"/>
     </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/initServices/@body.6">
-      <details key="start" value="2154"/>
-      <details key="end" value="2195"/>
+    <eAnnotations source="positions.43" references="/0/initServices/%.6">
+      <details key="start" value="2196"/>
+      <details key="end" value="2237"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/initServices/@body.6/analysis">
-      <details key="start" value="2154"/>
-      <details key="end" value="2162"/>
+    <eAnnotations source="positions.44" references="/0/initServices/%.6/analysis">
+      <details key="start" value="2196"/>
+      <details key="end" value="2204"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.45" references="/0/initServices/@body.6/targetFolder">
-      <details key="start" value="2182"/>
-      <details key="end" value="2194"/>
+    <eAnnotations source="positions.45" references="/0/initServices/%.6/targetFolder">
+      <details key="start" value="2224"/>
+      <details key="end" value="2236"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.46" references="/0/initServices/analysis">
-      <details key="start" value="1915"/>
-      <details key="end" value="1935"/>
+      <details key="start" value="1953"/>
+      <details key="end" value="1973"/>
       <details key="line" value="39"/>
     </eAnnotations>
     <eAnnotations source="positions.47" references="/0/initServices/targetFolder">
-      <details key="start" value="1937"/>
-      <details key="end" value="1958"/>
+      <details key="start" value="1975"/>
+      <details key="end" value="1996"/>
       <details key="line" value="39"/>
     </eAnnotations>
     <eAnnotations source="positions.48" references="/0/initServices/imageFileFormat">
-      <details key="start" value="1960"/>
-      <details key="end" value="1984"/>
+      <details key="start" value="1998"/>
+      <details key="end" value="2022"/>
       <details key="line" value="39"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/@ownedModuleElement.4">
-      <details key="start" value="2211"/>
-      <details key="end" value="2265"/>
+    <eAnnotations source="positions.49" references="/0/%.2">
+      <details key="start" value="2256"/>
+      <details key="end" value="2310"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.50" references="/0/resetServices">
-      <details key="start" value="2266"/>
-      <details key="end" value="2375"/>
+      <details key="start" value="2312"/>
+      <details key="end" value="2423"/>
       <details key="line" value="47"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/resetServices/@body.0">
-      <details key="start" value="2322"/>
-      <details key="end" value="2361"/>
+    <eAnnotations source="positions.51" references="/0/resetServices/%">
+      <details key="start" value="2369"/>
+      <details key="end" value="2408"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/resetServices/@body.0/analysis">
-      <details key="start" value="2322"/>
-      <details key="end" value="2330"/>
+    <eAnnotations source="positions.52" references="/0/resetServices/%/analysis">
+      <details key="start" value="2369"/>
+      <details key="end" value="2377"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.53" references="/0/resetServices/analysis">
-      <details key="start" value="2298"/>
-      <details key="end" value="2318"/>
+      <details key="start" value="2344"/>
+      <details key="end" value="2364"/>
       <details key="line" value="47"/>
     </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/@ownedModuleElement.6">
-      <details key="start" value="2377"/>
-      <details key="end" value="2431"/>
+    <eAnnotations source="positions.54" references="/0/%.3">
+      <details key="start" value="2427"/>
+      <details key="end" value="2481"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.55" references="/0/generateRepresentations">
-      <details key="start" value="2432"/>
-      <details key="end" value="2653"/>
+      <details key="start" value="2483"/>
+      <details key="end" value="2707"/>
       <details key="line" value="52"/>
     </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/generateRepresentations/@body.0">
-      <details key="start" value="2498"/>
-      <details key="end" value="2546"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/generateRepresentations/@body.0/analysis">
-      <details key="start" value="2498"/>
-      <details key="end" value="2506"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/generateRepresentations/@body.1">
-      <details key="start" value="2548"/>
-      <details key="end" value="2549"/>
-      <details key="line" value="54"/>
-    </eAnnotations>
-    <eAnnotations source="positions.59" references="/0/generateRepresentations/collect">
+    <eAnnotations source="positions.56" references="/0/generateRepresentations/%">
       <details key="start" value="2550"/>
-      <details key="end" value="2639"/>
+      <details key="end" value="2598"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/generateRepresentations/collect/collect">
-      <details key="start" value="2550"/>
-      <details key="end" value="2610"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/generateRepresentations/collect/collect/collect">
-      <details key="start" value="2550"/>
-      <details key="end" value="2589"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/generateRepresentations/collect/collect/collect/@source">
-      <details key="start" value="2550"/>
-      <details key="end" value="2575"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/generateRepresentations/collect/collect/collect/@source/analysis">
+    <eAnnotations source="positions.57" references="/0/generateRepresentations/%/analysis">
       <details key="start" value="2550"/>
       <details key="end" value="2558"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/generateRepresentations/collect/collect/collect/@body">
-      <details key="start" value="2576"/>
-      <details key="end" value="2589"/>
+    <eAnnotations source="positions.58" references="/0/generateRepresentations/%.1">
+      <details key="start" value="2600"/>
+      <details key="end" value="2602"/>
+      <details key="line" value="54"/>
+    </eAnnotations>
+    <eAnnotations source="positions.59" references="/0/generateRepresentations/collect">
+      <details key="start" value="2603"/>
+      <details key="end" value="2692"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/generateRepresentations/collect/collect/collect/@body/temp1">
+    <eAnnotations source="positions.60" references="/0/generateRepresentations/collect/collect">
+      <details key="start" value="2603"/>
+      <details key="end" value="2663"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.61" references="/0/generateRepresentations/collect/collect/collect">
+      <details key="start" value="2603"/>
+      <details key="end" value="2642"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.62" references="/0/generateRepresentations/collect/collect/collect/%">
+      <details key="start" value="2603"/>
+      <details key="end" value="2628"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.63" references="/0/generateRepresentations/collect/collect/collect/%/analysis">
+      <details key="start" value="2603"/>
+      <details key="end" value="2611"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.64" references="/0/generateRepresentations/collect/collect/collect/%.1">
+      <details key="start" value="2629"/>
+      <details key="end" value="2642"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.65" references="/0/generateRepresentations/collect/collect/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
@@ -1354,12 +1354,12 @@
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/generateRepresentations/collect/collect/@body">
-      <details key="start" value="2590"/>
-      <details key="end" value="2610"/>
+    <eAnnotations source="positions.67" references="/0/generateRepresentations/collect/collect/%">
+      <details key="start" value="2643"/>
+      <details key="end" value="2663"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/generateRepresentations/collect/collect/@body/temp2">
+    <eAnnotations source="positions.68" references="/0/generateRepresentations/collect/collect/%/temp2">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
@@ -1369,12 +1369,12 @@
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.70" references="/0/generateRepresentations/collect/@body">
+    <eAnnotations source="positions.70" references="/0/generateRepresentations/collect/%">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.71" references="/0/generateRepresentations/collect/@body/temp3">
+    <eAnnotations source="positions.71" references="/0/generateRepresentations/collect/%/temp3">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
@@ -1385,443 +1385,443 @@
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.73" references="/0/generateRepresentations/analysis">
-      <details key="start" value="2474"/>
-      <details key="end" value="2494"/>
+      <details key="start" value="2525"/>
+      <details key="end" value="2545"/>
       <details key="line" value="52"/>
     </eAnnotations>
-    <eAnnotations source="positions.74" references="/0/@ownedModuleElement.8">
-      <details key="start" value="2655"/>
-      <details key="end" value="2705"/>
+    <eAnnotations source="positions.74" references="/0/%.4">
+      <details key="start" value="2711"/>
+      <details key="end" value="2761"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.75" references="/0/generateProperties">
-      <details key="start" value="2706"/>
-      <details key="end" value="4031"/>
+      <details key="start" value="2763"/>
+      <details key="end" value="4113"/>
       <details key="line" value="58"/>
     </eAnnotations>
-    <eAnnotations source="positions.76" references="/0/generateProperties/@body.0">
-      <details key="start" value="2804"/>
-      <details key="end" value="2848"/>
+    <eAnnotations source="positions.76" references="/0/generateProperties/%">
+      <details key="start" value="2862"/>
+      <details key="end" value="2906"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.77" references="/0/generateProperties/@body.0/analysis">
-      <details key="start" value="2804"/>
-      <details key="end" value="2812"/>
+    <eAnnotations source="positions.77" references="/0/generateProperties/%/analysis">
+      <details key="start" value="2862"/>
+      <details key="end" value="2870"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.78" references="/0/generateProperties/@body.1">
-      <details key="start" value="2850"/>
-      <details key="end" value="2851"/>
+    <eAnnotations source="positions.78" references="/0/generateProperties/%.1">
+      <details key="start" value="2908"/>
+      <details key="end" value="2910"/>
       <details key="line" value="60"/>
     </eAnnotations>
-    <eAnnotations source="positions.79" references="/0/generateProperties/@body.2">
-      <details key="start" value="2851"/>
-      <details key="end" value="3319"/>
+    <eAnnotations source="positions.79" references="/0/generateProperties/%.2">
+      <details key="start" value="2910"/>
+      <details key="end" value="3387"/>
       <details key="line" value="60"/>
     </eAnnotations>
-    <eAnnotations source="positions.80" references="/0/generateProperties/@body.2/@body.0">
-      <details key="start" value="2914"/>
-      <details key="end" value="3213"/>
+    <eAnnotations source="positions.80" references="/0/generateProperties/%.2/%">
+      <details key="start" value="2974"/>
+      <details key="end" value="3279"/>
       <details key="line" value="61"/>
     </eAnnotations>
-    <eAnnotations source="positions.81" references="/0/generateProperties/@body.2/@body.0/@body.0">
-      <details key="start" value="2947"/>
-      <details key="end" value="2949"/>
+    <eAnnotations source="positions.81" references="/0/generateProperties/%.2/%/%">
+      <details key="start" value="3008"/>
+      <details key="end" value="3010"/>
       <details key="line" value="62"/>
     </eAnnotations>
-    <eAnnotations source="positions.82" references="/0/generateProperties/@body.2/@body.0/collect">
-      <details key="start" value="2950"/>
-      <details key="end" value="2998"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.83" references="/0/generateProperties/@body.2/@body.0/collect/@source">
-      <details key="start" value="2950"/>
-      <details key="end" value="2970"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.84" references="/0/generateProperties/@body.2/@body.0/collect/@source/childAnalysis">
-      <details key="start" value="2950"/>
-      <details key="end" value="2963"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.85" references="/0/generateProperties/@body.2/@body.0/collect/@body">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.86" references="/0/generateProperties/@body.2/@body.0/collect/@body/temp1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.87" references="/0/generateProperties/@body.2/@body.0/collect/temp4">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.88" references="/0/generateProperties/@body.2/@body.0/@body.2">
-      <details key="start" value="3000"/>
-      <details key="end" value="3001"/>
-      <details key="line" value="63"/>
-    </eAnnotations>
-    <eAnnotations source="positions.89" references="/0/generateProperties/@body.2/@body.0/exportProjectDependencies">
-      <details key="start" value="2918"/>
-      <details key="end" value="2945"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.90" references="/0/generateProperties/@body.2/@body.0/@else">
-      <details key="start" value="3002"/>
-      <details key="end" value="3208"/>
-      <details key="line" value="63"/>
-    </eAnnotations>
-    <eAnnotations source="positions.91" references="/0/generateProperties/@body.2/@body.0/@else/@body.0">
+    <eAnnotations source="positions.82" references="/0/generateProperties/%.2/%/collect">
       <details key="start" value="3011"/>
-      <details key="end" value="3206"/>
+      <details key="end" value="3059"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.83" references="/0/generateProperties/%.2/%/collect/%">
+      <details key="start" value="3011"/>
+      <details key="end" value="3031"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.84" references="/0/generateProperties/%.2/%/collect/%/childAnalysis">
+      <details key="start" value="3011"/>
+      <details key="end" value="3024"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.85" references="/0/generateProperties/%.2/%/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.86" references="/0/generateProperties/%.2/%/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.87" references="/0/generateProperties/%.2/%/collect/temp4">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.88" references="/0/generateProperties/%.2/%/%.1">
+      <details key="start" value="3061"/>
+      <details key="end" value="3063"/>
+      <details key="line" value="63"/>
+    </eAnnotations>
+    <eAnnotations source="positions.89" references="/0/generateProperties/%.2/%/exportProjectDependencies">
+      <details key="start" value="2978"/>
+      <details key="end" value="3005"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.90" references="/0/generateProperties/%.2/%/%.2">
+      <details key="start" value="3064"/>
+      <details key="end" value="3274"/>
+      <details key="line" value="63"/>
+    </eAnnotations>
+    <eAnnotations source="positions.91" references="/0/generateProperties/%.2/%/%.2/%">
+      <details key="start" value="3074"/>
+      <details key="end" value="3271"/>
       <details key="line" value="64"/>
     </eAnnotations>
-    <eAnnotations source="positions.92" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/@body.0">
-      <details key="start" value="3086"/>
-      <details key="end" value="3089"/>
+    <eAnnotations source="positions.92" references="/0/generateProperties/%.2/%/%.2/%/%">
+      <details key="start" value="3150"/>
+      <details key="end" value="3153"/>
       <details key="line" value="65"/>
     </eAnnotations>
-    <eAnnotations source="positions.93" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect">
-      <details key="start" value="3090"/>
-      <details key="end" value="3195"/>
+    <eAnnotations source="positions.93" references="/0/generateProperties/%.2/%/%.2/%/collect">
+      <details key="start" value="3154"/>
+      <details key="end" value="3259"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.94" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject">
-      <details key="start" value="3090"/>
+    <eAnnotations source="positions.94" references="/0/generateProperties/%.2/%/%.2/%/collect/reject">
+      <details key="start" value="3154"/>
+      <details key="end" value="3231"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.95" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/%">
+      <details key="start" value="3154"/>
+      <details key="end" value="3174"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.96" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/%/childAnalysis">
+      <details key="start" value="3154"/>
       <details key="end" value="3167"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.95" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/@source">
-      <details key="start" value="3090"/>
-      <details key="end" value="3110"/>
+    <eAnnotations source="positions.97" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/%.1">
+      <details key="start" value="3201"/>
+      <details key="end" value="3230"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.96" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/@source/childAnalysis">
-      <details key="start" value="3090"/>
-      <details key="end" value="3103"/>
+    <eAnnotations source="positions.98" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/%.1/dependencies">
+      <details key="start" value="3201"/>
+      <details key="end" value="3213"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.97" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/@body">
-      <details key="start" value="3137"/>
-      <details key="end" value="3166"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.98" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/@body/dependencies">
-      <details key="start" value="3137"/>
-      <details key="end" value="3149"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.99" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/@body/model">
-      <details key="start" value="3160"/>
-      <details key="end" value="3165"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.100" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/reject/model">
-      <details key="start" value="3119"/>
-      <details key="end" value="3134"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.101" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/@body">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.102" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/@body/temp1">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.103" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/collect/temp5">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.104" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/@body.2">
-      <details key="start" value="3197"/>
-      <details key="end" value="3198"/>
-      <details key="line" value="66"/>
-    </eAnnotations>
-    <eAnnotations source="positions.105" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/dependencies">
-      <details key="start" value="3016"/>
-      <details key="end" value="3084"/>
-      <details key="line" value="64"/>
-    </eAnnotations>
-    <eAnnotations source="positions.106" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/dependencies/@initExpression">
-      <details key="start" value="3052"/>
-      <details key="end" value="3085"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.107" references="/0/generateProperties/@body.2/@body.0/@else/@body.0/dependencies/@initExpression/analysis">
-      <details key="start" value="3052"/>
-      <details key="end" value="3060"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.108" references="/0/generateProperties/@body.2/@body.1">
-      <details key="start" value="3214"/>
-      <details key="end" value="3215"/>
-      <details key="line" value="68"/>
-    </eAnnotations>
-    <eAnnotations source="positions.109" references="/0/generateProperties/@body.2/collect">
-      <details key="start" value="3216"/>
-      <details key="end" value="3310"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.110" references="/0/generateProperties/@body.2/collect/@source">
-      <details key="start" value="3216"/>
-      <details key="end" value="3285"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.111" references="/0/generateProperties/@body.2/collect/@source/childAnalysis">
-      <details key="start" value="3216"/>
+    <eAnnotations source="positions.99" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/%.1/model">
+      <details key="start" value="3224"/>
       <details key="end" value="3229"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.112" references="/0/generateProperties/@body.2/collect/@body">
+    <eAnnotations source="positions.100" references="/0/generateProperties/%.2/%/%.2/%/collect/reject/model">
+      <details key="start" value="3183"/>
+      <details key="end" value="3198"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.101" references="/0/generateProperties/%.2/%/%.2/%/collect/%">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.113" references="/0/generateProperties/@body.2/collect/@body/temp1">
+    <eAnnotations source="positions.102" references="/0/generateProperties/%.2/%/%.2/%/collect/%/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.114" references="/0/generateProperties/@body.2/collect/temp6">
+    <eAnnotations source="positions.103" references="/0/generateProperties/%.2/%/%.2/%/collect/temp5">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.115" references="/0/generateProperties/@body.2/@body.3">
-      <details key="start" value="3312"/>
-      <details key="end" value="3313"/>
+    <eAnnotations source="positions.104" references="/0/generateProperties/%.2/%/%.2/%/%.1">
+      <details key="start" value="3261"/>
+      <details key="end" value="3263"/>
+      <details key="line" value="66"/>
+    </eAnnotations>
+    <eAnnotations source="positions.105" references="/0/generateProperties/%.2/%/%.2/%/dependencies">
+      <details key="start" value="3079"/>
+      <details key="end" value="3147"/>
+      <details key="line" value="64"/>
+    </eAnnotations>
+    <eAnnotations source="positions.106" references="/0/generateProperties/%.2/%/%.2/%/dependencies/%">
+      <details key="start" value="3115"/>
+      <details key="end" value="3148"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.107" references="/0/generateProperties/%.2/%/%.2/%/dependencies/%/analysis">
+      <details key="start" value="3115"/>
+      <details key="end" value="3123"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.108" references="/0/generateProperties/%.2/%.1">
+      <details key="start" value="3281"/>
+      <details key="end" value="3282"/>
+      <details key="line" value="68"/>
+    </eAnnotations>
+    <eAnnotations source="positions.109" references="/0/generateProperties/%.2/collect">
+      <details key="start" value="3283"/>
+      <details key="end" value="3377"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.110" references="/0/generateProperties/%.2/collect/%">
+      <details key="start" value="3283"/>
+      <details key="end" value="3352"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.111" references="/0/generateProperties/%.2/collect/%/childAnalysis">
+      <details key="start" value="3283"/>
+      <details key="end" value="3296"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.112" references="/0/generateProperties/%.2/collect/%.1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.113" references="/0/generateProperties/%.2/collect/%.1/temp1">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.114" references="/0/generateProperties/%.2/collect/temp6">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.115" references="/0/generateProperties/%.2/%.2">
+      <details key="start" value="3379"/>
+      <details key="end" value="3381"/>
       <details key="line" value="69"/>
     </eAnnotations>
-    <eAnnotations source="positions.116" references="/0/generateProperties/@body.2/childAnalysis">
-      <details key="start" value="2857"/>
-      <details key="end" value="2882"/>
+    <eAnnotations source="positions.116" references="/0/generateProperties/%.2/childAnalysis">
+      <details key="start" value="2916"/>
+      <details key="end" value="2941"/>
       <details key="line" value="60"/>
     </eAnnotations>
-    <eAnnotations source="positions.117" references="/0/generateProperties/@body.2/@iterSet">
-      <details key="start" value="2885"/>
-      <details key="end" value="2910"/>
+    <eAnnotations source="positions.117" references="/0/generateProperties/%.2/%.3">
+      <details key="start" value="2944"/>
+      <details key="end" value="2969"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.118" references="/0/generateProperties/@body.2/@iterSet/analysis">
-      <details key="start" value="2885"/>
-      <details key="end" value="2893"/>
+    <eAnnotations source="positions.118" references="/0/generateProperties/%.2/%.3/analysis">
+      <details key="start" value="2944"/>
+      <details key="end" value="2952"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.119" references="/0/generateProperties/@body.3">
-      <details key="start" value="3320"/>
-      <details key="end" value="3321"/>
+    <eAnnotations source="positions.119" references="/0/generateProperties/%.3">
+      <details key="start" value="3389"/>
+      <details key="end" value="3391"/>
       <details key="line" value="70"/>
     </eAnnotations>
-    <eAnnotations source="positions.120" references="/0/generateProperties/@body.4">
-      <details key="start" value="3321"/>
-      <details key="end" value="4019"/>
+    <eAnnotations source="positions.120" references="/0/generateProperties/%.4">
+      <details key="start" value="3391"/>
+      <details key="end" value="4100"/>
       <details key="line" value="71"/>
     </eAnnotations>
-    <eAnnotations source="positions.121" references="/0/generateProperties/@body.4/@body.0">
-      <details key="start" value="3719"/>
-      <details key="end" value="3720"/>
+    <eAnnotations source="positions.121" references="/0/generateProperties/%.4/%">
+      <details key="start" value="3795"/>
+      <details key="end" value="3796"/>
       <details key="line" value="77"/>
     </eAnnotations>
-    <eAnnotations source="positions.122" references="/0/generateProperties/@body.4/collect">
-      <details key="start" value="3721"/>
-      <details key="end" value="4011"/>
+    <eAnnotations source="positions.122" references="/0/generateProperties/%.4/collect">
+      <details key="start" value="3797"/>
+      <details key="end" value="4091"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.123" references="/0/generateProperties/@body.4/collect/@source">
-      <details key="start" value="3721"/>
-      <details key="end" value="3986"/>
+    <eAnnotations source="positions.123" references="/0/generateProperties/%.4/collect/%">
+      <details key="start" value="3797"/>
+      <details key="end" value="4066"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.124" references="/0/generateProperties/@body.4/collect/@source/collect">
-      <details key="start" value="3721"/>
-      <details key="end" value="3974"/>
+    <eAnnotations source="positions.124" references="/0/generateProperties/%.4/collect/%/collect">
+      <details key="start" value="3797"/>
+      <details key="end" value="4053"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.125" references="/0/generateProperties/@body.4/collect/@source/collect/select">
-      <details key="start" value="3721"/>
-      <details key="end" value="3967"/>
+    <eAnnotations source="positions.125" references="/0/generateProperties/%.4/collect/%/collect/select">
+      <details key="start" value="3797"/>
+      <details key="end" value="4046"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.126" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject">
-      <details key="start" value="3721"/>
-      <details key="end" value="3887"/>
+    <eAnnotations source="positions.126" references="/0/generateProperties/%.4/collect/%/collect/select/reject">
+      <details key="start" value="3797"/>
+      <details key="end" value="3965"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.127" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject">
-      <details key="start" value="3721"/>
-      <details key="end" value="3845"/>
+    <eAnnotations source="positions.127" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject">
+      <details key="start" value="3797"/>
+      <details key="end" value="3922"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.128" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect">
-      <details key="start" value="3721"/>
-      <details key="end" value="3783"/>
+    <eAnnotations source="positions.128" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect">
+      <details key="start" value="3797"/>
+      <details key="end" value="3859"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.129" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/@source">
-      <details key="start" value="3721"/>
-      <details key="end" value="3746"/>
+    <eAnnotations source="positions.129" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/%">
+      <details key="start" value="3797"/>
+      <details key="end" value="3822"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.130" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/@source/analysis">
-      <details key="start" value="3721"/>
-      <details key="end" value="3729"/>
+    <eAnnotations source="positions.130" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/%/analysis">
+      <details key="start" value="3797"/>
+      <details key="end" value="3805"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.131" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/@body">
+    <eAnnotations source="positions.131" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.132" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/@body/temp1">
+    <eAnnotations source="positions.132" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/%.1/temp1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.133" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/@body/@argument.0">
-      <details key="start" value="3760"/>
-      <details key="end" value="3782"/>
+    <eAnnotations source="positions.133" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/%.1/%">
+      <details key="start" value="3836"/>
+      <details key="end" value="3858"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.134" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/collect/temp7">
+    <eAnnotations source="positions.134" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/collect/temp7">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.135" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body">
-      <details key="start" value="3795"/>
-      <details key="end" value="3844"/>
+    <eAnnotations source="positions.135" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%">
+      <details key="start" value="3872"/>
+      <details key="end" value="3921"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.136" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@source">
-      <details key="start" value="3795"/>
-      <details key="end" value="3813"/>
+    <eAnnotations source="positions.136" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%">
+      <details key="start" value="3872"/>
+      <details key="end" value="3890"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.137" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@source/temp2">
+    <eAnnotations source="positions.137" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%/temp2">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.138" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@source/@argument.0">
-      <details key="start" value="3807"/>
-      <details key="end" value="3812"/>
+    <eAnnotations source="positions.138" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%/%">
+      <details key="start" value="3884"/>
+      <details key="end" value="3889"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.139" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@argument.0">
-      <details key="start" value="3817"/>
-      <details key="end" value="3844"/>
+    <eAnnotations source="positions.139" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%.1">
+      <details key="start" value="3894"/>
+      <details key="end" value="3921"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.140" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@argument.0/temp2">
+    <eAnnotations source="positions.140" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%.1/temp2">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.141" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/@body/@argument.0/@argument.0">
-      <details key="start" value="3829"/>
-      <details key="end" value="3843"/>
+    <eAnnotations source="positions.141" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/%/%.1/%">
+      <details key="start" value="3906"/>
+      <details key="end" value="3920"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.142" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/reject/temp8">
+    <eAnnotations source="positions.142" references="/0/generateProperties/%.4/collect/%/collect/select/reject/reject/temp8">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.143" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/@body">
-      <details key="start" value="3857"/>
-      <details key="end" value="3886"/>
+    <eAnnotations source="positions.143" references="/0/generateProperties/%.4/collect/%/collect/select/reject/%">
+      <details key="start" value="3935"/>
+      <details key="end" value="3964"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.144" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/@body/temp3">
+    <eAnnotations source="positions.144" references="/0/generateProperties/%.4/collect/%/collect/select/reject/%/temp3">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.145" references="/0/generateProperties/@body.4/collect/@source/collect/select/reject/temp9">
+    <eAnnotations source="positions.145" references="/0/generateProperties/%.4/collect/%/collect/select/reject/temp9">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.146" references="/0/generateProperties/@body.4/collect/@source/collect/select/@body">
-      <details key="start" value="3930"/>
-      <details key="end" value="3966"/>
+    <eAnnotations source="positions.146" references="/0/generateProperties/%.4/collect/%/collect/select/%">
+      <details key="start" value="4009"/>
+      <details key="end" value="4045"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.147" references="/0/generateProperties/@body.4/collect/@source/collect/select/@body/@argument.0">
-      <details key="start" value="3930"/>
-      <details key="end" value="3940"/>
+    <eAnnotations source="positions.147" references="/0/generateProperties/%.4/collect/%/collect/select/%/%">
+      <details key="start" value="4009"/>
+      <details key="end" value="4019"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.148" references="/0/generateProperties/@body.4/collect/@source/collect/select/@body/@argument.0/elt">
-      <details key="start" value="3930"/>
-      <details key="end" value="3933"/>
+    <eAnnotations source="positions.148" references="/0/generateProperties/%.4/collect/%/collect/select/%/%/elt">
+      <details key="start" value="4009"/>
+      <details key="end" value="4012"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.149" references="/0/generateProperties/@body.4/collect/@source/collect/select/elt">
-      <details key="start" value="3899"/>
-      <details key="end" value="3927"/>
+    <eAnnotations source="positions.149" references="/0/generateProperties/%.4/collect/%/collect/select/elt">
+      <details key="start" value="3978"/>
+      <details key="end" value="4006"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.150" references="/0/generateProperties/@body.4/collect/@source/collect/@body">
-      <details key="start" value="3968"/>
-      <details key="end" value="3974"/>
+    <eAnnotations source="positions.150" references="/0/generateProperties/%.4/collect/%/collect/%">
+      <details key="start" value="4047"/>
+      <details key="end" value="4053"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.151" references="/0/generateProperties/@body.4/collect/@source/collect/@body/temp4">
+    <eAnnotations source="positions.151" references="/0/generateProperties/%.4/collect/%/collect/%/temp4">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.152" references="/0/generateProperties/@body.4/collect/@source/collect/temp10">
+    <eAnnotations source="positions.152" references="/0/generateProperties/%.4/collect/%/collect/temp10">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.153" references="/0/generateProperties/@body.4/collect/@body">
+    <eAnnotations source="positions.153" references="/0/generateProperties/%.4/collect/%.1">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.154" references="/0/generateProperties/@body.4/collect/@body/temp5">
+    <eAnnotations source="positions.154" references="/0/generateProperties/%.4/collect/%.1/temp5">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.155" references="/0/generateProperties/@body.4/collect/temp11">
+    <eAnnotations source="positions.155" references="/0/generateProperties/%.4/collect/temp11">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.156" references="/0/generateProperties/@body.4/@body.2">
-      <details key="start" value="4013"/>
-      <details key="end" value="4014"/>
+    <eAnnotations source="positions.156" references="/0/generateProperties/%.4/%.1">
+      <details key="start" value="4093"/>
+      <details key="end" value="4095"/>
       <details key="line" value="82"/>
     </eAnnotations>
-    <eAnnotations source="positions.157" references="/0/generateProperties/@body.4/@ifExpr">
-      <details key="start" value="3325"/>
-      <details key="end" value="3356"/>
+    <eAnnotations source="positions.157" references="/0/generateProperties/%.4/%.2">
+      <details key="start" value="3395"/>
+      <details key="end" value="3426"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.158" references="/0/generateProperties/@body.4/@ifExpr/exportProjectDependencies">
-      <details key="start" value="3330"/>
-      <details key="end" value="3355"/>
+    <eAnnotations source="positions.158" references="/0/generateProperties/%.4/%.2/exportProjectDependencies">
+      <details key="start" value="3400"/>
+      <details key="end" value="3425"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.159" references="/0/generateProperties/analysis">
-      <details key="start" value="2743"/>
-      <details key="end" value="2763"/>
+      <details key="start" value="2800"/>
+      <details key="end" value="2820"/>
       <details key="line" value="58"/>
     </eAnnotations>
     <eAnnotations source="positions.160" references="/0/generateProperties/exportProjectDependencies">
-      <details key="start" value="2765"/>
-      <details key="end" value="2800"/>
+      <details key="start" value="2822"/>
+      <details key="end" value="2857"/>
       <details key="line" value="58"/>
     </eAnnotations>
   </ecore:EAnnotation>

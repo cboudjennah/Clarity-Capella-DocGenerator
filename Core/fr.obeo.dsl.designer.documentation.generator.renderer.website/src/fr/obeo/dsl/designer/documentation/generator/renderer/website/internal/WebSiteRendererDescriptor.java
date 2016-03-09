@@ -16,7 +16,7 @@ public class WebSiteRendererDescriptor implements IDocumentationRendererDescript
 
 	@Override
 	public String getLabel() {
-		return "Web site rendered";
+		return "Web site generator";
 	}
 
 	@Override

@@ -15,6 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 import org.eclipse.core.commands.AbstractHandler;
 import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.IStatus;
@@ -58,8 +59,11 @@ public class SiriusDocumentationHandler extends AbstractHandler {
 			if (selectedElement instanceof EObject) {
 				final EObject context = (EObject) selectedElement;
 				Shell shell = HandlerUtil.getActiveShell(event);
+				//gets a reference to the current project
+				IProject currentProject = getResource(context).getProject();
+				//
 				DocumentationGeneratorDialog dialog = new DocumentationGeneratorDialog(
-						shell, getResource(context).getProject().getLocation(),
+						shell, currentProject.getLocation(),
 						DocumentationGeneratorPlugin.getDefault()
 								.getGenerators(context), context);
 				if (dialog.open() == Dialog.OK) {
@@ -73,7 +77,9 @@ public class SiriusDocumentationHandler extends AbstractHandler {
 						GenerationRunnable launcher = new GenerationRunnable(
 								generatorDescriptor,//
 								rendererDescriptor, context, //
-								dialog.getDirectory());
+							//
+								currentProject);
+							//	dialog.getDirectory());
 						try {
 							PlatformUI.getWorkbench().getProgressService()
 									.run(true, true, launcher);

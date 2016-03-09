@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="labelProviderServices" nsURI="fr::obeo::dsl::designer::gen::html::services::labelProviderServices" startHeaderPosition="29" endHeaderPosition="182">
+  <mtl:Module name="labelProviderServices" nsURI="fr::obeo::dsl::designer::gen::html::services::labelProviderServices" startHeaderPosition="30" endHeaderPosition="185">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="110" endPosition="182" value=" Queries to access services provided by the LabelProviderServices class "/>
+      <body startPosition="113" endPosition="185" value=" Queries to access services provided by the LabelProviderServices class "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="initLabelProviderServices" visibility="Public">
       <parameter name="element">
@@ -219,134 +219,134 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="102"/>
-      <details key="end" value="184"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="105"/>
+      <details key="end" value="187"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/initLabelProviderServices">
-      <details key="start" value="186"/>
-      <details key="end" value="420"/>
+      <details key="start" value="191"/>
+      <details key="end" value="426"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/initLabelProviderServices/element">
-      <details key="start" value="226"/>
-      <details key="end" value="242"/>
+      <details key="start" value="231"/>
+      <details key="end" value="247"/>
       <details key="line" value="6"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/initLabelProviderServices/rootFolder">
-      <details key="start" value="244"/>
-      <details key="end" value="263"/>
+      <details key="start" value="249"/>
+      <details key="end" value="268"/>
       <details key="line" value="6"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/initLabelProviderServices/@expression">
-      <details key="start" value="278"/>
-      <details key="end" value="417"/>
+    <eAnnotations source="positions.4" references="/0/initLabelProviderServices/%">
+      <details key="start" value="284"/>
+      <details key="end" value="423"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/initLabelProviderServices/@expression/self">
+    <eAnnotations source="positions.5" references="/0/initLabelProviderServices/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/initLabelProviderServices/@expression/@argument.0">
-      <details key="start" value="285"/>
-      <details key="end" value="347"/>
+    <eAnnotations source="positions.6" references="/0/initLabelProviderServices/%/%">
+      <details key="start" value="291"/>
+      <details key="end" value="353"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/initLabelProviderServices/@expression/@argument.1">
-      <details key="start" value="349"/>
-      <details key="end" value="394"/>
+    <eAnnotations source="positions.7" references="/0/initLabelProviderServices/%/%.1">
+      <details key="start" value="355"/>
+      <details key="end" value="400"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/initLabelProviderServices/@expression/@argument.2">
-      <details key="start" value="396"/>
-      <details key="end" value="416"/>
+    <eAnnotations source="positions.8" references="/0/initLabelProviderServices/%/%.2">
+      <details key="start" value="402"/>
+      <details key="end" value="422"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/initLabelProviderServices/@expression/@argument.2/@part.0/rootFolder">
-      <details key="start" value="405"/>
-      <details key="end" value="415"/>
+    <eAnnotations source="positions.9" references="/0/initLabelProviderServices/%/%.2/%/rootFolder">
+      <details key="start" value="411"/>
+      <details key="end" value="421"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/getLabel">
-      <details key="start" value="422"/>
-      <details key="end" value="609"/>
+      <details key="start" value="430"/>
+      <details key="end" value="618"/>
       <details key="line" value="9"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/getLabel/object">
-      <details key="start" value="445"/>
-      <details key="end" value="461"/>
+      <details key="start" value="453"/>
+      <details key="end" value="469"/>
       <details key="line" value="9"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/getLabel/@expression">
-      <details key="start" value="475"/>
-      <details key="end" value="606"/>
+    <eAnnotations source="positions.12" references="/0/getLabel/%">
+      <details key="start" value="484"/>
+      <details key="end" value="615"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/getLabel/@expression/self">
+    <eAnnotations source="positions.13" references="/0/getLabel/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/getLabel/@expression/@argument.0">
-      <details key="start" value="482"/>
-      <details key="end" value="544"/>
+    <eAnnotations source="positions.14" references="/0/getLabel/%/%">
+      <details key="start" value="491"/>
+      <details key="end" value="553"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/getLabel/@expression/@argument.1">
-      <details key="start" value="546"/>
-      <details key="end" value="587"/>
+    <eAnnotations source="positions.15" references="/0/getLabel/%/%.1">
+      <details key="start" value="555"/>
+      <details key="end" value="596"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/getLabel/@expression/@argument.2">
-      <details key="start" value="589"/>
-      <details key="end" value="605"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/getLabel/@expression/@argument.2/@part.0/object">
+    <eAnnotations source="positions.16" references="/0/getLabel/%/%.2">
       <details key="start" value="598"/>
-      <details key="end" value="604"/>
+      <details key="end" value="614"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.17" references="/0/getLabel/%/%.2/%/object">
+      <details key="start" value="607"/>
+      <details key="end" value="613"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/getImage">
-      <details key="start" value="611"/>
-      <details key="end" value="798"/>
+      <details key="start" value="622"/>
+      <details key="end" value="810"/>
       <details key="line" value="12"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/getImage/object">
-      <details key="start" value="634"/>
-      <details key="end" value="650"/>
+      <details key="start" value="645"/>
+      <details key="end" value="661"/>
       <details key="line" value="12"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/getImage/@expression">
-      <details key="start" value="664"/>
-      <details key="end" value="795"/>
+    <eAnnotations source="positions.20" references="/0/getImage/%">
+      <details key="start" value="676"/>
+      <details key="end" value="807"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/getImage/@expression/self">
+    <eAnnotations source="positions.21" references="/0/getImage/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/getImage/@expression/@argument.0">
-      <details key="start" value="671"/>
-      <details key="end" value="733"/>
+    <eAnnotations source="positions.22" references="/0/getImage/%/%">
+      <details key="start" value="683"/>
+      <details key="end" value="745"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/getImage/@expression/@argument.1">
-      <details key="start" value="735"/>
-      <details key="end" value="776"/>
+    <eAnnotations source="positions.23" references="/0/getImage/%/%.1">
+      <details key="start" value="747"/>
+      <details key="end" value="788"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/getImage/@expression/@argument.2">
-      <details key="start" value="778"/>
-      <details key="end" value="794"/>
+    <eAnnotations source="positions.24" references="/0/getImage/%/%.2">
+      <details key="start" value="790"/>
+      <details key="end" value="806"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/getImage/@expression/@argument.2/@part.0/object">
-      <details key="start" value="787"/>
-      <details key="end" value="793"/>
+    <eAnnotations source="positions.25" references="/0/getImage/%/%.2/%/object">
+      <details key="start" value="799"/>
+      <details key="end" value="805"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

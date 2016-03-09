@@ -18,53 +18,53 @@
       <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/modeller/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/modeller/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/core/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/core/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/oa/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/oa/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/ctx/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/ctx/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/la/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/la/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/0.8.0#/"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/0.8.0#//deployment"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#//deployment"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/epbs/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/epbs/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/sharedmodel/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/sharedmodel/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/requirement/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/requirement/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#/"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//communication"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//datatype"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//datavalue"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//communication"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datatype"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datavalue"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/cs/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/cs/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/fa/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/fa/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/common/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/common/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/interaction/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/interaction/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/common/core/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/common/core/1.0.0#/"/>
     </input>
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
@@ -80,12 +80,12 @@
         </parametersDocumentation>
       </documentation>
       <parameter name="input">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
       </parameter>
       <expression xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/OclAny_Class/invoke">
         <eType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
         <source xsi:type="ocl.ecore:VariableExp" name="self" referredVariable="/5">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
         </source>
         <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="fr.obeo.dsl.designer.documentation.generator.capella.templates.helpers.DocumentationHelperService">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -95,9 +95,9 @@
         </argument>
         <argument xsi:type="ocl.ecore:CollectionLiteralExp" eType="/3/Sequence(FunctionalExchange)" kind="Sequence">
           <part xsi:type="ocl.ecore:CollectionItem">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
             <item xsi:type="ocl.ecore:VariableExp" name="input" referredVariable="/0/getFuncExItems/input">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
             </item>
           </part>
         </argument>
@@ -110,88 +110,88 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/@body.1/fe">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/%.1/fe">
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractNamedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&#x9;&#x9;    &lt;td>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/EObject_Class/eContainer">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionOutputPort"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/@body.1/fe">
-                  <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionOutputPort"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/%.1/fe">
+                  <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
                 </source>
-                <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange/sourceFunctionOutputPort"/>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange/sourceFunctionOutputPort"/>
               </source>
               <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractFunction">
-                <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+                <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
               </argument>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractTypedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td> &#xA;&#x9;&#x9;&#x9;    &lt;td>"/>
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             <source xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/EObject_Class/eContainer">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
               <source xsi:type="ocl.ecore:PropertyCallExp">
-                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionInputPort"/>
-                <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/@body.1/fe">
-                  <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionInputPort"/>
+                <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/%.1/fe">
+                  <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
                 </source>
-                <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange/targetFunctionInputPort"/>
+                <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange/targetFunctionInputPort"/>
               </source>
               <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractFunction">
-                <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+                <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
               </argument>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractTypedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&#x9;&#x9;&#x9;&lt;td>"/>
         <body xsi:type="mtl:TemplateInvocation" definition="/0/generateExchangeItems">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <argument xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/@body.1/fe">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateFunctionalExchangesTable/%.1/fe">
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
           </argument>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/td>&#xA;&#x9;&#x9;&#x9; &lt;/tr>&#xA;"/>
         <loopVariable name="fe">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
         </loopVariable>
         <iterSet xsi:type="ocl.ecore:OperationCallExp" eType="/3/OrderedSet(FunctionalExchange)" referredOperation="/1/Collection(T)_Class/filter">
           <source xsi:type="ocl.ecore:VariableExp" name="functionalExchanges" eType="/3/OrderedSet(ActivityEdge)" referredVariable="/0/generateFunctionalExchangesTable/functionalExchanges"/>
           <argument xsi:type="ocl.ecore:TypeExp" eType="/10/FunctionalExchange">
-            <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+            <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
           </argument>
         </iterSet>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="        &lt;/tbody>&#xA;    &lt;/table>"/>
       <parameter name="f">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
       </parameter>
       <parameter name="functionalExchanges" eType="/3/OrderedSet(ActivityEdge)"/>
     </ownedModuleElement>
@@ -202,31 +202,31 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="ei" referredVariable="/0/generateExchangeItems/@body.1/ei">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="ei" referredVariable="/0/generateExchangeItems/%.1/ei">
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractNamedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/li> &#xA;"/>
         <loopVariable name="ei">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
         </loopVariable>
         <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(ExchangeItem)">
           <source xsi:type="ocl.ecore:VariableExp" name="fe" referredVariable="/0/generateExchangeItems/fe">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
           </source>
-          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange/exchangedItems"/>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange/exchangedItems"/>
         </iterSet>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#xA;&lt;/ul>"/>
       <parameter name="fe">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateAvailableModeAndState" visibility="Public">
@@ -236,31 +236,31 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="s" referredVariable="/0/generateAvailableModeAndState/@body.1/s">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/0.8.0#//State"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="s" referredVariable="/0/generateAvailableModeAndState/%.1/s">
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/1.0.0#//State"/>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractTypedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/li>&#xA;"/>
         <loopVariable name="s">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/0.8.0#//State"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/1.0.0#//State"/>
         </loopVariable>
         <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(State)">
           <source xsi:type="ocl.ecore:VariableExp" name="f" referredVariable="/0/generateAvailableModeAndState/f">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
           </source>
-          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction/availableInStates"/>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction/availableInStates"/>
         </iterSet>
       </body>
       <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/ul>"/>
       <parameter name="f">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateChildFunctions" visibility="Public">
@@ -270,30 +270,30 @@
         <body xsi:type="ocl.ecore:PropertyCallExp">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="ocl.ecore:OperationCallExp">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
-            <source xsi:type="ocl.ecore:VariableExp" name="child" referredVariable="/0/generateChildFunctions/@body.1/child">
-              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="child" referredVariable="/0/generateChildFunctions/%.1/child">
+              <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
             </source>
             <argument xsi:type="ocl.ecore:TypeExp" eType="/10/AbstractTypedElement">
-              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+              <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
             </argument>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclAsType"/>
           </source>
-          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement/name"/>
+          <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement/name"/>
         </body>
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/li>&#xA;"/>
         <loopVariable name="child">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
         </loopVariable>
         <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/3/OrderedSet(AbstractFunction)">
           <source xsi:type="ocl.ecore:VariableExp" name="f" referredVariable="/0/generateChildFunctions/f">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
           </source>
-          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction/ownedFunctions"/>
+          <referredProperty xsi:type="ecore:EReference" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction/ownedFunctions"/>
         </iterSet>
       </body>
       <parameter name="f">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -330,7 +330,7 @@
         </eAnnotations>
         <eAnnotations source="MTL" references="/0/getFuncExItems"/>
         <eParameters name="input">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
         </eParameters>
       </eOperations>
       <eOperations name="generateFunctionalExchangesTable">
@@ -340,7 +340,7 @@
         <eAnnotations source="MTL" references="/0/generateFunctionalExchangesTable"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="f">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
         </eParameters>
         <eParameters name="functionalExchanges" eType="/3/OrderedSet(ActivityEdge)"/>
       </eOperations>
@@ -351,7 +351,7 @@
         <eAnnotations source="MTL" references="/0/generateExchangeItems"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="fe">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
         </eParameters>
       </eOperations>
       <eOperations name="generateAvailableModeAndState">
@@ -361,7 +361,7 @@
         <eAnnotations source="MTL" references="/0/generateAvailableModeAndState"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="f">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
         </eParameters>
       </eOperations>
       <eOperations name="generateChildFunctions">
@@ -371,7 +371,7 @@
         <eAnnotations source="MTL" references="/0/generateChildFunctions"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="f">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
         </eParameters>
       </eOperations>
     </eClassifiers>
@@ -417,12 +417,12 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="FunctionalExchange_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+        <references href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="AbstractFunction_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+        <references href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
       </eAnnotations>
     </eClassifiers>
   </ecore:EPackage>
@@ -431,82 +431,82 @@
   </ocl.ecore:Variable>
   <ecore:EPackage name="collections">
     <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(ExchangeItem)" instanceClassName="java.util.List">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(ActivityEdge)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/activity/0.8.0#//ActivityEdge"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/activity/1.0.0#//ActivityEdge"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(FunctionalExchange)" instanceClassName="java.util.List">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:SequenceType" name="Sequence(OclAny)" instanceClassName="java.util.List">
       <elementType xsi:type="ocl.ecore:AnyType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(FunctionalExchange)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(ExchangeItem)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(State)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/0.8.0#//State"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/1.0.0#//State"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:OrderedSetType" name="OrderedSet(AbstractFunction)" instanceClassName="java.util.LinkedHashSet">
-      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+      <elementType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
     </eClassifiers>
   </ecore:EPackage>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ecore:EPackage name="types">
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="FunctionalExchange">
-      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="AbstractNamedElement">
-      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractNamedElement"/>
+      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractNamedElement"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="AbstractFunction">
-      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
     </eClassifiers>
     <eClassifiers xsi:type="ocl.ecore:TypeType" name="AbstractTypedElement">
-      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/0.8.0#//AbstractTypedElement"/>
+      <referredType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/common/core/1.0.0#//AbstractTypedElement"/>
     </eClassifiers>
   </ecore:EPackage>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
@@ -515,25 +515,25 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/0.8.0#//ExchangeItem"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/information/1.0.0#//ExchangeItem"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//FunctionalExchange"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//FunctionalExchange"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
@@ -542,25 +542,25 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/0.8.0#//State"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/1.0.0#//State"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/0.8.0#//State"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/common/1.0.0#//State"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
@@ -569,25 +569,25 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/0.8.0#//AbstractFunction"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/fa/1.0.0#//AbstractFunction"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="i">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
@@ -601,17 +601,17 @@
       <details key="end" value="1421"/>
       <details key="line" value="27"/>
     </eAnnotations>
-    <eAnnotations source="positions.1" references="/0/getFuncExItems/@documentation">
+    <eAnnotations source="positions.1" references="/0/getFuncExItems/%">
       <details key="start" value="992"/>
       <details key="end" value="1158"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/getFuncExItems/@documentation/f">
+    <eAnnotations source="positions.2" references="/0/getFuncExItems/%/f">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/getFuncExItems/@documentation/functionalExchanges">
+    <eAnnotations source="positions.3" references="/0/getFuncExItems/%/functionalExchanges">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
@@ -621,32 +621,32 @@
       <details key="end" value="1216"/>
       <details key="line" value="27"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/getFuncExItems/@expression">
+    <eAnnotations source="positions.5" references="/0/getFuncExItems/%.1">
       <details key="start" value="1246"/>
       <details key="end" value="1418"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/getFuncExItems/@expression/self">
+    <eAnnotations source="positions.6" references="/0/getFuncExItems/%.1/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/getFuncExItems/@expression/@argument.0">
+    <eAnnotations source="positions.7" references="/0/getFuncExItems/%.1/%">
       <details key="start" value="1253"/>
       <details key="end" value="1352"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/getFuncExItems/@expression/@argument.1">
+    <eAnnotations source="positions.8" references="/0/getFuncExItems/%.1/%.1">
       <details key="start" value="1354"/>
       <details key="end" value="1400"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/getFuncExItems/@expression/@argument.2">
+    <eAnnotations source="positions.9" references="/0/getFuncExItems/%.1/%.2">
       <details key="start" value="1402"/>
       <details key="end" value="1417"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/getFuncExItems/@expression/@argument.2/@part.0/input">
+    <eAnnotations source="positions.10" references="/0/getFuncExItems/%.1/%.2/%/input">
       <details key="start" value="1411"/>
       <details key="end" value="1416"/>
       <details key="line" value="0"/>
@@ -656,162 +656,162 @@
       <details key="end" value="2343"/>
       <details key="line" value="30"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateFunctionalExchangesTable/@body.0">
+    <eAnnotations source="positions.12" references="/0/generateFunctionalExchangesTable/%">
       <details key="start" value="1558"/>
       <details key="end" value="1790"/>
       <details key="line" value="31"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/generateFunctionalExchangesTable/@body.1">
+    <eAnnotations source="positions.13" references="/0/generateFunctionalExchangesTable/%.1">
       <details key="start" value="1801"/>
       <details key="end" value="2301"/>
       <details key="line" value="41"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/generateFunctionalExchangesTable/@body.1/@body.0">
+    <eAnnotations source="positions.14" references="/0/generateFunctionalExchangesTable/%.1/%">
       <details key="start" value="1891"/>
       <details key="end" value="1912"/>
       <details key="line" value="42"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/generateFunctionalExchangesTable/@body.1/@body.1">
+    <eAnnotations source="positions.15" references="/0/generateFunctionalExchangesTable/%.1/%.1">
       <details key="start" value="1913"/>
       <details key="end" value="1967"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generateFunctionalExchangesTable/@body.1/@body.1/@source">
+    <eAnnotations source="positions.16" references="/0/generateFunctionalExchangesTable/%.1/%.1/%">
       <details key="start" value="1913"/>
       <details key="end" value="1962"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateFunctionalExchangesTable/@body.1/@body.1/@source/fe">
+    <eAnnotations source="positions.17" references="/0/generateFunctionalExchangesTable/%.1/%.1/%/fe">
       <details key="start" value="1913"/>
       <details key="end" value="1915"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateFunctionalExchangesTable/@body.1/@body.1/@source/@argument.0">
+    <eAnnotations source="positions.18" references="/0/generateFunctionalExchangesTable/%.1/%.1/%/%">
       <details key="start" value="1926"/>
       <details key="end" value="1961"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generateFunctionalExchangesTable/@body.1/@body.2">
+    <eAnnotations source="positions.19" references="/0/generateFunctionalExchangesTable/%.1/%.2">
       <details key="start" value="1969"/>
       <details key="end" value="1986"/>
       <details key="line" value="43"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/generateFunctionalExchangesTable/@body.1/@body.3">
+    <eAnnotations source="positions.20" references="/0/generateFunctionalExchangesTable/%.1/%.3">
       <details key="start" value="1987"/>
       <details key="end" value="2099"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source">
+    <eAnnotations source="positions.21" references="/0/generateFunctionalExchangesTable/%.1/%.3/%">
       <details key="start" value="1987"/>
       <details key="end" value="2094"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source/@source">
+    <eAnnotations source="positions.22" references="/0/generateFunctionalExchangesTable/%.1/%.3/%/%">
       <details key="start" value="1987"/>
       <details key="end" value="2047"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source/@source/@source">
+    <eAnnotations source="positions.23" references="/0/generateFunctionalExchangesTable/%.1/%.3/%/%/%">
       <details key="start" value="1987"/>
       <details key="end" value="2014"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source/@source/@source/fe">
+    <eAnnotations source="positions.24" references="/0/generateFunctionalExchangesTable/%.1/%.3/%/%/%/fe">
       <details key="start" value="1987"/>
       <details key="end" value="1989"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source/@source/@argument.0">
+    <eAnnotations source="positions.25" references="/0/generateFunctionalExchangesTable/%.1/%.3/%/%/%.1">
       <details key="start" value="2026"/>
       <details key="end" value="2046"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/generateFunctionalExchangesTable/@body.1/@body.3/@source/@argument.0">
+    <eAnnotations source="positions.26" references="/0/generateFunctionalExchangesTable/%.1/%.3/%/%.1">
       <details key="start" value="2058"/>
       <details key="end" value="2093"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/generateFunctionalExchangesTable/@body.1/@body.4">
+    <eAnnotations source="positions.27" references="/0/generateFunctionalExchangesTable/%.1/%.4">
       <details key="start" value="2101"/>
       <details key="end" value="2119"/>
       <details key="line" value="44"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/generateFunctionalExchangesTable/@body.1/@body.5">
+    <eAnnotations source="positions.28" references="/0/generateFunctionalExchangesTable/%.1/%.5">
       <details key="start" value="2120"/>
       <details key="end" value="2231"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source">
+    <eAnnotations source="positions.29" references="/0/generateFunctionalExchangesTable/%.1/%.5/%">
       <details key="start" value="2120"/>
       <details key="end" value="2226"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source/@source">
+    <eAnnotations source="positions.30" references="/0/generateFunctionalExchangesTable/%.1/%.5/%/%">
       <details key="start" value="2120"/>
       <details key="end" value="2179"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source/@source/@source">
+    <eAnnotations source="positions.31" references="/0/generateFunctionalExchangesTable/%.1/%.5/%/%/%">
       <details key="start" value="2120"/>
       <details key="end" value="2146"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source/@source/@source/fe">
+    <eAnnotations source="positions.32" references="/0/generateFunctionalExchangesTable/%.1/%.5/%/%/%/fe">
       <details key="start" value="2120"/>
       <details key="end" value="2122"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source/@source/@argument.0">
+    <eAnnotations source="positions.33" references="/0/generateFunctionalExchangesTable/%.1/%.5/%/%/%.1">
       <details key="start" value="2158"/>
       <details key="end" value="2178"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/generateFunctionalExchangesTable/@body.1/@body.5/@source/@argument.0">
+    <eAnnotations source="positions.34" references="/0/generateFunctionalExchangesTable/%.1/%.5/%/%.1">
       <details key="start" value="2190"/>
       <details key="end" value="2225"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/generateFunctionalExchangesTable/@body.1/@body.6">
+    <eAnnotations source="positions.35" references="/0/generateFunctionalExchangesTable/%.1/%.6">
       <details key="start" value="2233"/>
       <details key="end" value="2247"/>
       <details key="line" value="45"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/generateFunctionalExchangesTable/@body.1/@body.7">
+    <eAnnotations source="positions.36" references="/0/generateFunctionalExchangesTable/%.1/%.7">
       <details key="start" value="2248"/>
       <details key="end" value="2274"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/generateFunctionalExchangesTable/@body.1/@body.7/fe">
+    <eAnnotations source="positions.37" references="/0/generateFunctionalExchangesTable/%.1/%.7/fe">
       <details key="start" value="2248"/>
       <details key="end" value="2250"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/generateFunctionalExchangesTable/@body.1/@body.8">
+    <eAnnotations source="positions.38" references="/0/generateFunctionalExchangesTable/%.1/%.8">
       <details key="start" value="2276"/>
       <details key="end" value="2292"/>
       <details key="line" value="46"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/generateFunctionalExchangesTable/@body.1/fe">
+    <eAnnotations source="positions.39" references="/0/generateFunctionalExchangesTable/%.1/fe">
       <details key="start" value="1807"/>
       <details key="end" value="1834"/>
       <details key="line" value="41"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/generateFunctionalExchangesTable/@body.1/@iterSet">
+    <eAnnotations source="positions.40" references="/0/generateFunctionalExchangesTable/%.1/%.9">
       <details key="start" value="1837"/>
       <details key="end" value="1888"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/generateFunctionalExchangesTable/@body.1/@iterSet/functionalExchanges">
+    <eAnnotations source="positions.41" references="/0/generateFunctionalExchangesTable/%.1/%.9/functionalExchanges">
       <details key="start" value="1837"/>
       <details key="end" value="1856"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/generateFunctionalExchangesTable/@body.1/@iterSet/@argument.0">
+    <eAnnotations source="positions.42" references="/0/generateFunctionalExchangesTable/%.1/%.9/%">
       <details key="start" value="1865"/>
       <details key="end" value="1887"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/generateFunctionalExchangesTable/@body.2">
+    <eAnnotations source="positions.43" references="/0/generateFunctionalExchangesTable/%.2">
       <details key="start" value="2302"/>
       <details key="end" value="2331"/>
       <details key="line" value="49"/>
@@ -831,62 +831,62 @@
       <details key="end" value="2554"/>
       <details key="line" value="52"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/generateExchangeItems/@body.0">
+    <eAnnotations source="positions.47" references="/0/generateExchangeItems/%">
       <details key="start" value="2409"/>
       <details key="end" value="2415"/>
       <details key="line" value="53"/>
     </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/generateExchangeItems/@body.1">
+    <eAnnotations source="positions.48" references="/0/generateExchangeItems/%.1">
       <details key="start" value="2415"/>
       <details key="end" value="2534"/>
       <details key="line" value="55"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/generateExchangeItems/@body.1/@body.0">
+    <eAnnotations source="positions.49" references="/0/generateExchangeItems/%.1/%">
       <details key="start" value="2460"/>
       <details key="end" value="2464"/>
       <details key="line" value="56"/>
     </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/generateExchangeItems/@body.1/@body.1">
+    <eAnnotations source="positions.50" references="/0/generateExchangeItems/%.1/%.1">
       <details key="start" value="2465"/>
       <details key="end" value="2519"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/generateExchangeItems/@body.1/@body.1/@source">
+    <eAnnotations source="positions.51" references="/0/generateExchangeItems/%.1/%.1/%">
       <details key="start" value="2465"/>
       <details key="end" value="2514"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/generateExchangeItems/@body.1/@body.1/@source/ei">
+    <eAnnotations source="positions.52" references="/0/generateExchangeItems/%.1/%.1/%/ei">
       <details key="start" value="2465"/>
       <details key="end" value="2467"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.53" references="/0/generateExchangeItems/@body.1/@body.1/@source/@argument.0">
+    <eAnnotations source="positions.53" references="/0/generateExchangeItems/%.1/%.1/%/%">
       <details key="start" value="2478"/>
       <details key="end" value="2513"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/generateExchangeItems/@body.1/@body.2">
+    <eAnnotations source="positions.54" references="/0/generateExchangeItems/%.1/%.2">
       <details key="start" value="2521"/>
       <details key="end" value="2528"/>
       <details key="line" value="56"/>
     </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/generateExchangeItems/@body.1/ei">
+    <eAnnotations source="positions.55" references="/0/generateExchangeItems/%.1/ei">
       <details key="start" value="2421"/>
       <details key="end" value="2437"/>
       <details key="line" value="55"/>
     </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/generateExchangeItems/@body.1/@iterSet">
+    <eAnnotations source="positions.56" references="/0/generateExchangeItems/%.1/%.3">
       <details key="start" value="2440"/>
       <details key="end" value="2457"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/generateExchangeItems/@body.1/@iterSet/fe">
+    <eAnnotations source="positions.57" references="/0/generateExchangeItems/%.1/%.3/fe">
       <details key="start" value="2440"/>
       <details key="end" value="2442"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/generateExchangeItems/@body.2">
+    <eAnnotations source="positions.58" references="/0/generateExchangeItems/%.2">
       <details key="start" value="2535"/>
       <details key="end" value="2542"/>
       <details key="line" value="58"/>
@@ -901,62 +901,62 @@
       <details key="end" value="2761"/>
       <details key="line" value="62"/>
     </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/generateAvailableModeAndState/@body.0">
+    <eAnnotations source="positions.61" references="/0/generateAvailableModeAndState/%">
       <details key="start" value="2624"/>
       <details key="end" value="2629"/>
       <details key="line" value="63"/>
     </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/generateAvailableModeAndState/@body.1">
+    <eAnnotations source="positions.62" references="/0/generateAvailableModeAndState/%.1">
       <details key="start" value="2629"/>
       <details key="end" value="2743"/>
       <details key="line" value="64"/>
     </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/generateAvailableModeAndState/@body.1/@body.0">
+    <eAnnotations source="positions.63" references="/0/generateAvailableModeAndState/%.1/%">
       <details key="start" value="2669"/>
       <details key="end" value="2674"/>
       <details key="line" value="65"/>
     </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/generateAvailableModeAndState/@body.1/@body.1">
+    <eAnnotations source="positions.64" references="/0/generateAvailableModeAndState/%.1/%.1">
       <details key="start" value="2675"/>
       <details key="end" value="2728"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/generateAvailableModeAndState/@body.1/@body.1/@source">
+    <eAnnotations source="positions.65" references="/0/generateAvailableModeAndState/%.1/%.1/%">
       <details key="start" value="2675"/>
       <details key="end" value="2723"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.66" references="/0/generateAvailableModeAndState/@body.1/@body.1/@source/s">
+    <eAnnotations source="positions.66" references="/0/generateAvailableModeAndState/%.1/%.1/%/s">
       <details key="start" value="2675"/>
       <details key="end" value="2676"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.67" references="/0/generateAvailableModeAndState/@body.1/@body.1/@source/@argument.0">
+    <eAnnotations source="positions.67" references="/0/generateAvailableModeAndState/%.1/%.1/%/%">
       <details key="start" value="2687"/>
       <details key="end" value="2722"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/generateAvailableModeAndState/@body.1/@body.2">
+    <eAnnotations source="positions.68" references="/0/generateAvailableModeAndState/%.1/%.2">
       <details key="start" value="2730"/>
       <details key="end" value="2737"/>
       <details key="line" value="67"/>
     </eAnnotations>
-    <eAnnotations source="positions.69" references="/0/generateAvailableModeAndState/@body.1/s">
+    <eAnnotations source="positions.69" references="/0/generateAvailableModeAndState/%.1/s">
       <details key="start" value="2636"/>
       <details key="end" value="2645"/>
       <details key="line" value="64"/>
     </eAnnotations>
-    <eAnnotations source="positions.70" references="/0/generateAvailableModeAndState/@body.1/@iterSet">
+    <eAnnotations source="positions.70" references="/0/generateAvailableModeAndState/%.1/%.3">
       <details key="start" value="2647"/>
       <details key="end" value="2666"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.71" references="/0/generateAvailableModeAndState/@body.1/@iterSet/f">
+    <eAnnotations source="positions.71" references="/0/generateAvailableModeAndState/%.1/%.3/f">
       <details key="start" value="2647"/>
       <details key="end" value="2648"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.72" references="/0/generateAvailableModeAndState/@body.2">
+    <eAnnotations source="positions.72" references="/0/generateAvailableModeAndState/%.2">
       <details key="start" value="2744"/>
       <details key="end" value="2749"/>
       <details key="line" value="69"/>
@@ -971,57 +971,57 @@
       <details key="end" value="3003"/>
       <details key="line" value="71"/>
     </eAnnotations>
-    <eAnnotations source="positions.75" references="/0/generateChildFunctions/@body.0">
+    <eAnnotations source="positions.75" references="/0/generateChildFunctions/%">
       <details key="start" value="2824"/>
       <details key="end" value="2850"/>
       <details key="line" value="72"/>
     </eAnnotations>
-    <eAnnotations source="positions.76" references="/0/generateChildFunctions/@body.1">
+    <eAnnotations source="positions.76" references="/0/generateChildFunctions/%.1">
       <details key="start" value="2852"/>
       <details key="end" value="2991"/>
       <details key="line" value="73"/>
     </eAnnotations>
-    <eAnnotations source="positions.77" references="/0/generateChildFunctions/@body.1/@body.0">
+    <eAnnotations source="positions.77" references="/0/generateChildFunctions/%.1/%">
       <details key="start" value="2904"/>
       <details key="end" value="2910"/>
       <details key="line" value="74"/>
     </eAnnotations>
-    <eAnnotations source="positions.78" references="/0/generateChildFunctions/@body.1/@body.1">
+    <eAnnotations source="positions.78" references="/0/generateChildFunctions/%.1/%.1">
       <details key="start" value="2911"/>
       <details key="end" value="2968"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.79" references="/0/generateChildFunctions/@body.1/@body.1/@source">
+    <eAnnotations source="positions.79" references="/0/generateChildFunctions/%.1/%.1/%">
       <details key="start" value="2911"/>
       <details key="end" value="2963"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.80" references="/0/generateChildFunctions/@body.1/@body.1/@source/child">
+    <eAnnotations source="positions.80" references="/0/generateChildFunctions/%.1/%.1/%/child">
       <details key="start" value="2911"/>
       <details key="end" value="2916"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.81" references="/0/generateChildFunctions/@body.1/@body.1/@source/@argument.0">
+    <eAnnotations source="positions.81" references="/0/generateChildFunctions/%.1/%.1/%/%">
       <details key="start" value="2927"/>
       <details key="end" value="2962"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.82" references="/0/generateChildFunctions/@body.1/@body.2">
+    <eAnnotations source="positions.82" references="/0/generateChildFunctions/%.1/%.2">
       <details key="start" value="2970"/>
       <details key="end" value="2977"/>
       <details key="line" value="76"/>
     </eAnnotations>
-    <eAnnotations source="positions.83" references="/0/generateChildFunctions/@body.1/child">
+    <eAnnotations source="positions.83" references="/0/generateChildFunctions/%.1/child">
       <details key="start" value="2858"/>
       <details key="end" value="2882"/>
       <details key="line" value="73"/>
     </eAnnotations>
-    <eAnnotations source="positions.84" references="/0/generateChildFunctions/@body.1/@iterSet">
+    <eAnnotations source="positions.84" references="/0/generateChildFunctions/%.1/%.3">
       <details key="start" value="2885"/>
       <details key="end" value="2901"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.85" references="/0/generateChildFunctions/@body.1/@iterSet/f">
+    <eAnnotations source="positions.85" references="/0/generateChildFunctions/%.1/%.3/f">
       <details key="start" value="2885"/>
       <details key="end" value="2886"/>
       <details key="line" value="0"/>

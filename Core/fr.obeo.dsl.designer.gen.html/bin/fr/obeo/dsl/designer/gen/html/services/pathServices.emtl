@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="pathServices" nsURI="fr::obeo::dsl::designer::gen::html::services::pathServices" startHeaderPosition="29" endHeaderPosition="208">
+  <mtl:Module name="pathServices" nsURI="fr::obeo::dsl::designer::gen::html::services::pathServices" startHeaderPosition="30" endHeaderPosition="212">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
     </input>
@@ -13,7 +13,7 @@
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/audit"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="145" endPosition="208" value=" Queries to access services provided by the PathServices class "/>
+      <body startPosition="149" endPosition="212" value=" Queries to access services provided by the PathServices class "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="initPathServices" visibility="Public">
       <parameter name="element">
@@ -505,374 +505,374 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="137"/>
-      <details key="end" value="210"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="141"/>
+      <details key="end" value="214"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/initPathServices">
-      <details key="start" value="212"/>
-      <details key="end" value="419"/>
+      <details key="start" value="218"/>
+      <details key="end" value="426"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/initPathServices/element">
-      <details key="start" value="243"/>
-      <details key="end" value="259"/>
+      <details key="start" value="249"/>
+      <details key="end" value="265"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/initPathServices/rootFolder">
-      <details key="start" value="261"/>
-      <details key="end" value="280"/>
+      <details key="start" value="267"/>
+      <details key="end" value="286"/>
       <details key="line" value="7"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/initPathServices/@expression">
-      <details key="start" value="295"/>
-      <details key="end" value="416"/>
+    <eAnnotations source="positions.4" references="/0/initPathServices/%">
+      <details key="start" value="302"/>
+      <details key="end" value="423"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/initPathServices/@expression/self">
+    <eAnnotations source="positions.5" references="/0/initPathServices/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/initPathServices/@expression/@argument.0">
-      <details key="start" value="302"/>
-      <details key="end" value="355"/>
+    <eAnnotations source="positions.6" references="/0/initPathServices/%/%">
+      <details key="start" value="309"/>
+      <details key="end" value="362"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/initPathServices/@expression/@argument.1">
-      <details key="start" value="357"/>
-      <details key="end" value="393"/>
+    <eAnnotations source="positions.7" references="/0/initPathServices/%/%.1">
+      <details key="start" value="364"/>
+      <details key="end" value="400"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/initPathServices/@expression/@argument.2">
-      <details key="start" value="395"/>
-      <details key="end" value="415"/>
+    <eAnnotations source="positions.8" references="/0/initPathServices/%/%.2">
+      <details key="start" value="402"/>
+      <details key="end" value="422"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/initPathServices/@expression/@argument.2/@part.0/rootFolder">
-      <details key="start" value="404"/>
-      <details key="end" value="414"/>
+    <eAnnotations source="positions.9" references="/0/initPathServices/%/%.2/%/rootFolder">
+      <details key="start" value="411"/>
+      <details key="end" value="421"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.10" references="/0/getPagesFullPath">
-      <details key="start" value="421"/>
-      <details key="end" value="615"/>
+      <details key="start" value="430"/>
+      <details key="end" value="625"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/getPagesFullPath/object">
-      <details key="start" value="452"/>
-      <details key="end" value="468"/>
+      <details key="start" value="461"/>
+      <details key="end" value="477"/>
       <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/getPagesFullPath/@expression">
-      <details key="start" value="482"/>
-      <details key="end" value="612"/>
+    <eAnnotations source="positions.12" references="/0/getPagesFullPath/%">
+      <details key="start" value="492"/>
+      <details key="end" value="622"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/getPagesFullPath/@expression/self">
+    <eAnnotations source="positions.13" references="/0/getPagesFullPath/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/getPagesFullPath/@expression/@argument.0">
-      <details key="start" value="489"/>
-      <details key="end" value="542"/>
+    <eAnnotations source="positions.14" references="/0/getPagesFullPath/%/%">
+      <details key="start" value="499"/>
+      <details key="end" value="552"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/getPagesFullPath/@expression/@argument.1">
-      <details key="start" value="544"/>
-      <details key="end" value="593"/>
+    <eAnnotations source="positions.15" references="/0/getPagesFullPath/%/%.1">
+      <details key="start" value="554"/>
+      <details key="end" value="603"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/getPagesFullPath/@expression/@argument.2">
-      <details key="start" value="595"/>
-      <details key="end" value="611"/>
+    <eAnnotations source="positions.16" references="/0/getPagesFullPath/%/%.2">
+      <details key="start" value="605"/>
+      <details key="end" value="621"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/getPagesFullPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="604"/>
-      <details key="end" value="610"/>
+    <eAnnotations source="positions.17" references="/0/getPagesFullPath/%/%.2/%/object">
+      <details key="start" value="614"/>
+      <details key="end" value="620"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/getIconsFullPath">
-      <details key="start" value="617"/>
-      <details key="end" value="811"/>
+      <details key="start" value="629"/>
+      <details key="end" value="824"/>
       <details key="line" value="13"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/getIconsFullPath/object">
-      <details key="start" value="648"/>
-      <details key="end" value="664"/>
+      <details key="start" value="660"/>
+      <details key="end" value="676"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/getIconsFullPath/@expression">
-      <details key="start" value="678"/>
-      <details key="end" value="808"/>
+    <eAnnotations source="positions.20" references="/0/getIconsFullPath/%">
+      <details key="start" value="691"/>
+      <details key="end" value="821"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/getIconsFullPath/@expression/self">
+    <eAnnotations source="positions.21" references="/0/getIconsFullPath/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/getIconsFullPath/@expression/@argument.0">
-      <details key="start" value="685"/>
-      <details key="end" value="738"/>
+    <eAnnotations source="positions.22" references="/0/getIconsFullPath/%/%">
+      <details key="start" value="698"/>
+      <details key="end" value="751"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/getIconsFullPath/@expression/@argument.1">
-      <details key="start" value="740"/>
-      <details key="end" value="789"/>
+    <eAnnotations source="positions.23" references="/0/getIconsFullPath/%/%.1">
+      <details key="start" value="753"/>
+      <details key="end" value="802"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/getIconsFullPath/@expression/@argument.2">
-      <details key="start" value="791"/>
-      <details key="end" value="807"/>
+    <eAnnotations source="positions.24" references="/0/getIconsFullPath/%/%.2">
+      <details key="start" value="804"/>
+      <details key="end" value="820"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/getIconsFullPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="800"/>
-      <details key="end" value="806"/>
+    <eAnnotations source="positions.25" references="/0/getIconsFullPath/%/%.2/%/object">
+      <details key="start" value="813"/>
+      <details key="end" value="819"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.26" references="/0/getResourcesFullPath">
-      <details key="start" value="813"/>
-      <details key="end" value="1015"/>
+      <details key="start" value="828"/>
+      <details key="end" value="1031"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/getResourcesFullPath/object">
-      <details key="start" value="848"/>
-      <details key="end" value="864"/>
+      <details key="start" value="863"/>
+      <details key="end" value="879"/>
       <details key="line" value="16"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/getResourcesFullPath/@expression">
-      <details key="start" value="878"/>
-      <details key="end" value="1012"/>
+    <eAnnotations source="positions.28" references="/0/getResourcesFullPath/%">
+      <details key="start" value="894"/>
+      <details key="end" value="1028"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/getResourcesFullPath/@expression/self">
+    <eAnnotations source="positions.29" references="/0/getResourcesFullPath/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/getResourcesFullPath/@expression/@argument.0">
-      <details key="start" value="885"/>
-      <details key="end" value="938"/>
+    <eAnnotations source="positions.30" references="/0/getResourcesFullPath/%/%">
+      <details key="start" value="901"/>
+      <details key="end" value="954"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/getResourcesFullPath/@expression/@argument.1">
-      <details key="start" value="940"/>
-      <details key="end" value="993"/>
+    <eAnnotations source="positions.31" references="/0/getResourcesFullPath/%/%.1">
+      <details key="start" value="956"/>
+      <details key="end" value="1009"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/getResourcesFullPath/@expression/@argument.2">
-      <details key="start" value="995"/>
-      <details key="end" value="1011"/>
+    <eAnnotations source="positions.32" references="/0/getResourcesFullPath/%/%.2">
+      <details key="start" value="1011"/>
+      <details key="end" value="1027"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/getResourcesFullPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="1004"/>
-      <details key="end" value="1010"/>
+    <eAnnotations source="positions.33" references="/0/getResourcesFullPath/%/%.2/%/object">
+      <details key="start" value="1020"/>
+      <details key="end" value="1026"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.34" references="/0/getPagesRelativeToRootPath">
-      <details key="start" value="1017"/>
-      <details key="end" value="1231"/>
+      <details key="start" value="1035"/>
+      <details key="end" value="1250"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/getPagesRelativeToRootPath/object">
-      <details key="start" value="1058"/>
-      <details key="end" value="1074"/>
+      <details key="start" value="1076"/>
+      <details key="end" value="1092"/>
       <details key="line" value="19"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/getPagesRelativeToRootPath/@expression">
-      <details key="start" value="1088"/>
+    <eAnnotations source="positions.36" references="/0/getPagesRelativeToRootPath/%">
+      <details key="start" value="1107"/>
+      <details key="end" value="1247"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.37" references="/0/getPagesRelativeToRootPath/%/self">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.38" references="/0/getPagesRelativeToRootPath/%/%">
+      <details key="start" value="1114"/>
+      <details key="end" value="1167"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.39" references="/0/getPagesRelativeToRootPath/%/%.1">
+      <details key="start" value="1169"/>
       <details key="end" value="1228"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/getPagesRelativeToRootPath/@expression/self">
-      <details key="start" value="-1"/>
-      <details key="end" value="-1"/>
+    <eAnnotations source="positions.40" references="/0/getPagesRelativeToRootPath/%/%.2">
+      <details key="start" value="1230"/>
+      <details key="end" value="1246"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/getPagesRelativeToRootPath/@expression/@argument.0">
-      <details key="start" value="1095"/>
-      <details key="end" value="1148"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/getPagesRelativeToRootPath/@expression/@argument.1">
-      <details key="start" value="1150"/>
-      <details key="end" value="1209"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/getPagesRelativeToRootPath/@expression/@argument.2">
-      <details key="start" value="1211"/>
-      <details key="end" value="1227"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/getPagesRelativeToRootPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="1220"/>
-      <details key="end" value="1226"/>
+    <eAnnotations source="positions.41" references="/0/getPagesRelativeToRootPath/%/%.2/%/object">
+      <details key="start" value="1239"/>
+      <details key="end" value="1245"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.42" references="/0/getRepresentationPageFilename">
-      <details key="start" value="1233"/>
-      <details key="end" value="1492"/>
+      <details key="start" value="1254"/>
+      <details key="end" value="1514"/>
       <details key="line" value="22"/>
     </eAnnotations>
     <eAnnotations source="positions.43" references="/0/getRepresentationPageFilename/representation">
-      <details key="start" value="1277"/>
-      <details key="end" value="1309"/>
+      <details key="start" value="1298"/>
+      <details key="end" value="1330"/>
       <details key="line" value="22"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/getRepresentationPageFilename/@expression">
-      <details key="start" value="1323"/>
-      <details key="end" value="1489"/>
+    <eAnnotations source="positions.44" references="/0/getRepresentationPageFilename/%">
+      <details key="start" value="1345"/>
+      <details key="end" value="1511"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.45" references="/0/getRepresentationPageFilename/@expression/self">
+    <eAnnotations source="positions.45" references="/0/getRepresentationPageFilename/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.46" references="/0/getRepresentationPageFilename/@expression/@argument.0">
-      <details key="start" value="1330"/>
-      <details key="end" value="1383"/>
+    <eAnnotations source="positions.46" references="/0/getRepresentationPageFilename/%/%">
+      <details key="start" value="1352"/>
+      <details key="end" value="1405"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/getRepresentationPageFilename/@expression/@argument.1">
-      <details key="start" value="1385"/>
-      <details key="end" value="1462"/>
+    <eAnnotations source="positions.47" references="/0/getRepresentationPageFilename/%/%.1">
+      <details key="start" value="1407"/>
+      <details key="end" value="1484"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/getRepresentationPageFilename/@expression/@argument.2">
-      <details key="start" value="1464"/>
-      <details key="end" value="1488"/>
+    <eAnnotations source="positions.48" references="/0/getRepresentationPageFilename/%/%.2">
+      <details key="start" value="1486"/>
+      <details key="end" value="1510"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/getRepresentationPageFilename/@expression/@argument.2/@part.0/representation">
-      <details key="start" value="1473"/>
-      <details key="end" value="1487"/>
+    <eAnnotations source="positions.49" references="/0/getRepresentationPageFilename/%/%.2/%/representation">
+      <details key="start" value="1495"/>
+      <details key="end" value="1509"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.50" references="/0/getPropertiesPageFilename">
-      <details key="start" value="1494"/>
-      <details key="end" value="1702"/>
+      <details key="start" value="1518"/>
+      <details key="end" value="1727"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.51" references="/0/getPropertiesPageFilename/arg0">
-      <details key="start" value="1534"/>
-      <details key="end" value="1548"/>
+      <details key="start" value="1558"/>
+      <details key="end" value="1572"/>
       <details key="line" value="25"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/getPropertiesPageFilename/@expression">
-      <details key="start" value="1562"/>
-      <details key="end" value="1699"/>
+    <eAnnotations source="positions.52" references="/0/getPropertiesPageFilename/%">
+      <details key="start" value="1587"/>
+      <details key="end" value="1724"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.53" references="/0/getPropertiesPageFilename/@expression/self">
+    <eAnnotations source="positions.53" references="/0/getPropertiesPageFilename/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.54" references="/0/getPropertiesPageFilename/@expression/@argument.0">
-      <details key="start" value="1569"/>
-      <details key="end" value="1622"/>
+    <eAnnotations source="positions.54" references="/0/getPropertiesPageFilename/%/%">
+      <details key="start" value="1594"/>
+      <details key="end" value="1647"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/getPropertiesPageFilename/@expression/@argument.1">
-      <details key="start" value="1624"/>
-      <details key="end" value="1682"/>
+    <eAnnotations source="positions.55" references="/0/getPropertiesPageFilename/%/%.1">
+      <details key="start" value="1649"/>
+      <details key="end" value="1707"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/getPropertiesPageFilename/@expression/@argument.2">
-      <details key="start" value="1684"/>
-      <details key="end" value="1698"/>
+    <eAnnotations source="positions.56" references="/0/getPropertiesPageFilename/%/%.2">
+      <details key="start" value="1709"/>
+      <details key="end" value="1723"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/getPropertiesPageFilename/@expression/@argument.2/@part.0/arg0">
-      <details key="start" value="1693"/>
-      <details key="end" value="1697"/>
+    <eAnnotations source="positions.57" references="/0/getPropertiesPageFilename/%/%.2/%/arg0">
+      <details key="start" value="1718"/>
+      <details key="end" value="1722"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.58" references="/0/getPropertiesRelativeToRootPath">
-      <details key="start" value="1704"/>
-      <details key="end" value="1928"/>
+      <details key="start" value="1731"/>
+      <details key="end" value="1956"/>
       <details key="line" value="28"/>
     </eAnnotations>
     <eAnnotations source="positions.59" references="/0/getPropertiesRelativeToRootPath/object">
-      <details key="start" value="1750"/>
-      <details key="end" value="1766"/>
+      <details key="start" value="1777"/>
+      <details key="end" value="1793"/>
       <details key="line" value="28"/>
     </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/getPropertiesRelativeToRootPath/@expression">
-      <details key="start" value="1780"/>
-      <details key="end" value="1925"/>
+    <eAnnotations source="positions.60" references="/0/getPropertiesRelativeToRootPath/%">
+      <details key="start" value="1808"/>
+      <details key="end" value="1953"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.61" references="/0/getPropertiesRelativeToRootPath/@expression/self">
+    <eAnnotations source="positions.61" references="/0/getPropertiesRelativeToRootPath/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.62" references="/0/getPropertiesRelativeToRootPath/@expression/@argument.0">
-      <details key="start" value="1787"/>
-      <details key="end" value="1840"/>
+    <eAnnotations source="positions.62" references="/0/getPropertiesRelativeToRootPath/%/%">
+      <details key="start" value="1815"/>
+      <details key="end" value="1868"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.63" references="/0/getPropertiesRelativeToRootPath/@expression/@argument.1">
-      <details key="start" value="1842"/>
-      <details key="end" value="1906"/>
+    <eAnnotations source="positions.63" references="/0/getPropertiesRelativeToRootPath/%/%.1">
+      <details key="start" value="1870"/>
+      <details key="end" value="1934"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.64" references="/0/getPropertiesRelativeToRootPath/@expression/@argument.2">
-      <details key="start" value="1908"/>
-      <details key="end" value="1924"/>
+    <eAnnotations source="positions.64" references="/0/getPropertiesRelativeToRootPath/%/%.2">
+      <details key="start" value="1936"/>
+      <details key="end" value="1952"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.65" references="/0/getPropertiesRelativeToRootPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="1917"/>
-      <details key="end" value="1923"/>
+    <eAnnotations source="positions.65" references="/0/getPropertiesRelativeToRootPath/%/%.2/%/object">
+      <details key="start" value="1945"/>
+      <details key="end" value="1951"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.66" references="/0/getRepresentationsRelativeToRootPath">
-      <details key="start" value="1930"/>
-      <details key="end" value="2164"/>
+      <details key="start" value="1960"/>
+      <details key="end" value="2195"/>
       <details key="line" value="31"/>
     </eAnnotations>
     <eAnnotations source="positions.67" references="/0/getRepresentationsRelativeToRootPath/object">
-      <details key="start" value="1981"/>
-      <details key="end" value="1997"/>
+      <details key="start" value="2011"/>
+      <details key="end" value="2027"/>
       <details key="line" value="31"/>
     </eAnnotations>
-    <eAnnotations source="positions.68" references="/0/getRepresentationsRelativeToRootPath/@expression">
-      <details key="start" value="2011"/>
-      <details key="end" value="2161"/>
+    <eAnnotations source="positions.68" references="/0/getRepresentationsRelativeToRootPath/%">
+      <details key="start" value="2042"/>
+      <details key="end" value="2192"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.69" references="/0/getRepresentationsRelativeToRootPath/@expression/self">
+    <eAnnotations source="positions.69" references="/0/getRepresentationsRelativeToRootPath/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.70" references="/0/getRepresentationsRelativeToRootPath/@expression/@argument.0">
-      <details key="start" value="2018"/>
-      <details key="end" value="2071"/>
+    <eAnnotations source="positions.70" references="/0/getRepresentationsRelativeToRootPath/%/%">
+      <details key="start" value="2049"/>
+      <details key="end" value="2102"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.71" references="/0/getRepresentationsRelativeToRootPath/@expression/@argument.1">
-      <details key="start" value="2073"/>
-      <details key="end" value="2142"/>
+    <eAnnotations source="positions.71" references="/0/getRepresentationsRelativeToRootPath/%/%.1">
+      <details key="start" value="2104"/>
+      <details key="end" value="2173"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.72" references="/0/getRepresentationsRelativeToRootPath/@expression/@argument.2">
-      <details key="start" value="2144"/>
-      <details key="end" value="2160"/>
+    <eAnnotations source="positions.72" references="/0/getRepresentationsRelativeToRootPath/%/%.2">
+      <details key="start" value="2175"/>
+      <details key="end" value="2191"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.73" references="/0/getRepresentationsRelativeToRootPath/@expression/@argument.2/@part.0/object">
-      <details key="start" value="2153"/>
-      <details key="end" value="2159"/>
+    <eAnnotations source="positions.73" references="/0/getRepresentationsRelativeToRootPath/%/%.2/%/object">
+      <details key="start" value="2184"/>
+      <details key="end" value="2190"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

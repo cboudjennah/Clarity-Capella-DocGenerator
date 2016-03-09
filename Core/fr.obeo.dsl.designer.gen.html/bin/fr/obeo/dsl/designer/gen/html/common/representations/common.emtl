@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="common" nsURI="fr::obeo::dsl::designer::gen::html::common::representations::common" startHeaderPosition="29" endHeaderPosition="164">
+  <mtl:Module name="common" nsURI="fr::obeo::dsl::designer::gen::html::common::representations::common" startHeaderPosition="30" endHeaderPosition="167">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#/"/>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description"/>
@@ -13,7 +13,7 @@
     <imports href="../../services/pathServices.emtl#/0"/>
     <imports href="../../services/viewpointServices.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="321" endPosition="709" value="&#x9;Build the URL corresponding to the properties page for the specified element.&#xA;&#x9;&#x9;&#x9;The URL is based on&#xA;&#x9;&#x9; &#x9;- the DRepresentationElement if the semantic associated elements are not the same as the target&#xA;&#x9;&#x9;&#x9;- the target if it's the same as the semantic associated elements&#xA;&#x9;&#x9;&#x9;(thus we avoid generating pages for every DRepresentationElement cause some of them use the same properties page) "/>
+      <body startPosition="328" endPosition="720" value="&#x9;Build the URL corresponding to the properties page for the specified element.&#xD;&#xA;&#x9;&#x9;&#x9;The URL is based on&#xD;&#xA;&#x9;&#x9; &#x9;- the DRepresentationElement if the semantic associated elements are not the same as the target&#xD;&#xA;&#x9;&#x9;&#x9;- the target if it's the same as the semantic associated elements&#xD;&#xA;&#x9;&#x9;&#x9;(thus we avoid generating pages for every DRepresentationElement cause some of them use the same properties page) "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="propertiesPageUrl" visibility="Public">
       <body xsi:type="mtl:IfBlock">
@@ -31,7 +31,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentationElement"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         <ifExpr xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
           <definition href="../../services/representationsServices.emtl#/0/hasSpecificSemanticElements"/>
@@ -58,7 +58,7 @@
               <referredProperty xsi:type="ecore:EReference" href="http://www.eclipse.org/sirius/1.1.0#//DSemanticDecorator/target"/>
             </argument>
           </body>
-          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;"/>
         </else>
       </body>
       <parameter name="elt">
@@ -205,94 +205,94 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="313"/>
-      <details key="end" value="711"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="320"/>
+      <details key="end" value="722"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/propertiesPageUrl">
-      <details key="start" value="712"/>
-      <details key="end" value="1010"/>
+      <details key="start" value="724"/>
+      <details key="end" value="1028"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/propertiesPageUrl/@body.0">
-      <details key="start" value="778"/>
-      <details key="end" value="998"/>
+    <eAnnotations source="positions.2" references="/0/propertiesPageUrl/%">
+      <details key="start" value="791"/>
+      <details key="end" value="1015"/>
       <details key="line" value="14"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/propertiesPageUrl/@body.0/@body.0">
-      <details key="start" value="820"/>
-      <details key="end" value="862"/>
+    <eAnnotations source="positions.3" references="/0/propertiesPageUrl/%/%">
+      <details key="start" value="834"/>
+      <details key="end" value="876"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/propertiesPageUrl/@body.0/@body.0/elt">
-      <details key="start" value="820"/>
-      <details key="end" value="823"/>
+    <eAnnotations source="positions.4" references="/0/propertiesPageUrl/%/%/elt">
+      <details key="start" value="834"/>
+      <details key="end" value="837"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/propertiesPageUrl/@body.0/@body.1">
-      <details key="start" value="865"/>
-      <details key="end" value="896"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/propertiesPageUrl/@body.0/@body.1/elt">
-      <details key="start" value="865"/>
-      <details key="end" value="868"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/propertiesPageUrl/@body.0/@body.2">
-      <details key="start" value="898"/>
-      <details key="end" value="899"/>
-      <details key="line" value="16"/>
-    </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/propertiesPageUrl/@body.0/@ifExpr">
-      <details key="start" value="782"/>
-      <details key="end" value="817"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/propertiesPageUrl/@body.0/@ifExpr/elt">
-      <details key="start" value="783"/>
-      <details key="end" value="786"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/propertiesPageUrl/@body.0/@else">
-      <details key="start" value="899"/>
-      <details key="end" value="993"/>
-      <details key="line" value="16"/>
-    </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/propertiesPageUrl/@body.0/@else/@body.0">
-      <details key="start" value="907"/>
-      <details key="end" value="949"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/propertiesPageUrl/@body.0/@else/@body.0/elt">
-      <details key="start" value="907"/>
+    <eAnnotations source="positions.5" references="/0/propertiesPageUrl/%/%.1">
+      <details key="start" value="879"/>
       <details key="end" value="910"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/propertiesPageUrl/@body.0/@else/@body.1">
-      <details key="start" value="952"/>
-      <details key="end" value="990"/>
+    <eAnnotations source="positions.6" references="/0/propertiesPageUrl/%/%.1/elt">
+      <details key="start" value="879"/>
+      <details key="end" value="882"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/propertiesPageUrl/@body.0/@else/@body.1/@argument.0">
-      <details key="start" value="952"/>
-      <details key="end" value="962"/>
+    <eAnnotations source="positions.7" references="/0/propertiesPageUrl/%/%.2">
+      <details key="start" value="912"/>
+      <details key="end" value="914"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/propertiesPageUrl/%/%.3">
+      <details key="start" value="795"/>
+      <details key="end" value="830"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/propertiesPageUrl/@body.0/@else/@body.1/@argument.0/elt">
-      <details key="start" value="952"/>
-      <details key="end" value="955"/>
+    <eAnnotations source="positions.9" references="/0/propertiesPageUrl/%/%.3/elt">
+      <details key="start" value="796"/>
+      <details key="end" value="799"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/propertiesPageUrl/@body.0/@else/@body.2">
-      <details key="start" value="992"/>
-      <details key="end" value="993"/>
+    <eAnnotations source="positions.10" references="/0/propertiesPageUrl/%/%.4">
+      <details key="start" value="914"/>
+      <details key="end" value="1010"/>
+      <details key="line" value="16"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/propertiesPageUrl/%/%.4/%">
+      <details key="start" value="923"/>
+      <details key="end" value="965"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/propertiesPageUrl/%/%.4/%/elt">
+      <details key="start" value="923"/>
+      <details key="end" value="926"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/propertiesPageUrl/%/%.4/%.1">
+      <details key="start" value="968"/>
+      <details key="end" value="1006"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.14" references="/0/propertiesPageUrl/%/%.4/%.1/%">
+      <details key="start" value="968"/>
+      <details key="end" value="978"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.15" references="/0/propertiesPageUrl/%/%.4/%.1/%/elt">
+      <details key="start" value="968"/>
+      <details key="end" value="971"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.16" references="/0/propertiesPageUrl/%/%.4/%.2">
+      <details key="start" value="1008"/>
+      <details key="end" value="1010"/>
       <details key="line" value="18"/>
     </eAnnotations>
     <eAnnotations source="positions.17" references="/0/propertiesPageUrl/elt">
-      <details key="start" value="747"/>
-      <details key="end" value="775"/>
+      <details key="start" value="759"/>
+      <details key="end" value="787"/>
       <details key="line" value="13"/>
     </eAnnotations>
   </ecore:EAnnotation>

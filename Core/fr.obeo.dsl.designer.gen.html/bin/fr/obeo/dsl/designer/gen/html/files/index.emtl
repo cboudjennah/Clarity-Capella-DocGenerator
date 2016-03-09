@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="index" nsURI="fr::obeo::dsl::designer::gen::html::files::index" startHeaderPosition="29" endHeaderPosition="156">
+  <mtl:Module name="index" nsURI="fr::obeo::dsl::designer::gen::html::files::index" startHeaderPosition="30" endHeaderPosition="159">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#/"/>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description"/>
@@ -12,11 +12,11 @@
     <imports href="../services/viewpointServices.emtl#/0"/>
     <imports href="../services/pathServices.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="238" endPosition="343" value=" Generate the index page. This page uses 3 frames for the explorer, representations and properties panes "/>
+      <body startPosition="244" endPosition="349" value=" Generate the index page. This page uses 3 frames for the explorer, representations and properties panes "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateIndex" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;>&#xA;&lt;html>&#xA;&lt;head>&#xA;&lt;title>"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Frameset//EN&quot; &quot;http://www.w3.org/TR/html4/frameset.dtd&quot;>&#xD;&#xA;&lt;html>&#xD;&#xA;&lt;head>&#xD;&#xA;&lt;title>"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/viewpointServices.emtl#/0/getProjectName"/>
@@ -24,7 +24,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/title>&#xA;&lt;/head>&#xA;&lt;frameset cols=&quot;400,*&quot; frameborder=&quot;1&quot; border=&quot;2&quot; framespacing=&quot;2&quot;>&#xA;  &lt;frame name=&quot;explorer&quot; src=&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/title>&#xD;&#xA;&lt;/head>&#xD;&#xA;&lt;frameset cols=&quot;400,*&quot; frameborder=&quot;1&quot; border=&quot;2&quot; framespacing=&quot;2&quot;>&#xD;&#xA;  &lt;frame name=&quot;explorer&quot; src=&quot;"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getPagesFullPath"/>
@@ -32,7 +32,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/explorer.html&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;auto&quot;>&#xA;  &lt;frameset rows=&quot;500,*&quot; frameborder=&quot;1&quot; border=&quot;2&quot; framespacing=&quot;2&quot;>&#xA;    &lt;frame name=&quot;representation&quot; src=&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/explorer.html&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;auto&quot;>&#xD;&#xA;  &lt;frameset rows=&quot;500,*&quot; frameborder=&quot;1&quot; border=&quot;2&quot; framespacing=&quot;2&quot;>&#xD;&#xA;    &lt;frame name=&quot;representation&quot; src=&quot;"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getPagesFullPath"/>
@@ -40,7 +40,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/representation.html&quot;>&#xA;    &lt;frame name=&quot;properties&quot; src=&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/representation.html&quot;>&#xD;&#xA;    &lt;frame name=&quot;properties&quot; src=&quot;"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getPagesFullPath"/>
@@ -48,7 +48,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/properties.html&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;auto&quot;>&#xA;  &lt;/frameset>&#xA;  &lt;noframes>&#xA;    &lt;p>You need a browser supporting frames to view this page.&lt;/p>&#xA;  &lt;/noframes>&#xA;&lt;/frameset>&#xA;&lt;/html>&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/properties.html&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; scrolling=&quot;auto&quot;>&#xD;&#xA;  &lt;/frameset>&#xD;&#xA;  &lt;noframes>&#xD;&#xA;    &lt;p>You need a browser supporting frames to view this page.&lt;/p>&#xD;&#xA;  &lt;/noframes>&#xD;&#xA;&lt;/frameset>&#xD;&#xA;&lt;/html>&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="index.html">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         </fileUrl>
@@ -181,99 +181,99 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="230"/>
-      <details key="end" value="345"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="236"/>
+      <details key="end" value="351"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateIndex">
-      <details key="start" value="346"/>
-      <details key="end" value="1242"/>
+      <details key="start" value="353"/>
+      <details key="end" value="1268"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateIndex/@body.0">
-      <details key="start" value="400"/>
-      <details key="end" value="1230"/>
+    <eAnnotations source="positions.2" references="/0/generateIndex/%">
+      <details key="start" value="408"/>
+      <details key="end" value="1255"/>
       <details key="line" value="9"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateIndex/@body.0/@body.0">
-      <details key="start" value="438"/>
-      <details key="end" value="561"/>
+    <eAnnotations source="positions.3" references="/0/generateIndex/%/%">
+      <details key="start" value="447"/>
+      <details key="end" value="573"/>
       <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateIndex/@body.0/@body.1">
-      <details key="start" value="562"/>
-      <details key="end" value="587"/>
+    <eAnnotations source="positions.4" references="/0/generateIndex/%/%.1">
+      <details key="start" value="574"/>
+      <details key="end" value="599"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateIndex/@body.0/@body.1/analysis">
-      <details key="start" value="562"/>
-      <details key="end" value="570"/>
+    <eAnnotations source="positions.5" references="/0/generateIndex/%/%.1/analysis">
+      <details key="start" value="574"/>
+      <details key="end" value="582"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateIndex/@body.0/@body.2">
-      <details key="start" value="589"/>
-      <details key="end" value="704"/>
+    <eAnnotations source="positions.6" references="/0/generateIndex/%/%.2">
+      <details key="start" value="601"/>
+      <details key="end" value="719"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateIndex/@body.0/@body.3">
-      <details key="start" value="705"/>
-      <details key="end" value="732"/>
+    <eAnnotations source="positions.7" references="/0/generateIndex/%/%.3">
+      <details key="start" value="720"/>
+      <details key="end" value="747"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateIndex/@body.0/@body.3/analysis">
-      <details key="start" value="705"/>
-      <details key="end" value="713"/>
+    <eAnnotations source="positions.8" references="/0/generateIndex/%/%.3/analysis">
+      <details key="start" value="720"/>
+      <details key="end" value="728"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateIndex/@body.0/@body.4">
-      <details key="start" value="734"/>
-      <details key="end" value="909"/>
+    <eAnnotations source="positions.9" references="/0/generateIndex/%/%.4">
+      <details key="start" value="749"/>
+      <details key="end" value="926"/>
       <details key="line" value="16"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateIndex/@body.0/@body.5">
-      <details key="start" value="910"/>
-      <details key="end" value="937"/>
+    <eAnnotations source="positions.10" references="/0/generateIndex/%/%.5">
+      <details key="start" value="927"/>
+      <details key="end" value="954"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateIndex/@body.0/@body.5/analysis">
-      <details key="start" value="910"/>
-      <details key="end" value="918"/>
+    <eAnnotations source="positions.11" references="/0/generateIndex/%/%.5/analysis">
+      <details key="start" value="927"/>
+      <details key="end" value="935"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateIndex/@body.0/@body.6">
-      <details key="start" value="939"/>
-      <details key="end" value="996"/>
+    <eAnnotations source="positions.12" references="/0/generateIndex/%/%.6">
+      <details key="start" value="956"/>
+      <details key="end" value="1014"/>
       <details key="line" value="18"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/generateIndex/@body.0/@body.7">
-      <details key="start" value="997"/>
-      <details key="end" value="1024"/>
+    <eAnnotations source="positions.13" references="/0/generateIndex/%/%.7">
+      <details key="start" value="1015"/>
+      <details key="end" value="1042"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/generateIndex/@body.0/@body.7/analysis">
-      <details key="start" value="997"/>
-      <details key="end" value="1005"/>
+    <eAnnotations source="positions.14" references="/0/generateIndex/%/%.7/analysis">
+      <details key="start" value="1015"/>
+      <details key="end" value="1023"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/generateIndex/@body.0/@body.8">
-      <details key="start" value="1026"/>
-      <details key="end" value="1223"/>
+    <eAnnotations source="positions.15" references="/0/generateIndex/%/%.8">
+      <details key="start" value="1044"/>
+      <details key="end" value="1248"/>
       <details key="line" value="19"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/generateIndex/@body.0/@fileUrl">
-      <details key="start" value="407"/>
-      <details key="end" value="419"/>
+    <eAnnotations source="positions.16" references="/0/generateIndex/%/%.9">
+      <details key="start" value="415"/>
+      <details key="end" value="427"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateIndex/@body.0/@charset">
-      <details key="start" value="428"/>
-      <details key="end" value="435"/>
+    <eAnnotations source="positions.17" references="/0/generateIndex/%/%.10">
+      <details key="start" value="436"/>
+      <details key="end" value="443"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.18" references="/0/generateIndex/analysis">
-      <details key="start" value="377"/>
-      <details key="end" value="397"/>
+      <details key="start" value="384"/>
+      <details key="end" value="404"/>
       <details key="line" value="8"/>
     </eAnnotations>
   </ecore:EAnnotation>

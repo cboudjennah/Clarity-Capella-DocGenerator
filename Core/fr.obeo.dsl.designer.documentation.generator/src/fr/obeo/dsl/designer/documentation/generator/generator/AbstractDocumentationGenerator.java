@@ -36,7 +36,9 @@ import org.eclipse.acceleo.engine.event.IAcceleoTextGenerationListener;
 import org.eclipse.acceleo.engine.generation.strategy.DoNotGenerateGenerationStrategy;
 import org.eclipse.acceleo.engine.generation.strategy.IAcceleoGenerationStrategy;
 import org.eclipse.acceleo.model.mtl.Module;
+import org.eclipse.acceleo.model.mtl.MtlFactory;
 import org.eclipse.acceleo.model.mtl.MtlPackage;
+import org.eclipse.acceleo.model.mtl.impl.MtlPackageImpl;
 import org.eclipse.acceleo.model.mtl.resource.AcceleoResourceFactoryRegistry;
 import org.eclipse.acceleo.model.mtl.resource.AcceleoResourceSetImpl;
 import org.eclipse.acceleo.model.mtl.resource.EMtlBinaryResourceFactoryImpl;
@@ -72,18 +74,23 @@ import fr.obeo.dsl.designer.documentation.generator.renderer.AbstractRenderer;
  * Same as usual generator except:
  * <ul>
  * <li>It only launch generation on the model object (not on eAllContent)</li>
- * <li>Is an adapter. It will register itself to keep track of some information. At this point it is not used
- * since we have a configuration object. <b>TODO check if still necessary.</b></li>
+ * <li>Is an adapter. It will register itself to keep track of some information.
+ * At this point it is not used since we have a configuration object. <b>TODO
+ * check if still necessary.</b></li>
  * </ul>
  * 
  * @author adaussy
  */
 public abstract class AbstractDocumentationGenerator {
-	/** If the generation requires any additional arguments, they'll be stored here. */
+	/**
+	 * If the generation requires any additional arguments, they'll be stored
+	 * here.
+	 */
 	protected List<? extends Object> generationArguments;
 
 	/**
-	 * This will hold the list of generation listeners that are to be notified when text is generated.
+	 * This will hold the list of generation listeners that are to be notified
+	 * when text is generated.
 	 */
 	protected List<IAcceleoTextGenerationListener> generationListeners = new ArrayList<IAcceleoTextGenerationListener>(
 			1);
@@ -101,9 +108,11 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * This will hold the list of properties files that are to be added to the generation context.
+	 * This will hold the list of properties files that are to be added to the
+	 * generation context.
 	 * 
-	 * @deprected return a list of properties files directly through {@link #getProperties()} instead.
+	 * @deprected return a list of properties files directly through
+	 *            {@link #getProperties()} instead.
 	 */
 	@Deprecated
 	protected List<String> propertiesFiles = new ArrayList<String>(1);
@@ -112,7 +121,8 @@ public abstract class AbstractDocumentationGenerator {
 	protected File targetFolder;
 
 	/**
-	 * This will be used to know which resource to <u>not</u> unload from the resourceSet post generation.
+	 * This will be used to know which resource to <u>not</u> unload from the
+	 * resourceSet post generation.
 	 * 
 	 * @since 3.0
 	 */
@@ -126,18 +136,20 @@ public abstract class AbstractDocumentationGenerator {
 	protected AbstractAcceleoPropertiesLoaderService acceleoPropertiesLoaderService;
 
 	/**
-	 * The original resource factory registry of the resource set containing the model if the generation is
-	 * launched from {@link #initialize(EObject, File, List)}. This attribute is used only by the
-	 * {@link AbstractDocumentationGenerator} to restore the resource factory registry after the generation.
-	 * It should <b>not</b> be used for anything else.
+	 * The original resource factory registry of the resource set containing the
+	 * model if the generation is launched from
+	 * {@link #initialize(EObject, File, List)}. This attribute is used only by
+	 * the {@link AbstractDocumentationGenerator} to restore the resource
+	 * factory registry after the generation. It should <b>not</b> be used for
+	 * anything else.
 	 * 
 	 * @since 3.1
 	 */
 	protected Resource.Factory.Registry resourceFactoryRegistry;
 
 	/**
-	 * The generation ID is a unique identifier describing all the parameters of the generation. It is
-	 * computed thanks to
+	 * The generation ID is a unique identifier describing all the parameters of
+	 * the generation. It is computed thanks to
 	 * {@link org.eclipse.acceleo.engine.utils.AcceleoLaunchingUtil#computeLaunchConfigID(String, String, String, String, List)}
 	 * .
 	 * 
@@ -162,7 +174,8 @@ public abstract class AbstractDocumentationGenerator {
 	 * @param monitor
 	 *            This will be used to display progress information to the user.
 	 * @throws IOException
-	 *             This will be thrown if any of the output files cannot be saved to disk.
+	 *             This will be thrown if any of the output files cannot be
+	 *             saved to disk.
 	 */
 	public void doGenerate(Monitor monitor) throws IOException {
 		generate(monitor);
@@ -173,9 +186,11 @@ public abstract class AbstractDocumentationGenerator {
 	 * 
 	 * @param monitor
 	 *            This will be used to display progress information to the user.
-	 * @return This will return a preview of the generation when the generation strategy feeds it to us.
+	 * @return This will return a preview of the generation when the generation
+	 *         strategy feeds it to us.
 	 * @throws IOException
-	 *             This will be thrown if any of the output files cannot be saved to disk.
+	 *             This will be thrown if any of the output files cannot be
+	 *             saved to disk.
 	 */
 	public Map<String, String> generate(Monitor monitor) throws IOException {
 		renderer.setMonitor(BasicMonitor.toIProgressMonitor(monitor));
@@ -201,8 +216,8 @@ public abstract class AbstractDocumentationGenerator {
 		}
 
 		for (int i = 0; i < templateNames.length; i++) {
-			result.putAll(service.doGenerate(getModule(), templateNames[i], getModel(), getArguments(),
-					target, monitor));
+			result.putAll(
+					service.doGenerate(getModule(), templateNames[i], getModel(), getArguments(), target, monitor));
 		}
 
 		// End
@@ -214,8 +229,8 @@ public abstract class AbstractDocumentationGenerator {
 
 		if (!service.hasGenerationOccurred()) {
 			if (EMFPlugin.IS_ECLIPSE_RUNNING && AcceleoPreferences.isDebugMessagesEnabled()) {
-				AcceleoEnginePlugin.log(AcceleoEngineMessages
-						.getString("AcceleoService.NoGenerationHasOccurred"), false); //$NON-NLS-1$				
+				AcceleoEnginePlugin.log(AcceleoEngineMessages.getString("AcceleoService.NoGenerationHasOccurred"), //$NON-NLS-1$
+						false);
 			} else if (!EMFPlugin.IS_ECLIPSE_RUNNING) {
 				System.err.println(AcceleoEngineMessages.getString("AcceleoService.NoGenerationHasOccurred")); //$NON-NLS-1$
 			}
@@ -227,8 +242,9 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If the generation template called from this launcher needs any additional arguments, and you wish to
-	 * change what was given the constructor, you can alter them here.
+	 * If the generation template called from this launcher needs any additional
+	 * arguments, and you wish to change what was given the constructor, you can
+	 * alter them here.
 	 * 
 	 * @return The list of additional arguments for this generation.
 	 */
@@ -237,9 +253,11 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If this generator needs to listen to text generation events, listeners can be returned from here.
+	 * If this generator needs to listen to text generation events, listeners
+	 * can be returned from here.
 	 * 
-	 * @return List of listeners that are to be notified when text is generated through this launch.
+	 * @return List of listeners that are to be notified when text is generated
+	 *         through this launch.
 	 */
 	public List<IAcceleoTextGenerationListener> getGenerationListeners() {
 		return new ArrayList<IAcceleoTextGenerationListener>();
@@ -250,7 +268,8 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If you wish to launch the generation on something else than {@link #model}, alter it here.
+	 * If you wish to launch the generation on something else than
+	 * {@link #model}, alter it here.
 	 * 
 	 * @return The root EObject on which to iterate for this generation.
 	 */
@@ -259,34 +278,41 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If you wish to launch the generation on another module than {@link #module}, alter it here.
+	 * If you wish to launch the generation on another module than
+	 * {@link #module}, alter it here.
 	 * 
-	 * @return The module on which we'll seek the generation templates to launch.
+	 * @return The module on which we'll seek the generation templates to
+	 *         launch.
 	 */
 	public Module getModule() {
 		return module;
 	}
 
 	/**
-	 * This will be called in order to find and load the module that will be launched through this launcher.
-	 * We expect this name not to contain file extension, and the module to be located beside the launcher.
+	 * This will be called in order to find and load the module that will be
+	 * launched through this launcher. We expect this name not to contain file
+	 * extension, and the module to be located beside the launcher.
 	 * 
 	 * @return The name of the module that is to be launched.
 	 */
 	public abstract String getModuleName();
 
 	/**
-	 * If the module(s) called by this launcher require properties files, return their qualified path from
-	 * here.Take note that the first added properties files will take precedence over subsequent ones if they
-	 * contain conflicting keys.
+	 * If the module(s) called by this launcher require properties files, return
+	 * their qualified path from here.Take note that the first added properties
+	 * files will take precedence over subsequent ones if they contain
+	 * conflicting keys.
 	 * <p>
-	 * Properties need to be in source folders, the path that we expect to get as a result of this call are of
-	 * the form &lt;package>.&lt;properties file name without extension>. For example, if you have a file
-	 * named "messages.properties" in package "org.eclipse.acceleo.sample", the path that needs be returned by
-	 * a call to {@link #getProperties()} is "org.eclipse.acceleo.sample.messages".
+	 * Properties need to be in source folders, the path that we expect to get
+	 * as a result of this call are of the form &lt;package>.&lt;properties file
+	 * name without extension>. For example, if you have a file named
+	 * "messages.properties" in package "org.eclipse.acceleo.sample", the path
+	 * that needs be returned by a call to {@link #getProperties()} is
+	 * "org.eclipse.acceleo.sample.messages".
 	 * </p>
 	 * 
-	 * @return The list of properties file we need to add to the generation context.
+	 * @return The list of properties file we need to add to the generation
+	 *         context.
 	 */
 	public List<String> getProperties() {
 		return new ArrayList<String>();
@@ -304,7 +330,8 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If you wish to generate files in another folder than {@link #targetFolder}, alter it here.
+	 * If you wish to generate files in another folder than
+	 * {@link #targetFolder}, alter it here.
 	 * 
 	 * @return The root directory in which to generate files.
 	 */
@@ -313,9 +340,11 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * This will be used to get the list of templates that are to be launched by this launcher.
+	 * This will be used to get the list of templates that are to be launched by
+	 * this launcher.
 	 * 
-	 * @return The list of templates to call on the module {@link #getModuleName()}.
+	 * @return The list of templates to call on the module
+	 *         {@link #getModuleName()}.
 	 */
 	public abstract String[] getTemplateNames();
 
@@ -323,16 +352,18 @@ public abstract class AbstractDocumentationGenerator {
 	 * This will initialize all required information for this generator.
 	 * 
 	 * @param element
-	 *            We'll iterate over the content of this element to find Objects matching the first parameter
-	 *            of the template we need to call.
+	 *            We'll iterate over the content of this element to find Objects
+	 *            matching the first parameter of the template we need to call.
 	 * @param folder
-	 *            This will be used as the output folder for this generation : it will be the base path
-	 *            against which all file block URLs will be resolved.
+	 *            This will be used as the output folder for this generation :
+	 *            it will be the base path against which all file block URLs
+	 *            will be resolved.
 	 * @param arguments
-	 *            If the template which will be called requires more than one argument taken from the model,
-	 *            pass them here.
+	 *            If the template which will be called requires more than one
+	 *            argument taken from the model, pass them here.
 	 * @throws IOException
-	 *             This can be thrown in two scenarios : the module cannot be found, or it cannot be loaded.
+	 *             This can be thrown in two scenarios : the module cannot be
+	 *             found, or it cannot be loaded.
 	 */
 	public void initialize(EObject element, File folder, List<? extends Object> arguments) throws IOException {
 		ResourceSet resourceSet = new AcceleoResourceSetImpl();
@@ -348,7 +379,8 @@ public abstract class AbstractDocumentationGenerator {
 			resourceSet.setURIConverter(uriConverter);
 		}
 
-		// make sure that metamodel projects in the workspace override those in plugins
+		// make sure that metamodel projects in the workspace override those in
+		// plugins
 		resourceSet.getURIConverter().getURIMap().putAll(EcorePlugin.computePlatformURIMap());
 
 		registerResourceFactories(resourceSet);
@@ -372,14 +404,19 @@ public abstract class AbstractDocumentationGenerator {
 		}
 		URI moduleURI = createTemplateURI(moduleURL.toString());
 		moduleURI = URI.createURI(moduleURI.toString(), true);
-		module = (Module)ModelUtils.load(moduleURI, resourceSet);
-		model = element;
+		//
+														model = element;
+		// MtlPackageImpl.
+		// Module createdModule = MtlFactory.eINSTANCE.createModule();
+		//
+		// ModelUtils.
+		module = (Module) ModelUtils.load(moduleURI, resourceSet);
+		// model = element;
 		targetFolder = folder;
 		generationArguments = arguments;
 		addGeneratorAdapter(model.eResource().getResourceSet());
 		this.postInitialize();
 	}
-
 
 	private void addGeneratorAdapter(ResourceSet resourceSet) {
 		/*
@@ -398,16 +435,18 @@ public abstract class AbstractDocumentationGenerator {
 	 * This will initialize all required information for this generator.
 	 * 
 	 * @param modelURI
-	 *            URI where the model on which this generator will be used is located.
+	 *            URI where the model on which this generator will be used is
+	 *            located.
 	 * @param folder
-	 *            This will be used as the output folder for this generation : it will be the base path
-	 *            against which all file block URLs will be resolved.
+	 *            This will be used as the output folder for this generation :
+	 *            it will be the base path against which all file block URLs
+	 *            will be resolved.
 	 * @param arguments
-	 *            If the template which will be called requires more than one argument taken from the model,
-	 *            pass them here.
+	 *            If the template which will be called requires more than one
+	 *            argument taken from the model, pass them here.
 	 * @throws IOException
-	 *             This can be thrown in three scenarios : the module cannot be found, it cannot be loaded, or
-	 *             the model cannot be loaded.
+	 *             This can be thrown in three scenarios : the module cannot be
+	 *             found, it cannot be loaded, or the model cannot be loaded.
 	 */
 	public void initialize(URI modelURI, File folder, List<?> arguments) throws IOException {
 		ResourceSet modulesResourceSet = new AcceleoResourceSetImpl();
@@ -420,7 +459,8 @@ public abstract class AbstractDocumentationGenerator {
 
 		Map<URI, URI> uriMap = EcorePlugin.computePlatformURIMap();
 
-		// make sure that metamodel projects in the workspace override those in plugins
+		// make sure that metamodel projects in the workspace override those in
+		// plugins
 		modulesResourceSet.getURIConverter().getURIMap().putAll(uriMap);
 
 		registerResourceFactories(modulesResourceSet);
@@ -432,7 +472,8 @@ public abstract class AbstractDocumentationGenerator {
 			modelResourceSet.setURIConverter(uriConverter);
 		}
 
-		// make sure that metamodel projects in the workspace override those in plugins
+		// make sure that metamodel projects in the workspace override those in
+		// plugins
 		modelResourceSet.getURIConverter().getURIMap().putAll(uriMap);
 
 		registerResourceFactories(modelResourceSet);
@@ -456,7 +497,7 @@ public abstract class AbstractDocumentationGenerator {
 		}
 		URI moduleURI = createTemplateURI(moduleURL.toString());
 		moduleURI = URI.createURI(moduleURI.toString(), true);
-		module = (Module)ModelUtils.load(moduleURI, modulesResourceSet);
+		module = (Module) ModelUtils.load(moduleURI, modulesResourceSet);
 
 		URI newModelURI = URI.createURI(modelURI.toString(), true);
 		model = ModelUtils.load(newModelURI, modelResourceSet);
@@ -480,8 +521,8 @@ public abstract class AbstractDocumentationGenerator {
 	 * 
 	 * @param ePackageClass
 	 *            The EPackage class we need to take into account.
-	 * @return <code>true</code> if the given class has been loaded from a dynamically installed bundle,
-	 *         <code>false</code> otherwise.
+	 * @return <code>true</code> if the given class has been loaded from a
+	 *         dynamically installed bundle, <code>false</code> otherwise.
 	 * @since 3.1
 	 */
 	public boolean isInWorkspace(Class<? extends EPackage> ePackageClass) {
@@ -489,7 +530,8 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * This will update the resource set's package registry with all usual EPackages.
+	 * This will update the resource set's package registry with all usual
+	 * EPackages.
 	 * 
 	 * @param resourceSet
 	 *            The resource set which registry has to be updated.
@@ -499,8 +541,7 @@ public abstract class AbstractDocumentationGenerator {
 
 		resourceSet.getPackageRegistry().put(org.eclipse.ocl.ecore.EcorePackage.eINSTANCE.getNsURI(),
 				org.eclipse.ocl.ecore.EcorePackage.eINSTANCE);
-		resourceSet.getPackageRegistry().put(ExpressionsPackage.eINSTANCE.getNsURI(),
-				ExpressionsPackage.eINSTANCE);
+		resourceSet.getPackageRegistry().put(ExpressionsPackage.eINSTANCE.getNsURI(), ExpressionsPackage.eINSTANCE);
 
 		resourceSet.getPackageRegistry().put(MtlPackage.eINSTANCE.getNsURI(), MtlPackage.eINSTANCE);
 
@@ -509,7 +550,8 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * This will update the resource set's resource factory registry with all usual factories.
+	 * This will update the resource set's resource factory registry with all
+	 * usual factories.
 	 * 
 	 * @param resourceSet
 	 *            The resource set which registry has to be updated.
@@ -517,10 +559,10 @@ public abstract class AbstractDocumentationGenerator {
 	public void registerResourceFactories(ResourceSet resourceSet) {
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", //$NON-NLS-1$
 				new EcoreResourceFactoryImpl());
-		resourceSet.getResourceFactoryRegistry().getContentTypeToFactoryMap().put(
-				IAcceleoConstants.BINARY_CONTENT_TYPE, new EMtlBinaryResourceFactoryImpl());
-		resourceSet.getResourceFactoryRegistry().getContentTypeToFactoryMap().put(
-				IAcceleoConstants.XMI_CONTENT_TYPE, new EMtlResourceFactoryImpl());
+		resourceSet.getResourceFactoryRegistry().getContentTypeToFactoryMap().put(IAcceleoConstants.BINARY_CONTENT_TYPE,
+				new EMtlBinaryResourceFactoryImpl());
+		resourceSet.getResourceFactoryRegistry().getContentTypeToFactoryMap().put(IAcceleoConstants.XMI_CONTENT_TYPE,
+				new EMtlResourceFactoryImpl());
 	}
 
 	/**
@@ -535,37 +577,44 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * If you need to listen to generation events, generation listeners can be added for notification through
-	 * this.Listeners can be added to the {@link #generationListeners} list.
+	 * If you need to listen to generation events, generation listeners can be
+	 * added for notification through this.Listeners can be added to the
+	 * {@link #generationListeners} list.
 	 * 
-	 * @deprecated return a list of generation listeners directly through {@link #getGenerationListeners()}
-	 *             instead.
+	 * @deprecated return a list of generation listeners directly through
+	 *             {@link #getGenerationListeners()} instead.
 	 */
 	protected void addListeners() {
 		// empty implementation
 	}
 
 	/**
-	 * If the generation modules need properties files, this is where to add them. Take note that the first
-	 * added properties files will take precedence over subsequent ones if they contain conflicting keys.
+	 * If the generation modules need properties files, this is where to add
+	 * them. Take note that the first added properties files will take
+	 * precedence over subsequent ones if they contain conflicting keys.
 	 * 
-	 * @deprecated return a list of properties files path directly through {@link #getProperties()} instead.
+	 * @deprecated return a list of properties files path directly through
+	 *             {@link #getProperties()} instead.
 	 */
 	protected void addProperties() {
 		// empty implementation
 	}
 
 	/**
-	 * This will be used prior to each generation to create the instance of {@link AcceleoService} that will
-	 * be used to interface with the generation engine.
+	 * This will be used prior to each generation to create the instance of
+	 * {@link AcceleoService} that will be used to interface with the generation
+	 * engine.
 	 * <p>
-	 * This default implementation should be sufficient for all cases, it will delegate creation of the
-	 * generation strategy to {@link #getGenerationStrategy()}, register the generation listeners as returned
-	 * by {@link #getGenerationListeners()}, then register all properties as returned by [@link
-	 * #getProperties()} in the generation context.
+	 * This default implementation should be sufficient for all cases, it will
+	 * delegate creation of the generation strategy to
+	 * {@link #getGenerationStrategy()}, register the generation listeners as
+	 * returned by {@link #getGenerationListeners()}, then register all
+	 * properties as returned by [@link #getProperties()} in the generation
+	 * context.
 	 * </p>
 	 * 
-	 * @return The Acceleo service that is to be used for generations launched through this launcher.
+	 * @return The Acceleo service that is to be used for generations launched
+	 *         through this launcher.
 	 */
 	protected AcceleoService createAcceleoService() {
 		IAcceleoGenerationStrategy generationStrategy = getGenerationStrategy();
@@ -585,8 +634,9 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * This will be called by the engine when the generation stops. By default, we'll use this opportunity to
-	 * unload the resources we've loaded in the resource set.
+	 * This will be called by the engine when the generation stops. By default,
+	 * we'll use this opportunity to unload the resources we've loaded in the
+	 * resource set.
 	 * 
 	 * @param resourceSet
 	 *            The resource set from which to unload resources.
@@ -617,19 +667,19 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * Clears the package registry from the package registrations coming from the workspace.
+	 * Clears the package registry from the package registrations coming from
+	 * the workspace.
 	 * 
 	 * @since 3.1
 	 */
 	protected void clearPackageRegistry() {
 		if (EMFPlugin.IS_ECLIPSE_RUNNING) {
 			AcceleoPackageRegistry instance = AcceleoPackageRegistry.INSTANCE;
-			Set<Entry<String, Object>> entrySet = new LinkedHashSet<Map.Entry<String, Object>>(instance
-					.entrySet());
+			Set<Entry<String, Object>> entrySet = new LinkedHashSet<Map.Entry<String, Object>>(instance.entrySet());
 			for (Entry<String, Object> entry : entrySet) {
 				Object object = entry.getValue();
 				if (object instanceof EPackage) {
-					EPackage ePackage = (EPackage)object;
+					EPackage ePackage = (EPackage) object;
 					if (AcceleoWorkspaceUtil.INSTANCE.isInDynamicBundle(ePackage.getClass())) {
 						instance.remove(entry.getKey());
 					}
@@ -639,13 +689,13 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * Returns the Acceleo properties loader service which will handle the AcceleoPropertiesLoader to load and
-	 * save the properties files.
+	 * Returns the Acceleo properties loader service which will handle the
+	 * AcceleoPropertiesLoader to load and save the properties files.
 	 * 
 	 * @param acceleoService
 	 *            The Acceleo service
-	 * @return The Acceleo properties loader service which will handle the AcceleoPropertiesLoader to load and
-	 *         save the properties files.
+	 * @return The Acceleo properties loader service which will handle the
+	 *         AcceleoPropertiesLoader to load and save the properties files.
 	 * @since 3.1
 	 */
 	public AbstractAcceleoPropertiesLoaderService getPropertiesLoaderService(AcceleoService acceleoService) {
@@ -657,8 +707,8 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * Creates the URI Converter we'll use to load our modules. Take note that this should never be used out
-	 * of Eclipse.
+	 * Creates the URI Converter we'll use to load our modules. Take note that
+	 * this should never be used out of Eclipse.
 	 * 
 	 * @return The created URI Converter.
 	 * @since 3.0
@@ -693,27 +743,29 @@ public abstract class AbstractDocumentationGenerator {
 	}
 
 	/**
-	 * Creates the URI that will be used to resolve the template that is to be launched.
+	 * Creates the URI that will be used to resolve the template that is to be
+	 * launched.
 	 * 
 	 * @param entry
-	 *            The path towards the template file. Could be a jar or file scheme URI, or we'll assume it
-	 *            represents a relative path.
+	 *            The path towards the template file. Could be a jar or file
+	 *            scheme URI, or we'll assume it represents a relative path.
 	 * @return The actual URI from which the template file can be resolved.
 	 */
 	protected URI createTemplateURI(String entry) {
-		if (entry.startsWith("file:") || entry.startsWith("jar:")) { //$NON-NLS-1$ //$NON-NLS-2$ 
+		if (entry.startsWith("file:") || entry.startsWith("jar:")) { //$NON-NLS-1$ //$NON-NLS-2$
 			return URI.createURI(URI.decode(entry));
 		}
 		return URI.createFileURI(URI.decode(entry));
 	}
 
 	/**
-	 * Clients can override this if the default behavior doesn't properly find the emtl module URL.
+	 * Clients can override this if the default behavior doesn't properly find
+	 * the emtl module URL.
 	 * 
 	 * @param moduleName
 	 *            Name of the module we're searching for.
-	 * @return The template's URL. This will use Eclipse-specific behavior if possible, and use the class
-	 *         loader otherwise.
+	 * @return The template's URL. This will use Eclipse-specific behavior if
+	 *         possible, and use the class loader otherwise.
 	 */
 	protected URL findModuleURL(String moduleName) {
 		URL moduleURL = null;
@@ -721,7 +773,8 @@ public abstract class AbstractDocumentationGenerator {
 			try {
 				moduleURL = AcceleoWorkspaceUtil.getResourceURL(getClass(), moduleName);
 			} catch (IOException e) {
-				// Swallow this, we'll try and locate the module through the class loader
+				// Swallow this, we'll try and locate the module through the
+				// class loader
 			}
 		}
 		if (moduleURL == null) {
@@ -737,11 +790,10 @@ public abstract class AbstractDocumentationGenerator {
 	 */
 	protected EPackage getOCLStdLibPackage() {
 		EcoreEnvironmentFactory factory = new EcoreEnvironmentFactory();
-		EcoreEnvironment environment = (EcoreEnvironment)factory.createEnvironment();
-		EPackage oclStdLibPackage = (EPackage)EcoreUtil.getRootContainer(environment.getOCLStandardLibrary()
-				.getBag());
+		EcoreEnvironment environment = (EcoreEnvironment) factory.createEnvironment();
+		EPackage oclStdLibPackage = (EPackage) EcoreUtil.getRootContainer(environment.getOCLStandardLibrary().getBag());
 		environment.dispose();
 		return oclStdLibPackage;
 	}
-	
+
 }

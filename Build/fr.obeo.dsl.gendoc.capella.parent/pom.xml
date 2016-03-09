@@ -38,7 +38,17 @@
       <artifactId>maven</artifactId>
       <version>3.2.1</version>
     </dependency>
+    
+    <!--JSoup Dependency for JSoup-->
+    <dependency>
+		<groupId>org.jsoup</groupId>
+		<artifactId>jsoup</artifactId>
+		<version>1.7.2</version>
+	</dependency>
+    
   </dependencies>
+  
+  
  
  <repositories>
   <!-- configure p2 repository to resolve against -->

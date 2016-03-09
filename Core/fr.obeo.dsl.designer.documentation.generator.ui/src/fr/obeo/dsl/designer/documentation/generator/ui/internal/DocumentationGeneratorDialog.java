@@ -21,6 +21,7 @@ import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.Path;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.impl.ResourceFactoryImpl;
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.jface.dialogs.IDialogSettings;
@@ -70,7 +71,7 @@ public class DocumentationGeneratorDialog extends Dialog {
 	private IContainer directory;
 
 	/** Combo containing the chosen directory */
-	private Combo comboDirectory;
+//	private Combo comboDirectory;
 
 	/** Combo containing the chosen image file format */
 	/** Label used to display the error message image */
@@ -122,27 +123,27 @@ public class DocumentationGeneratorDialog extends Dialog {
 		Composite container = (Composite)super.createDialogArea(parent);
 		container.setLayout(new GridLayout(4, false));
 
-		Label lblToDirectory = new Label(container, SWT.NONE);
-		lblToDirectory.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
-		lblToDirectory.setText("To directory :");
-
-		comboDirectory = new Combo(container, SWT.NONE);
-		comboDirectory.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
-		initComboDirectory();
-		comboDirectory.addModifyListener(new ModifyListener() {
-			public void modifyText(ModifyEvent e) {
-				validateDirectory(comboDirectory.getText());
-			}
-		});
-
-		Button btnBrowse = new Button(container, SWT.NONE);
-		btnBrowse.setText("Browse...");
-		btnBrowse.addSelectionListener(new SelectionAdapter() {
-			@Override
-			public void widgetSelected(SelectionEvent e) {
-				handleBrowseButtonPressed();
-			}
-		});
+//		Label lblToDirectory = new Label(container, SWT.NONE);
+//		lblToDirectory.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false, 1, 1));
+//		lblToDirectory.setText("To directory :");
+//
+//		comboDirectory = new Combo(container, SWT.NONE);
+//		comboDirectory.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
+//		initComboDirectory();
+//		comboDirectory.addModifyListener(new ModifyListener() {
+//			public void modifyText(ModifyEvent e) {
+//				validateDirectory(comboDirectory.getText());
+//			}
+//		});
+//
+//		Button btnBrowse = new Button(container, SWT.NONE);
+//		btnBrowse.setText("Browse...");
+//		btnBrowse.addSelectionListener(new SelectionAdapter() {
+//			@Override
+//			public void widgetSelected(SelectionEvent e) {
+//				handleBrowseButtonPressed();
+//			}
+//		});
 
 		generatorComboViewer = new ComboViewer(container, SWT.NONE);
 		generatorComboViewer.getCombo().setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false, 2, 1));
@@ -223,18 +224,18 @@ public class DocumentationGeneratorDialog extends Dialog {
 		return orderedrendereList!=null ? orderedrendereList: rendereList;
 	}
 
-	/**
-	 * Initialize the directory combo with the selected path and the history
-	 */
-	private void initComboDirectory() {
-		String[] directories = settings.loadDirectories();
-		if (directories.length == 0) {
-			comboDirectory.setText(originalPath.toOSString());
-		} else {
-			comboDirectory.setItems(directories);
-			comboDirectory.select(0);
-		}
-	}
+//	/**
+//	 * Initialize the directory combo with the selected path and the history
+//	 */
+//	private void initComboDirectory() {
+//		String[] directories = settings.loadDirectories();
+//		if (directories.length == 0) {
+//			comboDirectory.setText(originalPath.toOSString());
+//		} else {
+//			comboDirectory.setItems(directories);
+//			comboDirectory.select(0);
+//		}
+//	}
 
 	/**
 	 * Set the error message and display it
@@ -259,11 +260,13 @@ public class DocumentationGeneratorDialog extends Dialog {
 
 	@Override
 	protected void okPressed() {
-		IResource member = ResourcesPlugin.getWorkspace().getRoot().getContainerForLocation(
-				new Path(comboDirectory.getText()));
-		// Save data into fields
-		// TODO improve this
-		directory = (IContainer)member;
+//		IResource member = ResourcesPlugin.getWorkspace().getRoot().getContainerForLocation(
+//				new Path(comboDirectory.getText()));
+//	
+//		
+//		// Save data into fields
+//		// TODO improve this
+//		directory = (IContainer)member;
 
 		// TODO improve this
 		selectedGenerator = (IDocumentationGeneratorDescriptor)((IStructuredSelection)generatorComboViewer
@@ -272,10 +275,10 @@ public class DocumentationGeneratorDialog extends Dialog {
 		selectedRenderer = (IDocumentationRendererDescriptor)((IStructuredSelection)renderComboviewer
 				.getSelection()).getFirstElement();
 
-		// Save directories names into history
-		String[] newHistory = settings.addToDirectoriesHistory(settings.loadDirectories(), comboDirectory
-				.getText());
-		settings.saveDirectories(newHistory);
+//		// Save directories names into history
+//		String[] newHistory = settings.addToDirectoriesHistory(settings.loadDirectories(), comboDirectory
+//				.getText());
+//		settings.saveDirectories(newHistory);
 
 		super.okPressed();
 	}
@@ -295,19 +298,21 @@ public class DocumentationGeneratorDialog extends Dialog {
 		final DirectoryDialog dialog = new DirectoryDialog(Display.getCurrent().getActiveShell());
 		dialog.setMessage(DIRECTORY_DIALOG_TITLE);
 		dialog.setText(DIRECTORY_DIALOG_TITLE);
+		
+		dialog.open();
 
-		final String dirName = comboDirectory.getText();
-		if (!dirName.equals("")) {
-			final File path = new File(dirName);
-			if (path.exists()) {
-				dialog.setFilterPath(new Path(dirName).toOSString());
-			}
-		}
-
-		final String selectedDirectory = dialog.open();
-		if (selectedDirectory != null) {
-			comboDirectory.setText(selectedDirectory);
-		}
+//		final String dirName = comboDirectory.getText();
+//		if (!dirName.equals("")) {
+//			final File path = new File(dirName);
+//			if (path.exists()) {
+//				dialog.setFilterPath(new Path(dirName).toOSString());
+//			}
+//		}
+//
+//		final String selectedDirectory = dialog.open();
+//		if (selectedDirectory != null) {
+//			comboDirectory.setText(selectedDirectory);
+//		}
 	}
 
 	/**

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="representationsServices" nsURI="fr::obeo::dsl::designer::gen::html::services::representationsServices" startHeaderPosition="29" endHeaderPosition="291">
+  <mtl:Module name="representationsServices" nsURI="fr::obeo::dsl::designer::gen::html::services::representationsServices" startHeaderPosition="30" endHeaderPosition="296">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
     </input>
@@ -21,7 +21,7 @@
       <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="217" endPosition="291" value=" Queries to access services provided by the RepresentationsServices class "/>
+      <body startPosition="222" endPosition="296" value=" Queries to access services provided by the RepresentationsServices class "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="initRepresentationsServices" visibility="Public">
       <parameter name="analysis">
@@ -453,309 +453,309 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="209"/>
-      <details key="end" value="293"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="214"/>
+      <details key="end" value="298"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/initRepresentationsServices">
-      <details key="start" value="295"/>
-      <details key="end" value="650"/>
+      <details key="start" value="302"/>
+      <details key="end" value="658"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/initRepresentationsServices/analysis">
-      <details key="start" value="337"/>
-      <details key="end" value="357"/>
+      <details key="start" value="344"/>
+      <details key="end" value="364"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/initRepresentationsServices/rootFolder">
-      <details key="start" value="359"/>
-      <details key="end" value="378"/>
+      <details key="start" value="366"/>
+      <details key="end" value="385"/>
       <details key="line" value="8"/>
     </eAnnotations>
     <eAnnotations source="positions.4" references="/0/initRepresentationsServices/imageFileFormat">
-      <details key="start" value="380"/>
-      <details key="end" value="404"/>
+      <details key="start" value="387"/>
+      <details key="end" value="411"/>
       <details key="line" value="8"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/initRepresentationsServices/@expression">
-      <details key="start" value="419"/>
-      <details key="end" value="647"/>
+    <eAnnotations source="positions.5" references="/0/initRepresentationsServices/%">
+      <details key="start" value="427"/>
+      <details key="end" value="655"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/initRepresentationsServices/@expression/self">
+    <eAnnotations source="positions.6" references="/0/initRepresentationsServices/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/initRepresentationsServices/@expression/@argument.0">
-      <details key="start" value="426"/>
-      <details key="end" value="490"/>
+    <eAnnotations source="positions.7" references="/0/initRepresentationsServices/%/%">
+      <details key="start" value="434"/>
+      <details key="end" value="498"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/initRepresentationsServices/@expression/@argument.1">
-      <details key="start" value="492"/>
-      <details key="end" value="597"/>
+    <eAnnotations source="positions.8" references="/0/initRepresentationsServices/%/%.1">
+      <details key="start" value="500"/>
+      <details key="end" value="605"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/initRepresentationsServices/@expression/@argument.2">
-      <details key="start" value="599"/>
-      <details key="end" value="646"/>
+    <eAnnotations source="positions.9" references="/0/initRepresentationsServices/%/%.2">
+      <details key="start" value="607"/>
+      <details key="end" value="654"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/initRepresentationsServices/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="608"/>
-      <details key="end" value="616"/>
+    <eAnnotations source="positions.10" references="/0/initRepresentationsServices/%/%.2/%/analysis">
+      <details key="start" value="616"/>
+      <details key="end" value="624"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/initRepresentationsServices/@expression/@argument.2/@part.1/rootFolder">
-      <details key="start" value="618"/>
-      <details key="end" value="628"/>
+    <eAnnotations source="positions.11" references="/0/initRepresentationsServices/%/%.2/%.1/rootFolder">
+      <details key="start" value="626"/>
+      <details key="end" value="636"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/initRepresentationsServices/@expression/@argument.2/@part.2/imageFileFormat">
-      <details key="start" value="630"/>
-      <details key="end" value="645"/>
+    <eAnnotations source="positions.12" references="/0/initRepresentationsServices/%/%.2/%.2/imageFileFormat">
+      <details key="start" value="638"/>
+      <details key="end" value="653"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/resetRepresentationsServices">
-      <details key="start" value="652"/>
-      <details key="end" value="897"/>
+      <details key="start" value="662"/>
+      <details key="end" value="908"/>
       <details key="line" value="11"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/resetRepresentationsServices/analysis">
-      <details key="start" value="695"/>
-      <details key="end" value="715"/>
+      <details key="start" value="705"/>
+      <details key="end" value="725"/>
       <details key="line" value="11"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/resetRepresentationsServices/@expression">
-      <details key="start" value="730"/>
-      <details key="end" value="894"/>
+    <eAnnotations source="positions.15" references="/0/resetRepresentationsServices/%">
+      <details key="start" value="741"/>
+      <details key="end" value="905"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/resetRepresentationsServices/@expression/self">
+    <eAnnotations source="positions.16" references="/0/resetRepresentationsServices/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/resetRepresentationsServices/@expression/@argument.0">
-      <details key="start" value="737"/>
-      <details key="end" value="801"/>
+    <eAnnotations source="positions.17" references="/0/resetRepresentationsServices/%/%">
+      <details key="start" value="748"/>
+      <details key="end" value="812"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/resetRepresentationsServices/@expression/@argument.1">
-      <details key="start" value="803"/>
-      <details key="end" value="873"/>
+    <eAnnotations source="positions.18" references="/0/resetRepresentationsServices/%/%.1">
+      <details key="start" value="814"/>
+      <details key="end" value="884"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/resetRepresentationsServices/@expression/@argument.2">
-      <details key="start" value="875"/>
-      <details key="end" value="893"/>
+    <eAnnotations source="positions.19" references="/0/resetRepresentationsServices/%/%.2">
+      <details key="start" value="886"/>
+      <details key="end" value="904"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.20" references="/0/resetRepresentationsServices/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="884"/>
-      <details key="end" value="892"/>
+    <eAnnotations source="positions.20" references="/0/resetRepresentationsServices/%/%.2/%/analysis">
+      <details key="start" value="895"/>
+      <details key="end" value="903"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.21" references="/0/getRepresentationElementsWithSpecificSemanticElements">
-      <details key="start" value="899"/>
-      <details key="end" value="1219"/>
+      <details key="start" value="912"/>
+      <details key="end" value="1233"/>
       <details key="line" value="14"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/getRepresentationElementsWithSpecificSemanticElements/analysis">
-      <details key="start" value="967"/>
-      <details key="end" value="987"/>
+      <details key="start" value="980"/>
+      <details key="end" value="1000"/>
       <details key="line" value="14"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression">
-      <details key="start" value="1027"/>
-      <details key="end" value="1216"/>
+    <eAnnotations source="positions.23" references="/0/getRepresentationElementsWithSpecificSemanticElements/%">
+      <details key="start" value="1041"/>
+      <details key="end" value="1230"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression/self">
+    <eAnnotations source="positions.24" references="/0/getRepresentationElementsWithSpecificSemanticElements/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression/@argument.0">
-      <details key="start" value="1034"/>
-      <details key="end" value="1098"/>
+    <eAnnotations source="positions.25" references="/0/getRepresentationElementsWithSpecificSemanticElements/%/%">
+      <details key="start" value="1048"/>
+      <details key="end" value="1112"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression/@argument.1">
-      <details key="start" value="1100"/>
-      <details key="end" value="1195"/>
+    <eAnnotations source="positions.26" references="/0/getRepresentationElementsWithSpecificSemanticElements/%/%.1">
+      <details key="start" value="1114"/>
+      <details key="end" value="1209"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression/@argument.2">
-      <details key="start" value="1197"/>
-      <details key="end" value="1215"/>
+    <eAnnotations source="positions.27" references="/0/getRepresentationElementsWithSpecificSemanticElements/%/%.2">
+      <details key="start" value="1211"/>
+      <details key="end" value="1229"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/getRepresentationElementsWithSpecificSemanticElements/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="1206"/>
-      <details key="end" value="1214"/>
+    <eAnnotations source="positions.28" references="/0/getRepresentationElementsWithSpecificSemanticElements/%/%.2/%/analysis">
+      <details key="start" value="1220"/>
+      <details key="end" value="1228"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.29" references="/0/exportDiagramAndGetImageMap">
-      <details key="start" value="1221"/>
-      <details key="end" value="1473"/>
+      <details key="start" value="1237"/>
+      <details key="end" value="1490"/>
       <details key="line" value="17"/>
     </eAnnotations>
     <eAnnotations source="positions.30" references="/0/exportDiagramAndGetImageMap/diagram">
-      <details key="start" value="1263"/>
-      <details key="end" value="1289"/>
+      <details key="start" value="1279"/>
+      <details key="end" value="1305"/>
       <details key="line" value="17"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/exportDiagramAndGetImageMap/@expression">
-      <details key="start" value="1303"/>
-      <details key="end" value="1470"/>
+    <eAnnotations source="positions.31" references="/0/exportDiagramAndGetImageMap/%">
+      <details key="start" value="1320"/>
+      <details key="end" value="1487"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/exportDiagramAndGetImageMap/@expression/self">
+    <eAnnotations source="positions.32" references="/0/exportDiagramAndGetImageMap/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/exportDiagramAndGetImageMap/@expression/@argument.0">
-      <details key="start" value="1310"/>
-      <details key="end" value="1374"/>
+    <eAnnotations source="positions.33" references="/0/exportDiagramAndGetImageMap/%/%">
+      <details key="start" value="1327"/>
+      <details key="end" value="1391"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/exportDiagramAndGetImageMap/@expression/@argument.1">
-      <details key="start" value="1376"/>
-      <details key="end" value="1450"/>
+    <eAnnotations source="positions.34" references="/0/exportDiagramAndGetImageMap/%/%.1">
+      <details key="start" value="1393"/>
+      <details key="end" value="1467"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/exportDiagramAndGetImageMap/@expression/@argument.2">
-      <details key="start" value="1452"/>
-      <details key="end" value="1469"/>
+    <eAnnotations source="positions.35" references="/0/exportDiagramAndGetImageMap/%/%.2">
+      <details key="start" value="1469"/>
+      <details key="end" value="1486"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/exportDiagramAndGetImageMap/@expression/@argument.2/@part.0/diagram">
-      <details key="start" value="1461"/>
-      <details key="end" value="1468"/>
+    <eAnnotations source="positions.36" references="/0/exportDiagramAndGetImageMap/%/%.2/%/diagram">
+      <details key="start" value="1478"/>
+      <details key="end" value="1485"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.37" references="/0/hasSpecificSemanticElements">
-      <details key="start" value="1475"/>
-      <details key="end" value="1762"/>
+      <details key="start" value="1494"/>
+      <details key="end" value="1782"/>
       <details key="line" value="20"/>
     </eAnnotations>
     <eAnnotations source="positions.38" references="/0/hasSpecificSemanticElements/representationElt">
-      <details key="start" value="1517"/>
-      <details key="end" value="1559"/>
+      <details key="start" value="1536"/>
+      <details key="end" value="1578"/>
       <details key="line" value="20"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/hasSpecificSemanticElements/@expression">
-      <details key="start" value="1574"/>
-      <details key="end" value="1759"/>
+    <eAnnotations source="positions.39" references="/0/hasSpecificSemanticElements/%">
+      <details key="start" value="1594"/>
+      <details key="end" value="1779"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/hasSpecificSemanticElements/@expression/self">
+    <eAnnotations source="positions.40" references="/0/hasSpecificSemanticElements/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/hasSpecificSemanticElements/@expression/@argument.0">
-      <details key="start" value="1581"/>
-      <details key="end" value="1645"/>
+    <eAnnotations source="positions.41" references="/0/hasSpecificSemanticElements/%/%">
+      <details key="start" value="1601"/>
+      <details key="end" value="1665"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/hasSpecificSemanticElements/@expression/@argument.1">
-      <details key="start" value="1647"/>
-      <details key="end" value="1729"/>
+    <eAnnotations source="positions.42" references="/0/hasSpecificSemanticElements/%/%.1">
+      <details key="start" value="1667"/>
+      <details key="end" value="1749"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.43" references="/0/hasSpecificSemanticElements/@expression/@argument.2">
-      <details key="start" value="1731"/>
-      <details key="end" value="1758"/>
+    <eAnnotations source="positions.43" references="/0/hasSpecificSemanticElements/%/%.2">
+      <details key="start" value="1751"/>
+      <details key="end" value="1778"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.44" references="/0/hasSpecificSemanticElements/@expression/@argument.2/@part.0/representationElt">
-      <details key="start" value="1740"/>
-      <details key="end" value="1757"/>
+    <eAnnotations source="positions.44" references="/0/hasSpecificSemanticElements/%/%.2/%/representationElt">
+      <details key="start" value="1760"/>
+      <details key="end" value="1777"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.45" references="/0/getDiagramImageFilename">
-      <details key="start" value="1764"/>
-      <details key="end" value="2008"/>
+      <details key="start" value="1786"/>
+      <details key="end" value="2031"/>
       <details key="line" value="23"/>
     </eAnnotations>
     <eAnnotations source="positions.46" references="/0/getDiagramImageFilename/diagram">
-      <details key="start" value="1802"/>
-      <details key="end" value="1828"/>
+      <details key="start" value="1824"/>
+      <details key="end" value="1850"/>
       <details key="line" value="23"/>
     </eAnnotations>
-    <eAnnotations source="positions.47" references="/0/getDiagramImageFilename/@expression">
-      <details key="start" value="1842"/>
-      <details key="end" value="2005"/>
+    <eAnnotations source="positions.47" references="/0/getDiagramImageFilename/%">
+      <details key="start" value="1865"/>
+      <details key="end" value="2028"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.48" references="/0/getDiagramImageFilename/@expression/self">
+    <eAnnotations source="positions.48" references="/0/getDiagramImageFilename/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.49" references="/0/getDiagramImageFilename/@expression/@argument.0">
-      <details key="start" value="1849"/>
-      <details key="end" value="1913"/>
+    <eAnnotations source="positions.49" references="/0/getDiagramImageFilename/%/%">
+      <details key="start" value="1872"/>
+      <details key="end" value="1936"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.50" references="/0/getDiagramImageFilename/@expression/@argument.1">
-      <details key="start" value="1915"/>
-      <details key="end" value="1985"/>
+    <eAnnotations source="positions.50" references="/0/getDiagramImageFilename/%/%.1">
+      <details key="start" value="1938"/>
+      <details key="end" value="2008"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.51" references="/0/getDiagramImageFilename/@expression/@argument.2">
-      <details key="start" value="1987"/>
-      <details key="end" value="2004"/>
+    <eAnnotations source="positions.51" references="/0/getDiagramImageFilename/%/%.2">
+      <details key="start" value="2010"/>
+      <details key="end" value="2027"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.52" references="/0/getDiagramImageFilename/@expression/@argument.2/@part.0/diagram">
-      <details key="start" value="1996"/>
-      <details key="end" value="2003"/>
+    <eAnnotations source="positions.52" references="/0/getDiagramImageFilename/%/%.2/%/diagram">
+      <details key="start" value="2019"/>
+      <details key="end" value="2026"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.53" references="/0/getAssociatedRepresentations">
-      <details key="start" value="2010"/>
-      <details key="end" value="2258"/>
+      <details key="start" value="2035"/>
+      <details key="end" value="2284"/>
       <details key="line" value="26"/>
     </eAnnotations>
     <eAnnotations source="positions.54" references="/0/getAssociatedRepresentations/object">
-      <details key="start" value="2053"/>
-      <details key="end" value="2069"/>
+      <details key="start" value="2078"/>
+      <details key="end" value="2094"/>
       <details key="line" value="26"/>
     </eAnnotations>
-    <eAnnotations source="positions.55" references="/0/getAssociatedRepresentations/@expression">
-      <details key="start" value="2102"/>
-      <details key="end" value="2255"/>
+    <eAnnotations source="positions.55" references="/0/getAssociatedRepresentations/%">
+      <details key="start" value="2128"/>
+      <details key="end" value="2281"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.56" references="/0/getAssociatedRepresentations/@expression/self">
+    <eAnnotations source="positions.56" references="/0/getAssociatedRepresentations/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.57" references="/0/getAssociatedRepresentations/@expression/@argument.0">
-      <details key="start" value="2109"/>
-      <details key="end" value="2173"/>
+    <eAnnotations source="positions.57" references="/0/getAssociatedRepresentations/%/%">
+      <details key="start" value="2135"/>
+      <details key="end" value="2199"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.58" references="/0/getAssociatedRepresentations/@expression/@argument.1">
-      <details key="start" value="2175"/>
-      <details key="end" value="2236"/>
+    <eAnnotations source="positions.58" references="/0/getAssociatedRepresentations/%/%.1">
+      <details key="start" value="2201"/>
+      <details key="end" value="2262"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.59" references="/0/getAssociatedRepresentations/@expression/@argument.2">
-      <details key="start" value="2238"/>
-      <details key="end" value="2254"/>
+    <eAnnotations source="positions.59" references="/0/getAssociatedRepresentations/%/%.2">
+      <details key="start" value="2264"/>
+      <details key="end" value="2280"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.60" references="/0/getAssociatedRepresentations/@expression/@argument.2/@part.0/object">
-      <details key="start" value="2247"/>
-      <details key="end" value="2253"/>
+    <eAnnotations source="positions.60" references="/0/getAssociatedRepresentations/%/%.2/%/object">
+      <details key="start" value="2273"/>
+      <details key="end" value="2279"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

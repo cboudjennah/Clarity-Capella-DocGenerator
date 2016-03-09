@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="representationPane" nsURI="fr::obeo::dsl::designer::gen::html::files::representationPane" startHeaderPosition="29" endHeaderPosition="165">
+  <mtl:Module name="representationPane" nsURI="fr::obeo::dsl::designer::gen::html::files::representationPane" startHeaderPosition="30" endHeaderPosition="168">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#/"/>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description"/>
@@ -14,25 +14,25 @@
     <imports href="../common/representations/tables.emtl#/0"/>
     <imports href="../common/representations/trees.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="415" endPosition="515" value=" Generate the page for a representation. This page will be opened inside the &quot;representation&quot; frame "/>
+      <body startPosition="423" endPosition="523" value=" Generate the page for a representation. This page will be opened inside the &quot;representation&quot; frame "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateRepresentationPane" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;>&#xA;&lt;html>&#xA;&lt;head>&#xA;&#x9;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;>&#xA;&#x9;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;>&#xD;&#xA;&lt;html>&#xD;&#xA;&lt;head>&#xD;&#xA;&#x9;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;>&#xD;&#xA;&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation" definition="/0/generateHead">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="representation" referredVariable="/0/generateRepresentationPane/representation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/head>&#xA;&lt;body style=&quot;padding:10px;&quot;>&#xA;&#x9;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&lt;/head>&#xD;&#xA;&lt;body style=&quot;padding:10px;&quot;>&#xD;&#xA;&#x9;"/>
         <body xsi:type="mtl:TemplateInvocation" definition="/0/generateBody">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="representation" referredVariable="/0/generateRepresentationPane/representation">
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DRepresentation"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/body>&#xA;&lt;/html>&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xD;&#xA;&lt;/body>&#xD;&#xA;&lt;/html>&#xD;&#xA;"/>
         <fileUrl xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getRepresentationPageFilename"/>
@@ -67,11 +67,11 @@
       </parameter>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="1530" endPosition="1616" value=" Generate a page to fill the &quot;representation&quot; frame when no element has been selected "/>
+      <body startPosition="1567" endPosition="1653" value=" Generate a page to fill the &quot;representation&quot; frame when no element has been selected "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Template" name="generateNoSelectionRepresentationPane" visibility="Public">
       <body xsi:type="mtl:FileBlock" openMode="OverWrite">
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;>&#xA;&lt;html>&#xA;&lt;head>&#xA;&#x9;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;>&#xA;&#x9;&lt;title>Representation : No selected representation&lt;/title>&#xA;&#x9;&lt;link href=&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01//EN&quot; &quot;http://www.w3.org/TR/html4/strict.dtd&quot;>&#xD;&#xA;&lt;html>&#xD;&#xA;&lt;head>&#xD;&#xA;&#x9;&lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot;>&#xD;&#xA;&#x9;&lt;title>Representation : No selected representation&lt;/title>&#xD;&#xA;&#x9;&lt;link href=&quot;"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getPagesRelativeToRootPath"/>
@@ -86,7 +86,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/bootstrap/bootstrap.css&quot; rel=&quot;stylesheet&quot;>&#xA;&#x9;&lt;link href=&quot;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="/bootstrap/bootstrap.css&quot; rel=&quot;stylesheet&quot;>&#xD;&#xA;&#x9;&lt;link href=&quot;"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <definition href="../services/pathServices.emtl#/0/getPagesRelativeToRootPath"/>
@@ -101,7 +101,7 @@
             <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/sirius/1.1.0#//DAnalysis"/>
           </argument>
         </body>
-        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="specific/global.css&quot; rel=&quot;stylesheet&quot;>&#xA;&lt;/head>&#xA;&#xA;&lt;body style=&quot;padding:10px;&quot;>&#xA;&#x9;&lt;h1>Diagram&lt;/h1>&#xA;&#x9;&lt;p>Select a representation in the Model Explorer or Properties frame to display it.&lt;/p>&#xA;&lt;/body>&#xA;&lt;/html>&#xA;"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="specific/global.css&quot; rel=&quot;stylesheet&quot;>&#xD;&#xA;&lt;/head>&#xD;&#xA;&#xD;&#xA;&lt;body style=&quot;padding:10px;&quot;>&#xD;&#xA;&#x9;&lt;h1>Diagram&lt;/h1>&#xD;&#xA;&#x9;&lt;p>Select a representation in the Model Explorer or Properties frame to display it.&lt;/p>&#xD;&#xA;&lt;/body>&#xD;&#xA;&lt;/html>&#xD;&#xA;"/>
         <fileUrl xsi:type="ocl.ecore:OperationCallExp" referredOperation="/1/String_Class/+">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
           <source xsi:type="mtl:QueryInvocation">
@@ -371,209 +371,209 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="407"/>
-      <details key="end" value="517"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="415"/>
+      <details key="end" value="525"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/generateRepresentationPane">
-      <details key="start" value="518"/>
-      <details key="end" value="983"/>
+      <details key="start" value="527"/>
+      <details key="end" value="1005"/>
       <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateRepresentationPane/@body.0">
-      <details key="start" value="597"/>
-      <details key="end" value="971"/>
+    <eAnnotations source="positions.2" references="/0/generateRepresentationPane/%">
+      <details key="start" value="607"/>
+      <details key="end" value="992"/>
       <details key="line" value="11"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateRepresentationPane/@body.0/@body.0">
-      <details key="start" value="669"/>
-      <details key="end" value="844"/>
+    <eAnnotations source="positions.3" references="/0/generateRepresentationPane/%/%">
+      <details key="start" value="680"/>
+      <details key="end" value="859"/>
       <details key="line" value="12"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateRepresentationPane/@body.0/@body.1">
-      <details key="start" value="845"/>
+    <eAnnotations source="positions.4" references="/0/generateRepresentationPane/%/%.1">
+      <details key="start" value="860"/>
+      <details key="end" value="889"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateRepresentationPane/%/%.1/representation">
+      <details key="start" value="860"/>
       <details key="end" value="874"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateRepresentationPane/@body.0/@body.1/representation">
-      <details key="start" value="845"/>
-      <details key="end" value="859"/>
-      <details key="line" value="0"/>
-    </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateRepresentationPane/@body.0/@body.2">
-      <details key="start" value="876"/>
-      <details key="end" value="915"/>
+    <eAnnotations source="positions.6" references="/0/generateRepresentationPane/%/%.2">
+      <details key="start" value="891"/>
+      <details key="end" value="933"/>
       <details key="line" value="17"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateRepresentationPane/@body.0/@body.3">
-      <details key="start" value="916"/>
-      <details key="end" value="945"/>
+    <eAnnotations source="positions.7" references="/0/generateRepresentationPane/%/%.3">
+      <details key="start" value="934"/>
+      <details key="end" value="963"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateRepresentationPane/@body.0/@body.3/representation">
-      <details key="start" value="916"/>
-      <details key="end" value="930"/>
+    <eAnnotations source="positions.8" references="/0/generateRepresentationPane/%/%.3/representation">
+      <details key="start" value="934"/>
+      <details key="end" value="948"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateRepresentationPane/@body.0/@body.4">
-      <details key="start" value="947"/>
-      <details key="end" value="964"/>
+    <eAnnotations source="positions.9" references="/0/generateRepresentationPane/%/%.4">
+      <details key="start" value="965"/>
+      <details key="end" value="985"/>
       <details key="line" value="20"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateRepresentationPane/@body.0/@fileUrl">
-      <details key="start" value="604"/>
-      <details key="end" value="650"/>
+    <eAnnotations source="positions.10" references="/0/generateRepresentationPane/%/%.5">
+      <details key="start" value="614"/>
+      <details key="end" value="660"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateRepresentationPane/@body.0/@fileUrl/representation">
-      <details key="start" value="604"/>
-      <details key="end" value="618"/>
+    <eAnnotations source="positions.11" references="/0/generateRepresentationPane/%/%.5/representation">
+      <details key="start" value="614"/>
+      <details key="end" value="628"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateRepresentationPane/@body.0/@charset">
-      <details key="start" value="659"/>
-      <details key="end" value="666"/>
+    <eAnnotations source="positions.12" references="/0/generateRepresentationPane/%/%.6">
+      <details key="start" value="669"/>
+      <details key="end" value="676"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateRepresentationPane/representation">
-      <details key="start" value="562"/>
-      <details key="end" value="594"/>
+      <details key="start" value="571"/>
+      <details key="end" value="603"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.14" references="/0/generateHead">
-      <details key="start" value="985"/>
-      <details key="end" value="1232"/>
+      <details key="start" value="1009"/>
+      <details key="end" value="1260"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.15" references="/0/generateHead/representation">
-      <details key="start" value="1016"/>
-      <details key="end" value="1048"/>
+      <details key="start" value="1040"/>
+      <details key="end" value="1072"/>
       <details key="line" value="25"/>
     </eAnnotations>
     <eAnnotations source="positions.16" references="/0/generateBody">
-      <details key="start" value="1234"/>
-      <details key="end" value="1520"/>
+      <details key="start" value="1264"/>
+      <details key="end" value="1555"/>
       <details key="line" value="31"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/generateBody/@body.0">
-      <details key="start" value="1470"/>
-      <details key="end" value="1486"/>
+    <eAnnotations source="positions.17" references="/0/generateBody/%">
+      <details key="start" value="1504"/>
+      <details key="end" value="1520"/>
       <details key="line" value="35"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/generateBody/@body.1">
-      <details key="start" value="1487"/>
-      <details key="end" value="1506"/>
+    <eAnnotations source="positions.18" references="/0/generateBody/%.1">
+      <details key="start" value="1521"/>
+      <details key="end" value="1540"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.19" references="/0/generateBody/@body.1/representation">
-      <details key="start" value="1487"/>
-      <details key="end" value="1501"/>
+    <eAnnotations source="positions.19" references="/0/generateBody/%.1/representation">
+      <details key="start" value="1521"/>
+      <details key="end" value="1535"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/generateBody/representation">
-      <details key="start" value="1265"/>
-      <details key="end" value="1297"/>
+      <details key="start" value="1295"/>
+      <details key="end" value="1327"/>
       <details key="line" value="31"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/@ownedModuleElement.4">
-      <details key="start" value="1522"/>
-      <details key="end" value="1618"/>
+    <eAnnotations source="positions.21" references="/0/%.1">
+      <details key="start" value="1559"/>
+      <details key="end" value="1655"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.22" references="/0/generateNoSelectionRepresentationPane">
-      <details key="start" value="1619"/>
-      <details key="end" value="2446"/>
+      <details key="start" value="1657"/>
+      <details key="end" value="2501"/>
       <details key="line" value="39"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/generateNoSelectionRepresentationPane/@body.0">
-      <details key="start" value="1697"/>
-      <details key="end" value="2434"/>
+    <eAnnotations source="positions.23" references="/0/generateNoSelectionRepresentationPane/%">
+      <details key="start" value="1736"/>
+      <details key="end" value="2488"/>
       <details key="line" value="40"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.0">
-      <details key="start" value="1775"/>
-      <details key="end" value="2022"/>
+    <eAnnotations source="positions.24" references="/0/generateNoSelectionRepresentationPane/%/%">
+      <details key="start" value="1815"/>
+      <details key="end" value="2067"/>
       <details key="line" value="41"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.1">
-      <details key="start" value="2023"/>
-      <details key="end" value="2060"/>
+    <eAnnotations source="positions.25" references="/0/generateNoSelectionRepresentationPane/%/%.1">
+      <details key="start" value="2068"/>
+      <details key="end" value="2105"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.1/analysis">
-      <details key="start" value="2023"/>
-      <details key="end" value="2031"/>
+    <eAnnotations source="positions.26" references="/0/generateNoSelectionRepresentationPane/%/%.1/analysis">
+      <details key="start" value="2068"/>
+      <details key="end" value="2076"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.27" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.2">
-      <details key="start" value="2063"/>
-      <details key="end" value="2094"/>
+    <eAnnotations source="positions.27" references="/0/generateNoSelectionRepresentationPane/%/%.2">
+      <details key="start" value="2108"/>
+      <details key="end" value="2139"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.28" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.2/analysis">
-      <details key="start" value="2063"/>
-      <details key="end" value="2071"/>
+    <eAnnotations source="positions.28" references="/0/generateNoSelectionRepresentationPane/%/%.2/analysis">
+      <details key="start" value="2108"/>
+      <details key="end" value="2116"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.3">
-      <details key="start" value="2096"/>
-      <details key="end" value="2153"/>
+    <eAnnotations source="positions.29" references="/0/generateNoSelectionRepresentationPane/%/%.3">
+      <details key="start" value="2141"/>
+      <details key="end" value="2199"/>
       <details key="line" value="46"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.4">
-      <details key="start" value="2154"/>
-      <details key="end" value="2191"/>
+    <eAnnotations source="positions.30" references="/0/generateNoSelectionRepresentationPane/%/%.4">
+      <details key="start" value="2200"/>
+      <details key="end" value="2237"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.4/analysis">
-      <details key="start" value="2154"/>
-      <details key="end" value="2162"/>
+    <eAnnotations source="positions.31" references="/0/generateNoSelectionRepresentationPane/%/%.4/analysis">
+      <details key="start" value="2200"/>
+      <details key="end" value="2208"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.5">
-      <details key="start" value="2194"/>
-      <details key="end" value="2225"/>
+    <eAnnotations source="positions.32" references="/0/generateNoSelectionRepresentationPane/%/%.5">
+      <details key="start" value="2240"/>
+      <details key="end" value="2271"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.5/analysis">
-      <details key="start" value="2194"/>
-      <details key="end" value="2202"/>
+    <eAnnotations source="positions.33" references="/0/generateNoSelectionRepresentationPane/%/%.5/analysis">
+      <details key="start" value="2240"/>
+      <details key="end" value="2248"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/generateNoSelectionRepresentationPane/@body.0/@body.6">
-      <details key="start" value="2227"/>
-      <details key="end" value="2427"/>
+    <eAnnotations source="positions.34" references="/0/generateNoSelectionRepresentationPane/%/%.6">
+      <details key="start" value="2273"/>
+      <details key="end" value="2481"/>
       <details key="line" value="47"/>
     </eAnnotations>
-    <eAnnotations source="positions.35" references="/0/generateNoSelectionRepresentationPane/@body.0/@fileUrl">
-      <details key="start" value="1704"/>
-      <details key="end" value="1756"/>
+    <eAnnotations source="positions.35" references="/0/generateNoSelectionRepresentationPane/%/%.7">
+      <details key="start" value="1743"/>
+      <details key="end" value="1795"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.36" references="/0/generateNoSelectionRepresentationPane/@body.0/@fileUrl/@source">
-      <details key="start" value="1704"/>
-      <details key="end" value="1731"/>
+    <eAnnotations source="positions.36" references="/0/generateNoSelectionRepresentationPane/%/%.7/%">
+      <details key="start" value="1743"/>
+      <details key="end" value="1770"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/generateNoSelectionRepresentationPane/@body.0/@fileUrl/@source/analysis">
-      <details key="start" value="1704"/>
-      <details key="end" value="1712"/>
+    <eAnnotations source="positions.37" references="/0/generateNoSelectionRepresentationPane/%/%.7/%/analysis">
+      <details key="start" value="1743"/>
+      <details key="end" value="1751"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/generateNoSelectionRepresentationPane/@body.0/@fileUrl/@argument.0">
-      <details key="start" value="1734"/>
-      <details key="end" value="1756"/>
+    <eAnnotations source="positions.38" references="/0/generateNoSelectionRepresentationPane/%/%.7/%.1">
+      <details key="start" value="1773"/>
+      <details key="end" value="1795"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/generateNoSelectionRepresentationPane/@body.0/@charset">
-      <details key="start" value="1765"/>
-      <details key="end" value="1772"/>
+    <eAnnotations source="positions.39" references="/0/generateNoSelectionRepresentationPane/%/%.8">
+      <details key="start" value="1804"/>
+      <details key="end" value="1811"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.40" references="/0/generateNoSelectionRepresentationPane/analysis">
-      <details key="start" value="1674"/>
-      <details key="end" value="1694"/>
+      <details key="start" value="1712"/>
+      <details key="end" value="1732"/>
       <details key="line" value="39"/>
     </eAnnotations>
   </ecore:EAnnotation>

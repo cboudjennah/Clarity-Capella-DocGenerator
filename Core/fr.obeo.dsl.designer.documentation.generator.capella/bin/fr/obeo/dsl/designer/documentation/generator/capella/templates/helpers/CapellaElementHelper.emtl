@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="CapellaElementHelper" nsURI="fr::obeo::dsl::designer::documentation::generator::capella::templates::helpers::CapellaElementHelper" startHeaderPosition="29" endHeaderPosition="1075">
+  <mtl:Module name="CapellaElementHelper" nsURI="fr::obeo::dsl::designer::documentation::generator::capella::templates::helpers::CapellaElementHelper" startHeaderPosition="29" endHeaderPosition="1071">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#/"/>
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description"/>
@@ -18,63 +18,63 @@
       <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/modeller/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/modeller/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/core/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/core/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/oa/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/oa/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/ctx/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/ctx/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/la/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/la/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/0.8.0#/"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/0.8.0#//deployment"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#//deployment"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/epbs/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/epbs/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/sharedmodel/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/sharedmodel/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/requirement/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/requirement/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#/"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//communication"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//datatype"/>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/0.8.0#//datavalue"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//communication"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datatype"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datavalue"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/cs/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/cs/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/fa/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/fa/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/common/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/common/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/core/interaction/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/interaction/1.0.0#/"/>
     </input>
     <input>
-      <takesTypesFrom href="http://www.polarsys.org/capella/common/core/0.8.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/common/core/1.0.0#/"/>
     </input>
-    <imports href="CapellaDocumentationHelper.emtl#/0"/>
+    <imports href="platform:/resource/fr.obeo.dsl.designer.documentation.generator.capella/bin/fr/obeo/dsl/designer/documentation/generator/capella/templates/helpers/CapellaDocumentationHelper.emtl#/0"/>
     <ownedModuleElement xsi:type="mtl:Template" name="generateDescriptionDivIfAny" visibility="Public">
       <body xsi:type="mtl:IfBlock">
         <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;div class=&quot;description&quot;>&#xA;&#x9;&lt;b>Description: &lt;/b>"/>
         <body xsi:type="mtl:QueryInvocation">
           <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
-          <definition href="CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
+          <definition href="platform:/resource/fr.obeo.dsl.designer.documentation.generator.capella/bin/fr/obeo/dsl/designer/documentation/generator/capella/templates/helpers/CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
           <argument xsi:type="ocl.ecore:VariableExp" name="capellaElement" referredVariable="/0/generateDescriptionDivIfAny/capellaElement">
-            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
           </argument>
           <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="description">
             <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
@@ -88,9 +88,9 @@
             <source xsi:type="ocl.ecore:PropertyCallExp">
               <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
               <source xsi:type="ocl.ecore:VariableExp" name="capellaElement" referredVariable="/0/generateDescriptionDivIfAny/capellaElement">
-                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
               </source>
-              <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement/description"/>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement/description"/>
             </source>
             <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/oclIsUndefined"/>
           </source>
@@ -98,13 +98,13 @@
         </ifExpr>
       </body>
       <documentation xsi:type="mtl:ModuleElementDocumentation">
-        <body startPosition="1085" endPosition="1281" value="&#xD;&#xA;Generate a &quot;description&quot; paragraph with a gray background.&#xD;&#xA;If the melody element has no description nothing is generated.&#xD;&#xA;@param melodyElement MelodyElement holding the description&#xD;&#xA;&#xD;&#xA;"/>
+        <body startPosition="1081" endPosition="1277" value="&#xD;&#xA;Generate a &quot;description&quot; paragraph with a gray background.&#xD;&#xA;If the melody element has no description nothing is generated.&#xD;&#xA;@param melodyElement MelodyElement holding the description&#xD;&#xA;&#xD;&#xA;"/>
         <parametersDocumentation name="melodyElement">
           <body value=" MelodyElement holding the description"/>
         </parametersDocumentation>
       </documentation>
       <parameter name="capellaElement">
-        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
       </parameter>
     </ownedModuleElement>
   </mtl:Module>
@@ -135,7 +135,7 @@
         <eAnnotations source="MTL" references="/0/generateDescriptionDivIfAny"/>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="capellaElement">
-          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
         </eParameters>
       </eOperations>
       <eOperations name="cleanHTML">
@@ -143,7 +143,7 @@
           <contents xsi:type="ocl.ecore:Constraint"/>
         </eAnnotations>
         <eAnnotations source="MTL">
-          <references href="CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
+          <references href="platform:/resource/fr.obeo.dsl.designer.documentation.generator.capella/bin/fr/obeo/dsl/designer/documentation/generator/capella/templates/helpers/CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
         </eAnnotations>
         <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
         <eParameters name="arg0">
@@ -176,7 +176,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CapellaElement_Class">
       <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
-        <references href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+        <references href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
       </eAnnotations>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="DSemanticDiagram_Class">
@@ -189,92 +189,92 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
-    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/0.8.0#//CapellaElement"/>
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
   </ocl.ecore:Variable>
   <ocl.ecore:Variable name="self">
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
     <eAnnotations source="positions.0" references="/0/generateDescriptionDivIfAny">
-      <details key="start" value="1284"/>
-      <details key="end" value="1532"/>
+      <details key="start" value="1280"/>
+      <details key="end" value="1528"/>
       <details key="line" value="28"/>
     </eAnnotations>
-    <eAnnotations source="positions.1" references="/0/generateDescriptionDivIfAny/@body.0">
-      <details key="start" value="1363"/>
-      <details key="end" value="1520"/>
+    <eAnnotations source="positions.1" references="/0/generateDescriptionDivIfAny/%">
+      <details key="start" value="1359"/>
+      <details key="end" value="1516"/>
       <details key="line" value="29"/>
     </eAnnotations>
-    <eAnnotations source="positions.2" references="/0/generateDescriptionDivIfAny/@body.0/@body.0">
-      <details key="start" value="1418"/>
-      <details key="end" value="1465"/>
+    <eAnnotations source="positions.2" references="/0/generateDescriptionDivIfAny/%/%">
+      <details key="start" value="1414"/>
+      <details key="end" value="1461"/>
       <details key="line" value="30"/>
     </eAnnotations>
-    <eAnnotations source="positions.3" references="/0/generateDescriptionDivIfAny/@body.0/@body.1">
-      <details key="start" value="1466"/>
-      <details key="end" value="1505"/>
+    <eAnnotations source="positions.3" references="/0/generateDescriptionDivIfAny/%/%.1">
+      <details key="start" value="1462"/>
+      <details key="end" value="1501"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/generateDescriptionDivIfAny/@body.0/@body.1/capellaElement">
-      <details key="start" value="1466"/>
-      <details key="end" value="1480"/>
+    <eAnnotations source="positions.4" references="/0/generateDescriptionDivIfAny/%/%.1/capellaElement">
+      <details key="start" value="1462"/>
+      <details key="end" value="1476"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/generateDescriptionDivIfAny/@body.0/@body.1/@argument.1">
-      <details key="start" value="1491"/>
-      <details key="end" value="1504"/>
+    <eAnnotations source="positions.5" references="/0/generateDescriptionDivIfAny/%/%.1/%">
+      <details key="start" value="1487"/>
+      <details key="end" value="1500"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/generateDescriptionDivIfAny/@body.0/@body.2">
-      <details key="start" value="1507"/>
-      <details key="end" value="1515"/>
+    <eAnnotations source="positions.6" references="/0/generateDescriptionDivIfAny/%/%.2">
+      <details key="start" value="1503"/>
+      <details key="end" value="1511"/>
       <details key="line" value="32"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr">
-      <details key="start" value="1367"/>
-      <details key="end" value="1416"/>
+    <eAnnotations source="positions.7" references="/0/generateDescriptionDivIfAny/%/%.3">
+      <details key="start" value="1363"/>
+      <details key="end" value="1412"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source">
-      <details key="start" value="1372"/>
-      <details key="end" value="1415"/>
+    <eAnnotations source="positions.8" references="/0/generateDescriptionDivIfAny/%/%.3/%">
+      <details key="start" value="1368"/>
+      <details key="end" value="1411"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source/@source">
-      <details key="start" value="1372"/>
-      <details key="end" value="1398"/>
+    <eAnnotations source="positions.9" references="/0/generateDescriptionDivIfAny/%/%.3/%/%">
+      <details key="start" value="1368"/>
+      <details key="end" value="1394"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source/@source/capellaElement">
-      <details key="start" value="1372"/>
-      <details key="end" value="1386"/>
+    <eAnnotations source="positions.10" references="/0/generateDescriptionDivIfAny/%/%.3/%/%/capellaElement">
+      <details key="start" value="1368"/>
+      <details key="end" value="1382"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.11" references="/0/generateDescriptionDivIfAny/@documentation">
-      <details key="start" value="1082"/>
-      <details key="end" value="1283"/>
+    <eAnnotations source="positions.11" references="/0/generateDescriptionDivIfAny/%.1">
+      <details key="start" value="1078"/>
+      <details key="end" value="1279"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.12" references="/0/generateDescriptionDivIfAny/@documentation/melodyElement">
+    <eAnnotations source="positions.12" references="/0/generateDescriptionDivIfAny/%.1/melodyElement">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.13" references="/0/generateDescriptionDivIfAny/capellaElement">
-      <details key="start" value="1329"/>
-      <details key="end" value="1360"/>
+      <details key="start" value="1325"/>
+      <details key="end" value="1356"/>
       <details key="line" value="28"/>
     </eAnnotations>
   </ecore:EAnnotation>

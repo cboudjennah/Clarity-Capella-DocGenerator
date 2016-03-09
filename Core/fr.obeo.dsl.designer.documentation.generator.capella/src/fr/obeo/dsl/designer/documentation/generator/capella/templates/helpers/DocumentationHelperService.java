@@ -233,7 +233,7 @@ public class DocumentationHelperService {
 
 				for (DView dView : ownedViews) {
 					final EList<DRepresentation> allRepresentations = dView
-							.getAllRepresentations();
+							.getOwnedRepresentations();
 					for (DRepresentation dRepresentation : allRepresentations) {
 						if (dRepresentation instanceof DSemanticDiagram) {
 							final DSemanticDiagram semanticDiagram = (DSemanticDiagram) dRepresentation;

@@ -37,6 +37,8 @@ import fr.obeo.dsl.designer.documentation.generator.renderer.IDocumentationRende
  */
 public class GenerationRunnable implements IRunnableWithProgress {
 
+	private static final String GENERATED_DOCS_FOLDER = "generated_docs";
+
 	private final EObject input;
 
 	private List<IStatus> statuses = new ArrayList<IStatus>();
@@ -64,7 +66,7 @@ public class GenerationRunnable implements IRunnableWithProgress {
 	@Override
 	public void run(IProgressMonitor monitor) throws InvocationTargetException, InterruptedException {
 		try {
-			IFolder documentationFolder = container.getFolder(new Path("documenation"));
+			IFolder documentationFolder = container.getFolder(new Path(GENERATED_DOCS_FOLDER));
 			if (!documentationFolder.exists()) {
 				documentationFolder.create(true, true, monitor);
 			}

@@ -27,7 +27,7 @@ public class WordDocumentationRendererDescriptor implements IDocumentationRender
 
 	@Override
 	public String getLabel() {
-		return "Word documentation renderer";
+		return "Word generator";
 	}
 
 	@Override

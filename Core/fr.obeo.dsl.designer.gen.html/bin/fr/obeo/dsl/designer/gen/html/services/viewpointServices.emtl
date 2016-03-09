@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
-  <mtl:Module name="viewpointServices" nsURI="fr::obeo::dsl::designer::gen::html::services::viewpointServices" startHeaderPosition="29" endHeaderPosition="220">
+  <mtl:Module name="viewpointServices" nsURI="fr::obeo::dsl::designer::gen::html::services::viewpointServices" startHeaderPosition="30" endHeaderPosition="224">
     <input>
       <takesTypesFrom href="http://www.eclipse.org/emf/2002/Ecore#/"/>
     </input>
@@ -13,7 +13,7 @@
       <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/audit"/>
     </input>
     <ownedModuleElement xsi:type="mtl:Comment">
-      <body startPosition="155" endPosition="220" value=" Queries to access services provided by the SiriusServices class "/>
+      <body startPosition="159" endPosition="224" value=" Queries to access services provided by the SiriusServices class "/>
     </ownedModuleElement>
     <ownedModuleElement xsi:type="mtl:Query" name="initSiriusServices" visibility="Public">
       <parameter name="analysis">
@@ -324,219 +324,219 @@
     <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
   </ocl.ecore:Variable>
   <ecore:EAnnotation source="positions">
-    <eAnnotations source="positions.0" references="/0/@ownedModuleElement.0">
-      <details key="start" value="147"/>
-      <details key="end" value="222"/>
+    <eAnnotations source="positions.0" references="/0/%">
+      <details key="start" value="151"/>
+      <details key="end" value="226"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.1" references="/0/initSiriusServices">
-      <details key="start" value="224"/>
-      <details key="end" value="491"/>
+      <details key="start" value="230"/>
+      <details key="end" value="498"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.2" references="/0/initSiriusServices/analysis">
-      <details key="start" value="257"/>
-      <details key="end" value="277"/>
+      <details key="start" value="263"/>
+      <details key="end" value="283"/>
       <details key="line" value="7"/>
     </eAnnotations>
     <eAnnotations source="positions.3" references="/0/initSiriusServices/rootFolder">
-      <details key="start" value="279"/>
-      <details key="end" value="298"/>
+      <details key="start" value="285"/>
+      <details key="end" value="304"/>
       <details key="line" value="7"/>
     </eAnnotations>
-    <eAnnotations source="positions.4" references="/0/initSiriusServices/@expression">
-      <details key="start" value="313"/>
-      <details key="end" value="488"/>
+    <eAnnotations source="positions.4" references="/0/initSiriusServices/%">
+      <details key="start" value="320"/>
+      <details key="end" value="495"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.5" references="/0/initSiriusServices/@expression/self">
+    <eAnnotations source="positions.5" references="/0/initSiriusServices/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.6" references="/0/initSiriusServices/@expression/@argument.0">
-      <details key="start" value="320"/>
-      <details key="end" value="375"/>
+    <eAnnotations source="positions.6" references="/0/initSiriusServices/%/%">
+      <details key="start" value="327"/>
+      <details key="end" value="382"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.7" references="/0/initSiriusServices/@expression/@argument.1">
-      <details key="start" value="377"/>
-      <details key="end" value="455"/>
+    <eAnnotations source="positions.7" references="/0/initSiriusServices/%/%.1">
+      <details key="start" value="384"/>
+      <details key="end" value="462"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.8" references="/0/initSiriusServices/@expression/@argument.2">
-      <details key="start" value="457"/>
-      <details key="end" value="487"/>
+    <eAnnotations source="positions.8" references="/0/initSiriusServices/%/%.2">
+      <details key="start" value="464"/>
+      <details key="end" value="494"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.9" references="/0/initSiriusServices/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="466"/>
-      <details key="end" value="474"/>
+    <eAnnotations source="positions.9" references="/0/initSiriusServices/%/%.2/%/analysis">
+      <details key="start" value="473"/>
+      <details key="end" value="481"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.10" references="/0/initSiriusServices/@expression/@argument.2/@part.1/rootFolder">
-      <details key="start" value="476"/>
-      <details key="end" value="486"/>
+    <eAnnotations source="positions.10" references="/0/initSiriusServices/%/%.2/%.1/rootFolder">
+      <details key="start" value="483"/>
+      <details key="end" value="493"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.11" references="/0/getAllAnalyses">
-      <details key="start" value="493"/>
-      <details key="end" value="713"/>
+      <details key="start" value="502"/>
+      <details key="end" value="723"/>
       <details key="line" value="10"/>
     </eAnnotations>
     <eAnnotations source="positions.12" references="/0/getAllAnalyses/analysis">
-      <details key="start" value="522"/>
-      <details key="end" value="542"/>
+      <details key="start" value="531"/>
+      <details key="end" value="551"/>
       <details key="line" value="10"/>
     </eAnnotations>
-    <eAnnotations source="positions.13" references="/0/getAllAnalyses/@expression">
-      <details key="start" value="569"/>
-      <details key="end" value="710"/>
+    <eAnnotations source="positions.13" references="/0/getAllAnalyses/%">
+      <details key="start" value="579"/>
+      <details key="end" value="720"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.14" references="/0/getAllAnalyses/@expression/self">
+    <eAnnotations source="positions.14" references="/0/getAllAnalyses/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.15" references="/0/getAllAnalyses/@expression/@argument.0">
-      <details key="start" value="576"/>
-      <details key="end" value="631"/>
+    <eAnnotations source="positions.15" references="/0/getAllAnalyses/%/%">
+      <details key="start" value="586"/>
+      <details key="end" value="641"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.16" references="/0/getAllAnalyses/@expression/@argument.1">
-      <details key="start" value="633"/>
-      <details key="end" value="689"/>
+    <eAnnotations source="positions.16" references="/0/getAllAnalyses/%/%.1">
+      <details key="start" value="643"/>
+      <details key="end" value="699"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.17" references="/0/getAllAnalyses/@expression/@argument.2">
-      <details key="start" value="691"/>
-      <details key="end" value="709"/>
+    <eAnnotations source="positions.17" references="/0/getAllAnalyses/%/%.2">
+      <details key="start" value="701"/>
+      <details key="end" value="719"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.18" references="/0/getAllAnalyses/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="700"/>
-      <details key="end" value="708"/>
+    <eAnnotations source="positions.18" references="/0/getAllAnalyses/%/%.2/%/analysis">
+      <details key="start" value="710"/>
+      <details key="end" value="718"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.19" references="/0/getProjectName">
-      <details key="start" value="715"/>
-      <details key="end" value="922"/>
+      <details key="start" value="727"/>
+      <details key="end" value="935"/>
       <details key="line" value="13"/>
     </eAnnotations>
     <eAnnotations source="positions.20" references="/0/getProjectName/analysis">
-      <details key="start" value="744"/>
-      <details key="end" value="764"/>
+      <details key="start" value="756"/>
+      <details key="end" value="776"/>
       <details key="line" value="13"/>
     </eAnnotations>
-    <eAnnotations source="positions.21" references="/0/getProjectName/@expression">
-      <details key="start" value="778"/>
-      <details key="end" value="919"/>
+    <eAnnotations source="positions.21" references="/0/getProjectName/%">
+      <details key="start" value="791"/>
+      <details key="end" value="932"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.22" references="/0/getProjectName/@expression/self">
+    <eAnnotations source="positions.22" references="/0/getProjectName/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.23" references="/0/getProjectName/@expression/@argument.0">
-      <details key="start" value="785"/>
-      <details key="end" value="840"/>
+    <eAnnotations source="positions.23" references="/0/getProjectName/%/%">
+      <details key="start" value="798"/>
+      <details key="end" value="853"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.24" references="/0/getProjectName/@expression/@argument.1">
-      <details key="start" value="842"/>
-      <details key="end" value="898"/>
+    <eAnnotations source="positions.24" references="/0/getProjectName/%/%.1">
+      <details key="start" value="855"/>
+      <details key="end" value="911"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.25" references="/0/getProjectName/@expression/@argument.2">
-      <details key="start" value="900"/>
-      <details key="end" value="918"/>
+    <eAnnotations source="positions.25" references="/0/getProjectName/%/%.2">
+      <details key="start" value="913"/>
+      <details key="end" value="931"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.26" references="/0/getProjectName/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="909"/>
-      <details key="end" value="917"/>
+    <eAnnotations source="positions.26" references="/0/getProjectName/%/%.2/%/analysis">
+      <details key="start" value="922"/>
+      <details key="end" value="930"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.27" references="/0/getProjectDependencies">
-      <details key="start" value="924"/>
-      <details key="end" value="1158"/>
+      <details key="start" value="939"/>
+      <details key="end" value="1174"/>
       <details key="line" value="16"/>
     </eAnnotations>
     <eAnnotations source="positions.28" references="/0/getProjectDependencies/analysis">
-      <details key="start" value="961"/>
-      <details key="end" value="981"/>
+      <details key="start" value="976"/>
+      <details key="end" value="996"/>
       <details key="line" value="16"/>
     </eAnnotations>
-    <eAnnotations source="positions.29" references="/0/getProjectDependencies/@expression">
-      <details key="start" value="1006"/>
-      <details key="end" value="1155"/>
+    <eAnnotations source="positions.29" references="/0/getProjectDependencies/%">
+      <details key="start" value="1022"/>
+      <details key="end" value="1171"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.30" references="/0/getProjectDependencies/@expression/self">
+    <eAnnotations source="positions.30" references="/0/getProjectDependencies/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.31" references="/0/getProjectDependencies/@expression/@argument.0">
-      <details key="start" value="1013"/>
-      <details key="end" value="1068"/>
+    <eAnnotations source="positions.31" references="/0/getProjectDependencies/%/%">
+      <details key="start" value="1029"/>
+      <details key="end" value="1084"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.32" references="/0/getProjectDependencies/@expression/@argument.1">
-      <details key="start" value="1070"/>
-      <details key="end" value="1134"/>
+    <eAnnotations source="positions.32" references="/0/getProjectDependencies/%/%.1">
+      <details key="start" value="1086"/>
+      <details key="end" value="1150"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.33" references="/0/getProjectDependencies/@expression/@argument.2">
-      <details key="start" value="1136"/>
-      <details key="end" value="1154"/>
+    <eAnnotations source="positions.33" references="/0/getProjectDependencies/%/%.2">
+      <details key="start" value="1152"/>
+      <details key="end" value="1170"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.34" references="/0/getProjectDependencies/@expression/@argument.2/@part.0/analysis">
-      <details key="start" value="1145"/>
-      <details key="end" value="1153"/>
+    <eAnnotations source="positions.34" references="/0/getProjectDependencies/%/%.2/%/analysis">
+      <details key="start" value="1161"/>
+      <details key="end" value="1169"/>
       <details key="line" value="0"/>
     </eAnnotations>
     <eAnnotations source="positions.35" references="/0/isInProjectDependencies">
-      <details key="start" value="1160"/>
-      <details key="end" value="1371"/>
+      <details key="start" value="1178"/>
+      <details key="end" value="1390"/>
       <details key="line" value="19"/>
     </eAnnotations>
     <eAnnotations source="positions.36" references="/0/isInProjectDependencies/object">
-      <details key="start" value="1198"/>
-      <details key="end" value="1214"/>
+      <details key="start" value="1216"/>
+      <details key="end" value="1232"/>
       <details key="line" value="19"/>
     </eAnnotations>
-    <eAnnotations source="positions.37" references="/0/isInProjectDependencies/@expression">
-      <details key="start" value="1229"/>
-      <details key="end" value="1368"/>
+    <eAnnotations source="positions.37" references="/0/isInProjectDependencies/%">
+      <details key="start" value="1248"/>
+      <details key="end" value="1387"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.38" references="/0/isInProjectDependencies/@expression/self">
+    <eAnnotations source="positions.38" references="/0/isInProjectDependencies/%/self">
       <details key="start" value="-1"/>
       <details key="end" value="-1"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.39" references="/0/isInProjectDependencies/@expression/@argument.0">
-      <details key="start" value="1236"/>
-      <details key="end" value="1291"/>
+    <eAnnotations source="positions.39" references="/0/isInProjectDependencies/%/%">
+      <details key="start" value="1255"/>
+      <details key="end" value="1310"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.40" references="/0/isInProjectDependencies/@expression/@argument.1">
-      <details key="start" value="1293"/>
-      <details key="end" value="1349"/>
+    <eAnnotations source="positions.40" references="/0/isInProjectDependencies/%/%.1">
+      <details key="start" value="1312"/>
+      <details key="end" value="1368"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.41" references="/0/isInProjectDependencies/@expression/@argument.2">
-      <details key="start" value="1351"/>
-      <details key="end" value="1367"/>
+    <eAnnotations source="positions.41" references="/0/isInProjectDependencies/%/%.2">
+      <details key="start" value="1370"/>
+      <details key="end" value="1386"/>
       <details key="line" value="0"/>
     </eAnnotations>
-    <eAnnotations source="positions.42" references="/0/isInProjectDependencies/@expression/@argument.2/@part.0/object">
-      <details key="start" value="1360"/>
-      <details key="end" value="1366"/>
+    <eAnnotations source="positions.42" references="/0/isInProjectDependencies/%/%.2/%/object">
+      <details key="start" value="1379"/>
+      <details key="end" value="1385"/>
       <details key="line" value="0"/>
     </eAnnotations>
   </ecore:EAnnotation>

@@ -17,9 +17,9 @@
           locationURI="popup:org.eclipse.ui.popup.any">
        <command
              commandId="org.obeonetwork.dsl.siruis.documentation.generator"
-             label="Generates Documentation"
+             label="Capella Document Generator"
              style="push"
-             tooltip="Generates Documentation">
+             tooltip="Capella Document Generator">
           <visibleWhen
                 checkEnabled="false">
              <iterate
