@@ -59,63 +59,50 @@ public class SiriusDocumentationHandler extends AbstractHandler {
 			if (selectedElement instanceof EObject) {
 				final EObject context = (EObject) selectedElement;
 				Shell shell = HandlerUtil.getActiveShell(event);
-				//gets a reference to the current project
+				// gets a reference to the current project
 				IProject currentProject = getResource(context).getProject();
 				//
-				DocumentationGeneratorDialog dialog = new DocumentationGeneratorDialog(
-						shell, currentProject.getLocation(),
-						DocumentationGeneratorPlugin.getDefault()
-								.getGenerators(context), context);
+				DocumentationGeneratorDialog dialog = new DocumentationGeneratorDialog(shell,
+						currentProject.getLocation(), DocumentationGeneratorPlugin.getDefault().getGenerators(context),
+						context);
 				if (dialog.open() == Dialog.OK) {
-					IDocumentationGeneratorDescriptor generatorDescriptor = dialog
-							.getGeneratorDescriptor();
-					IDocumentationRendererDescriptor rendererDescriptor = dialog
-							.getRendererDescriptor();
+					IDocumentationGeneratorDescriptor generatorDescriptor = dialog.getGeneratorDescriptor();
+					IDocumentationRendererDescriptor rendererDescriptor = dialog.getRendererDescriptor();
 
-					if (generatorDescriptor != null
-							&& rendererDescriptor != null) {
-						GenerationRunnable launcher = new GenerationRunnable(
-								generatorDescriptor,//
+					if (generatorDescriptor != null && rendererDescriptor != null) {
+						GenerationRunnable launcher = new GenerationRunnable(generatorDescriptor, //
 								rendererDescriptor, context, //
-							//
+								//
 								currentProject);
-							//	dialog.getDirectory());
+						// dialog.getDirectory());
 						try {
-							PlatformUI.getWorkbench().getProgressService()
-									.run(true, true, launcher);
+							PlatformUI.getWorkbench().getProgressService().run(true, true, launcher);
 
 							boolean success = true;
 							for (IStatus s : launcher.getStatuses()) {
 								if (!s.isOK()) {
 									success = false;
 								}
-								DocumentationGeneratorPlugin.getDefault()
-										.getLog().log(s);
+								DocumentationGeneratorPlugin.getDefault().getLog().log(s);
 							}
 
 							if (success) {
 								// Message to indicate end of generation
-								MessageDialog.openInformation(
-										HandlerUtil.getActiveShell(event),
-										"Documentation generation",
-										"Representations file was successfully exported into "
-												+ dialog.getDirectory());
+								MessageDialog.openInformation(HandlerUtil.getActiveShell(event),
+										"Documentation generation", "Generation successful");
+								// "Representations file was successfully
+								// exported into "
+								// + dialog.getDirectory());
 							}
 						} catch (InvocationTargetException e) {
 							logException(e);
-							MessageDialog.openError(
-									HandlerUtil.getActiveShell(event),
-									DIALOG_TITLE, ERROR_MESSAGE);
+							MessageDialog.openError(HandlerUtil.getActiveShell(event), DIALOG_TITLE, ERROR_MESSAGE);
 						} catch (InterruptedException e) {
-							MessageDialog.openWarning(
-									HandlerUtil.getActiveShell(event),
-									DIALOG_TITLE, CANCEL_MESSAGE);
+							MessageDialog.openWarning(HandlerUtil.getActiveShell(event), DIALOG_TITLE, CANCEL_MESSAGE);
 						}
 					} else {
-						MessageDialog
-								.openError(HandlerUtil.getActiveShell(event),
-										"Uncorrect selection",
-										"Can not launch a documentation generation with the current configuration");
+						MessageDialog.openError(HandlerUtil.getActiveShell(event), "Uncorrect selection",
+								"Can not launch a documentation generation with the current configuration");
 						return null;
 					}
 
@@ -137,8 +124,7 @@ public class SiriusDocumentationHandler extends AbstractHandler {
 		if (message == null || message.trim().length() == 0) {
 			message = DEFAULT_ERROR_MESSAGE;
 		}
-		IStatus status = new Status(IStatus.ERROR,
-				DocumentationGeneratorUIPlugin.PLUGIN_ID, message, e);
+		IStatus status = new Status(IStatus.ERROR, DocumentationGeneratorUIPlugin.PLUGIN_ID, message, e);
 		DocumentationGeneratorUIPlugin.getDefault().getLog().log(status);
 	}
 
@@ -147,8 +133,7 @@ public class SiriusDocumentationHandler extends AbstractHandler {
 		URI eUri = eResource.getURI();
 		if (eUri.isPlatformResource()) {
 			String platformString = eUri.toPlatformString(true);
-			return ResourcesPlugin.getWorkspace().getRoot()
-					.findMember(platformString);
+			return ResourcesPlugin.getWorkspace().getRoot().findMember(platformString);
 		}
 		return null;
 	}
