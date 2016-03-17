@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.obeo.dsl.designer.documentation.generator.renderer.word/src-gen"
+    modelPluginID="fr.obeo.dsl.designer.documentation.generator.renderer.word" modelName="WordDocumentTemplate"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>WordDocumentTemplate.ecore</foreignModel>
+  <genPackages prefix="WordDocumentTemplate" basePackage="fr.obeo.dsl.designer.documentation.generator.renderer.word"
+      disposableProviderFactory="true" ecorePackage="WordDocumentTemplate.ecore#/">
+    <genDataTypes ecoreDataType="WordDocumentTemplate.ecore#//URL"/>
+    <genClasses ecoreClass="WordDocumentTemplate.ecore#//WordTemplate">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WordDocumentTemplate.ecore#//WordTemplate/theme"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WordDocumentTemplate.ecore#//WordTemplate/css"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WordDocumentTemplate.ecore#//WordTemplate/colorMapping"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute WordDocumentTemplate.ecore#//WordTemplate/headerAndFooterTemplate"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

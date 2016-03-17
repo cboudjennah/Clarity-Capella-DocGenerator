@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="CapellaElementHelper" nsURI="fr::obeo::dsl::designer::documentation::generator::capella::templates::helpers::CapellaElementHelper" startHeaderPosition="29" endHeaderPosition="1071">
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#/"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/style"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/tool"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/validation"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/1.1.0#//description/audit"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#/"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/style"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/tool"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter"/>
+      <takesTypesFrom href="http://www.eclipse.org/sirius/diagram/1.1.0#//description/concern"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/modeller/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/core/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/oa/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/ctx/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/la/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/pa/1.0.0#//deployment"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/epbs/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/sharedmodel/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/requirement/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#/"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//communication"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datatype"/>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/information/1.0.0#//datavalue"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/cs/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/fa/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/common/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/core/interaction/1.0.0#/"/>
+    </input>
+    <input>
+      <takesTypesFrom href="http://www.polarsys.org/capella/common/core/1.0.0#/"/>
+    </input>
+    <imports href="CapellaDocumentationHelper.emtl#/0"/>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateDescriptionDivIfAny" visibility="Public">
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;div class=&quot;description&quot;>&#xA;&#x9;&lt;b>Description: &lt;/b>"/>
+        <body xsi:type="mtl:QueryInvocation">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <definition href="CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
+          <argument xsi:type="ocl.ecore:VariableExp" name="capellaElement" referredVariable="/0/generateDescriptionDivIfAny/capellaElement">
+            <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+          </argument>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="description">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/div>&#xA;"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="capellaElement" referredVariable="/0/generateDescriptionDivIfAny/capellaElement">
+                <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement/description"/>
+            </source>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/oclIsUndefined"/>
+          </source>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean_Class/not"/>
+        </ifExpr>
+      </body>
+      <documentation xsi:type="mtl:ModuleElementDocumentation">
+        <body startPosition="1081" endPosition="1277" value="&#xD;&#xA;Generate a &quot;description&quot; paragraph with a gray background.&#xD;&#xA;If the melody element has no description nothing is generated.&#xD;&#xA;@param melodyElement MelodyElement holding the description&#xD;&#xA;&#xD;&#xA;"/>
+        <parametersDocumentation name="melodyElement">
+          <body value=" MelodyElement holding the description"/>
+        </parametersDocumentation>
+      </documentation>
+      <parameter name="capellaElement">
+        <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ecore:EPackage name="additions">
+    <eClassifiers xsi:type="ecore:EClass" name="String_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Integer_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Real_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Real"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="EObject_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+      </eAnnotations>
+      <eOperations name="generateDescriptionDivIfAny">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL" references="/0/generateDescriptionDivIfAny"/>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="capellaElement">
+          <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+        </eParameters>
+      </eOperations>
+      <eOperations name="cleanHTML">
+        <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+          <contents xsi:type="ocl.ecore:Constraint"/>
+        </eAnnotations>
+        <eAnnotations source="MTL">
+          <references href="CapellaDocumentationHelper.emtl#/0/cleanHTML"/>
+        </eAnnotations>
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <eParameters name="arg0">
+          <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+        </eParameters>
+        <eParameters name="arg1">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </eParameters>
+      </eOperations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OclAny_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Collection(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Collection(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Sequence(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Sequence(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="OrderedSet(T)_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OrderedSet(T)"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CapellaElement_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DSemanticDiagram_Class">
+      <eAnnotations source="http://www.eclipse.org/ocl/1.1.0/OCL">
+        <references href="http://www.eclipse.org/sirius/diagram/1.1.0#//DSemanticDiagram"/>
+      </eAnnotations>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.polarsys.org/capella/core/core/1.0.0#//CapellaElement"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+  </ocl.ecore:Variable>
+  <ecore:EAnnotation source="positions">
+    <eAnnotations source="positions.0" references="/0/generateDescriptionDivIfAny">
+      <details key="start" value="1280"/>
+      <details key="end" value="1528"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+    <eAnnotations source="positions.1" references="/0/generateDescriptionDivIfAny/@body.0">
+      <details key="start" value="1359"/>
+      <details key="end" value="1516"/>
+      <details key="line" value="29"/>
+    </eAnnotations>
+    <eAnnotations source="positions.2" references="/0/generateDescriptionDivIfAny/@body.0/@body.0">
+      <details key="start" value="1414"/>
+      <details key="end" value="1461"/>
+      <details key="line" value="30"/>
+    </eAnnotations>
+    <eAnnotations source="positions.3" references="/0/generateDescriptionDivIfAny/@body.0/@body.1">
+      <details key="start" value="1462"/>
+      <details key="end" value="1501"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.4" references="/0/generateDescriptionDivIfAny/@body.0/@body.1/capellaElement">
+      <details key="start" value="1462"/>
+      <details key="end" value="1476"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.5" references="/0/generateDescriptionDivIfAny/@body.0/@body.1/@argument.1">
+      <details key="start" value="1487"/>
+      <details key="end" value="1500"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.6" references="/0/generateDescriptionDivIfAny/@body.0/@body.2">
+      <details key="start" value="1503"/>
+      <details key="end" value="1511"/>
+      <details key="line" value="32"/>
+    </eAnnotations>
+    <eAnnotations source="positions.7" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr">
+      <details key="start" value="1363"/>
+      <details key="end" value="1412"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.8" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source">
+      <details key="start" value="1368"/>
+      <details key="end" value="1411"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.9" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source/@source">
+      <details key="start" value="1368"/>
+      <details key="end" value="1394"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.10" references="/0/generateDescriptionDivIfAny/@body.0/@ifExpr/@source/@source/capellaElement">
+      <details key="start" value="1368"/>
+      <details key="end" value="1382"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.11" references="/0/generateDescriptionDivIfAny/@documentation">
+      <details key="start" value="1078"/>
+      <details key="end" value="1279"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.12" references="/0/generateDescriptionDivIfAny/@documentation/melodyElement">
+      <details key="start" value="-1"/>
+      <details key="end" value="-1"/>
+      <details key="line" value="0"/>
+    </eAnnotations>
+    <eAnnotations source="positions.13" references="/0/generateDescriptionDivIfAny/capellaElement">
+      <details key="start" value="1325"/>
+      <details key="end" value="1356"/>
+      <details key="line" value="28"/>
+    </eAnnotations>
+  </ecore:EAnnotation>
+</xmi:XMI>

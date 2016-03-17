@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated PageDocument -->
+      <package
+            uri="http:/PageDocument/1.0"
+            class="fr.obeo.dsl.designer.documentation.generator.renderer.word.pageDocument.PageDocumentPackage"
+            genModel="model/PageDocument.genmodel"/>
+   </extension>
+
+ <extension
+         point="fr.obeo.dsl.designer.documentation.generator.documentationRenderer">
+      <documentationRenderer
+            impl="fr.obeo.dsl.designer.documentation.generator.renderer.word.WordDocumentationRendererDescriptor">
+      </documentationRenderer>
+   </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated WordDocumentTemplate -->
+      <package
+            uri="http://DocGen/WordDocumentTemplate/1.0"
+            class="fr.obeo.dsl.designer.documentation.generator.renderer.word.WordDocumentTemplate.WordDocumentTemplatePackage"
+            genModel="model/WordDocumentTemplate.genmodel"/>
+   </extension>
+
+</plugin>

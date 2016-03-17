@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Export-Package: fr.obeo.dsl.designer.documentation.generator.capella,f
+ r.obeo.dsl.designer.documentation.generator.capella.generator,fr.obeo
+ .dsl.designer.documentation.generator.capella.templates,fr.obeo.dsl.d
+ esigner.documentation.generator.capella.templates.helpers
+Require-Bundle: org.polarsys.capella.core.data.gen,org.polarsys.capell
+ a.common.data.activity.gen,org.polarsys.capella.common.data.core.gen,
+ org.eclipse.core.runtime,org.eclipse.emf.ecore,org.eclipse.emf.ecore.
+ xmi,org.eclipse.ocl,org.eclipse.ocl.ecore,org.eclipse.acceleo.common,
+ org.eclipse.acceleo.model,org.eclipse.acceleo.profiler,org.eclipse.ac
+ celeo.engine,com.google.guava,org.eclipse.core.resources,org.eclipse.
+ emf.edit,org.jsoup,fr.obeo.dsl.designer.documentation.generator;bundl
+ e-version="1.0.0"
+Bundle-Vendor: Eclipse Modeling Project
+Eclipse-LazyStart: true
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 1.0.0.201603170947
+Bundle-Name: Acceleo Capella Module Runtime Plug-in
+Bundle-Activator: fr.obeo.dsl.designer.documentation.generator.capella
+ .Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: fr.obeo.dsl.designer.documentation.generator.cape
+ lla;singleton:=true
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

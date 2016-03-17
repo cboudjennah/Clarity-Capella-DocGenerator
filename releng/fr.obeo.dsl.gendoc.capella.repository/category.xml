@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/fr.obeo.dsl.gendoc.capella.feature_1.0.0.qualifier.jar" id="fr.obeo.dsl.gendoc.capella.feature" version="1.0.0.qualifier">
+      <category name="Capella Doc Generator"/>
+   </feature>
+   <category-def name="Capella Doc Generator" label="Capella Doc Generator"/>
+</site>
