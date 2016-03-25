@@ -17,16 +17,16 @@
           locationURI="popup:org.eclipse.ui.popup.any">
        <command
              commandId="org.obeonetwork.dsl.siruis.documentation.generator"
-             label="Capella Document Generator"
+             label="Capella Component Document Generator"
              style="push"
-             tooltip="Capella Document Generator">
+             tooltip="Generates a hierarchical document for the System or a specific component ">
           <visibleWhen
                 checkEnabled="false">
              <iterate
                    ifEmpty="false">
                   <or>
                    <adapt
-                         type="org.polarsys.capella.core.data.capellacore.CapellaElement">
+                         type="org.polarsys.capella.core.data.cs.Component">
                    </adapt>
                 </or>
                 </iterate>
