@@ -3,7 +3,7 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.si
  rius.common.ui,fr.obeo.dsl.designer.documentation.generator;bundle-ve
  rsion="1.0.0",org.eclipse.sirius,org.eclipse.core.resources
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 1.0.0.201603170947
+Bundle-Version: 1.0.0.201603251654
 Bundle-Name: Ui
 Bundle-Activator: fr.obeo.dsl.designer.documentation.generator.ui.Docu
  mentationGeneratorUIPlugin

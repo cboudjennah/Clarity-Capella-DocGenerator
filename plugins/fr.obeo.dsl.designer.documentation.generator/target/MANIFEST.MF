@@ -13,7 +13,7 @@ Require-Bundle: org.eclipse.acceleo.engine,org.eclipse.gmf.runtime.dia
  .eclipse.emf.ecore;visibility:=reexport,org.eclipse.sirius.diagram;vi
  sibility:=reexport,org.eclipse.sirius;visibility:=reexport
 Bundle-Vendor: %providerName
-Bundle-Version: 1.0.0.201603170947
+Bundle-Version: 1.0.0.201603251654
 Bundle-ManifestVersion: 2
 Bundle-Activator: fr.obeo.dsl.designer.documentation.generator.Documen
  tationGeneratorPlugin

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.documentation.generator' version='1.0.0.201603170947'>
+  <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.documentation.generator' version='1.0.0.201603251654'>
     <properties size='5'>
       <property name='artifact.size' value='56268'/>
       <property name='download.size' value='56268'/>

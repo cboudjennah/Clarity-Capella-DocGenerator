@@ -14,7 +14,7 @@ Require-Bundle: org.polarsys.capella.core.data.gen,org.polarsys.capell
 Bundle-Vendor: Eclipse Modeling Project
 Eclipse-LazyStart: true
 Bundle-ActivationPolicy: lazy
-Bundle-Version: 1.0.0.201603170947
+Bundle-Version: 1.0.0.201603251654
 Bundle-Name: Acceleo Capella Module Runtime Plug-in
 Bundle-Activator: fr.obeo.dsl.designer.documentation.generator.capella
  .Activator

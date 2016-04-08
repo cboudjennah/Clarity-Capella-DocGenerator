@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603170947' singleton='false'>
-    <update id='fr.obeo.dsl.designer.gen.html' range='[0.0.0,1.0.0.201603170947)' severity='0'/>
+  <unit id='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603251654' singleton='false'>
+    <update id='fr.obeo.dsl.designer.gen.html' range='[0.0.0,1.0.0.201603251654)' severity='0'/>
     <properties size='5'>
       <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
       <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
@@ -10,8 +10,8 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603170947'/>
-      <provided namespace='osgi.bundle' name='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603170947'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603251654'/>
+      <provided namespace='osgi.bundle' name='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603251654'/>
       <provided namespace='java.package' name='fr.obeo.dsl.designer.gen.html.main' version='0.0.0'/>
       <provided namespace='java.package' name='fr.obeo.dsl.designer.gen.html.services' version='0.0.0'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
@@ -40,13 +40,13 @@
       <required namespace='osgi.bundle' name='org.eclipse.emf.edit.ui' range='0.0.0'/>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603170947'/>
+      <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.gen.html' version='1.0.0.201603251654'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: fr.obeo.dsl.designer.gen.html&#xA;Bundle-Version: 1.0.0.201603170947&#xA;
+          Bundle-SymbolicName: fr.obeo.dsl.designer.gen.html&#xA;Bundle-Version: 1.0.0.201603251654&#xA;
         </instruction>
       </instructions>
     </touchpointData>

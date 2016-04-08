@@ -21,7 +21,7 @@ Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.jsoup;bund
  i,org.eclipse.emf.transaction,org.eclipse.gmf.runtime.notation.edit,o
  rg.eclipse.gmf.runtime.diagram.ui
 Bundle-Vendor: %providerName
-Bundle-Version: 1.0.0.201603170947
+Bundle-Version: 1.0.0.201603251654
 Bundle-ManifestVersion: 2
 Bundle-Activator: fr.obeo.dsl.designer.documentation.generator.rendere
  r.word.WordRendererPlugin

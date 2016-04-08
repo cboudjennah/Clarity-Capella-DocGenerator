@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.documentation.generator.renderer.website' version='1.0.0.201603170947'>
+  <artifact classifier='osgi.bundle' id='fr.obeo.dsl.designer.documentation.generator.renderer.website' version='1.0.0.201603251654'>
     <properties size='5'>
-      <property name='artifact.size' value='305765'/>
-      <property name='download.size' value='305765'/>
+      <property name='artifact.size' value='305764'/>
+      <property name='download.size' value='305764'/>
       <property name='maven-groupId' value='GenDoc'/>
       <property name='maven-artifactId' value='fr.obeo.dsl.designer.documentation.generator.renderer.website'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>

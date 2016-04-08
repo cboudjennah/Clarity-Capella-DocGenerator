@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='2'>
-  <unit id='fr.obeo.dsl.gendoc.capella.feature.feature.group' version='1.0.0.201603170947' singleton='false'>
-    <update id='fr.obeo.dsl.gendoc.capella.feature.feature.group' range='[0.0.0,1.0.0.201603170947)' severity='0'/>
+  <unit id='fr.obeo.dsl.gendoc.capella.feature.feature.group' version='1.0.0.201603251654' singleton='false'>
+    <update id='fr.obeo.dsl.gendoc.capella.feature.feature.group' range='[0.0.0,1.0.0.201603251654)' severity='0'/>
     <properties size='7'>
       <property name='org.eclipse.equinox.p2.name' value='Capella Doc Generator feature'/>
       <property name='org.eclipse.equinox.p2.description' value='Capella Doc Generator'/>
@@ -12,16 +12,16 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='1'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.group' version='1.0.0.201603170947'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.group' version='1.0.0.201603251654'/>
     </provides>
     <requires size='7'>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.capella' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.ui' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.renderer.website' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.renderer.word' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.gen.html' range='[1.0.0.201603170947,1.0.0.201603170947]'/>
-      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.jar' range='[1.0.0.201603170947,1.0.0.201603170947]'>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.capella' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.ui' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.renderer.website' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.documentation.generator.renderer.word' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.designer.gen.html' range='[1.0.0.201603251654,1.0.0.201603251654]'/>
+      <required namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.jar' range='[1.0.0.201603251654,1.0.0.201603251654]'>
         <filter>
           (org.eclipse.update.install.features=true)
         </filter>
@@ -37,7 +37,7 @@
       [Enter Copyright Description here.]
     </copyright>
   </unit>
-  <unit id='fr.obeo.dsl.gendoc.capella.feature.feature.jar' version='1.0.0.201603170947'>
+  <unit id='fr.obeo.dsl.gendoc.capella.feature.feature.jar' version='1.0.0.201603251654'>
     <properties size='6'>
       <property name='org.eclipse.equinox.p2.name' value='Capella Doc Generator feature'/>
       <property name='org.eclipse.equinox.p2.description' value='Capella Doc Generator'/>
@@ -47,15 +47,15 @@
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>
     </properties>
     <provides size='3'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.jar' version='1.0.0.201603170947'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='fr.obeo.dsl.gendoc.capella.feature.feature.jar' version='1.0.0.201603251654'/>
       <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
-      <provided namespace='org.eclipse.update.feature' name='fr.obeo.dsl.gendoc.capella.feature' version='1.0.0.201603170947'/>
+      <provided namespace='org.eclipse.update.feature' name='fr.obeo.dsl.gendoc.capella.feature' version='1.0.0.201603251654'/>
     </provides>
     <filter>
       (org.eclipse.update.install.features=true)
     </filter>
     <artifacts size='1'>
-      <artifact classifier='org.eclipse.update.feature' id='fr.obeo.dsl.gendoc.capella.feature' version='1.0.0.201603170947'/>
+      <artifact classifier='org.eclipse.update.feature' id='fr.obeo.dsl.gendoc.capella.feature' version='1.0.0.201603251654'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>

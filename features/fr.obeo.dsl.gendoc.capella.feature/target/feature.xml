@@ -2,7 +2,7 @@
 <feature
       id="fr.obeo.dsl.gendoc.capella.feature"
       label="Capella Doc Generator feature"
-      version="1.0.0.201603170947">
+      version="1.0.0.201603251654">
 
    <description url="http://www.example.com/description">
       Capella Doc Generator
@@ -106,42 +106,42 @@ This Agreement is governed by the laws of the State of New York and the intellec
          id="fr.obeo.dsl.designer.documentation.generator"
          download-size="54"
          install-size="117"
-         version="1.0.0.201603170947"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
    <plugin
          id="fr.obeo.dsl.designer.documentation.generator.capella"
          download-size="122"
          install-size="994"
-         version="1.0.0.201603170947"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
    <plugin
          id="fr.obeo.dsl.designer.documentation.generator.ui"
-         download-size="26"
-         install-size="53"
-         version="1.0.0.201603170947"
+         download-size="25"
+         install-size="52"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
    <plugin
          id="fr.obeo.dsl.designer.documentation.generator.renderer.website"
          download-size="298"
          install-size="1070"
-         version="1.0.0.201603170947"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
    <plugin
          id="fr.obeo.dsl.designer.documentation.generator.renderer.word"
          download-size="294"
          install-size="355"
-         version="1.0.0.201603170947"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
    <plugin
          id="fr.obeo.dsl.designer.gen.html"
          download-size="239"
          install-size="293"
-         version="1.0.0.201603170947"
+         version="1.0.0.201603251654"
          unpack="false"/>
 
 </feature>
