@@ -24,7 +24,8 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.sirius.diagram.ui,
  org.eclipse.emf.transaction,
  org.eclipse.gmf.runtime.notation.edit,
- org.eclipse.gmf.runtime.diagram.ui
+ org.eclipse.gmf.runtime.diagram.ui,
+ javax.mail;bundle-version="1.4.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ActivationPolicy: lazy
 Bundle-ClassPath: lib/mailapi.jar,
