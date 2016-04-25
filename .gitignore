@@ -1,4 +1,9 @@
-*.class
+bin/
+target/
+*.class/
+*.acceleo
+
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
