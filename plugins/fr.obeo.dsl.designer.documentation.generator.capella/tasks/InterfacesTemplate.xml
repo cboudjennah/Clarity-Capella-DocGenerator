@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="InterfacesTemplate" name="fr.obeo.dsl.designer.documentation.generator.capella">
+    <property name="ECLIPSE_HOME" value="../../../../../T/CapellaStudio1.0.0"/>
+    <property name="ECLIPSE_WORKSPACE" value="../../../../../workspaces/CapellaDocGen"/>
+
+    <!-- The classpath with only the dependencies used by the project -->
+    <path id="fr.obeo.dsl.designer.documentation.generator.capella.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/fr.obeo.dsl.designer.documentation.generator.capella/bin"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.core.data.gen_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore_2.11.1.v20150805-0538.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.common_2.11.0.v20150805-0538.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore.xmi_2.11.1.v20150805-0538.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.data.core.gen_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.emde_1.0.0.v20151227-0611.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.report_1.0.0.v20151227-0609.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.report.model.edit_1.0.0.v20151227-0609.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.report.model_1.0.0.v20151227-0609.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.edit_2.11.1.v20150806-0404.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.ecore.change_2.11.0.v20150805-0538.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.model_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.helpers_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.platform.sirius.ted_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius_3.1.2.201511030845.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius.common_3.1.2.201511030845.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius.common.ui_3.1.2.201511030845.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius.ecore.extender_3.1.2.201511030845.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.ef_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.workspace_1.5.1.201506010221.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.runtime_3.11.1.v20150903-1804.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/javax.annotation_1.2.0.v201401042248.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/javax.inject_1.0.0.v20091030.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi_3.10.101.v20150820-1432.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.osgi.compatibility.state_1.0.100.v20150402-1551.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.runtime.compatibility.registry_3.6.0.v20150318-1505/runtime_registry_compatibility.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.equinox.app_1.3.300.v20150423-1356.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.resources_3.10.1.v20150725-1910.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.core.commands_3.7.0.v20150422-0725.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.transaction_1.9.0.201506010221.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.validation_1.8.0.201505312255.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.mdsofa.common_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.apache.log4j_1.2.15.v201012070815.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.jdt.core_3.11.1.v20150902-1521.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.jdt.compiler.apt_1.2.0.v20150514-0146.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.jdt.compiler.tool_1.1.0.v20150513-2007.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.pde.core_3.10.101.v20150722-0954.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.tools.report_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.model.helpers_0.8.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.emde.model_1.0.0.v20151227-0611.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.kitalpha.emde.xmi_1.0.0.v20151227-0611.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.data.activity.gen_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.polarsys.capella.common.data.behavior.gen_1.0.0.2015-11-30_17-19-31.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl_3.5.0.v20150521-1211.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.common_1.3.0.v20150519-0914.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.ocl.ecore_3.5.0.v20150525-1635.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.common_3.4.1.201309031307.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.model_3.4.1.201309031307.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.profiler_3.4.1.201309031307.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.engine_3.4.1.201309031307.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen.ecore_2.11.0.v20150806-0404.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen_2.11.0.v20150806-0404.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_15.0.0.v201403281430.jar"/>
+        <pathelement location="${ECLIPSE_WORKSPACE}//.metadata/.plugins/org.eclipse.pde.core/.bundle_pool/plugins/org.jsoup_1.7.2.v201411291515.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.sirius.diagram_3.1.2.201511030845.jar"/>
+    </path>
+
+    <path id="fr.obeo.dsl.designer.documentation.generator.capella.classpath">
+        <path refid="fr.obeo.dsl.designer.documentation.generator.capella.libraryclasspath"/>
+    </path>
+
+    <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
+    <path id="fr.obeo.dsl.designer.documentation.generator.capella.libraryclasspath.alljars">
+        <pathelement location="../fr.obeo.dsl.designer.documentation.generator.capella/bin"/>
+        <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
+    </path>
+
+    <path id="fr.obeo.dsl.designer.documentation.generator.capella.classpath.alljars">
+        <path refid="fr.obeo.dsl.designer.documentation.generator.capella.libraryclasspath.alljars"/>
+    </path>
+
+    <!-- The default task with the jars used by this project -->
+    <target name="InterfacesTemplate">
+        <java classname="fr.obeo.dsl.designer.documentation.generator.capella.templates.InterfacesTemplate" classpathref="fr.obeo.dsl.designer.documentation.generator.capella.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+
+    <!--
+        In case of problem you can also try with all the jar available in your Eclipse
+        Keep in mind that having two versions of the same jar can create problems
+    -->
+    <target name="InterfacesTemplate.alljars">
+        <java classname="fr.obeo.dsl.designer.documentation.generator.capella.templates.InterfacesTemplate" classpathref="fr.obeo.dsl.designer.documentation.generator.capella.classpath">
+            <arg value="${model}"/>
+            <arg value="${target}"/>
+        </java>
+    </target>
+</project>

@@ -65,8 +65,8 @@ public class DocumentationHelperService {
 	 * @return
 	 * @throws Exception
 	 */
-	private static CapellaDocumentationGeneratorCustom getCurrentGenerator() {
-		CapellaDocumentationGeneratorCustom currentGeneration = Activator
+	private static fr.obeo.dsl.designer.documentation.generator.generator.AbstractDocumentationGenerator getCurrentGenerator() {
+		fr.obeo.dsl.designer.documentation.generator.generator.AbstractDocumentationGenerator currentGeneration = Activator
 				.getDefault().getCurrentGeneration();
 		if (currentGeneration == null) {
 			throw new IllegalStateException(
