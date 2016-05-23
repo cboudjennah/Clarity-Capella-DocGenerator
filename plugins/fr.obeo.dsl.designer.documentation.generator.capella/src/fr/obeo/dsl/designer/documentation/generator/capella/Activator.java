@@ -16,13 +16,17 @@ import org.eclipse.core.runtime.Status;
 import org.osgi.framework.BundleContext;
 
 import fr.obeo.dsl.designer.documentation.generator.capella.generator.CapellaDocumentationGeneratorCustom;
+import fr.obeo.dsl.designer.documentation.generator.generator.AbstractDocumentationGenerator;
 
 /**
  * The activator class controls the plug-in life cycle.
  */
 public class Activator extends Plugin {
 	
-	private CapellaDocumentationGeneratorCustom currentGeneration;
+	private AbstractDocumentationGenerator currentGeneration;
+	
+//	private CapellaDocumentationGeneratorCustom currentGeneration;
+	
 
     /**
      * The plug-in ID.
@@ -79,17 +83,28 @@ public class Activator extends Plugin {
 	}
 
 	
-	/**
-	 * @param generator
-	 *            the current runnong generator
-	 */
-	// TODO this is bad it should be imporved
-	public void setCurrentGeneration(CapellaDocumentationGeneratorCustom generator) {
+//	/**
+//	 * @param generator
+//	 *            the current runnong generator
+//	 */
+//	// TODO this is bad it should be imporved
+//	public void setCurrentGeneration(CapellaDocumentationGeneratorCustom generator) {
+//		this.currentGeneration = generator;
+//	}
+//
+//	
+//	public CapellaDocumentationGeneratorCustom getCurrentGeneration() {
+//		// TODO this is bad it should be imporved
+//		return currentGeneration;
+//	}
+	
+	
+	public void setCurrentGeneration(AbstractDocumentationGenerator generator) {
 		this.currentGeneration = generator;
 	}
 
 	
-	public CapellaDocumentationGeneratorCustom getCurrentGeneration() {
+	public AbstractDocumentationGenerator getCurrentGeneration() {
 		// TODO this is bad it should be imporved
 		return currentGeneration;
 	}
