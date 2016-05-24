@@ -26,16 +26,26 @@
 
   <pluginRepositories>
     <pluginRepository>
+      <id>Eclipse - Acceleo Release</id>
+      <url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
+    </pluginRepository>
+  
+    <pluginRepository>
       <id>Indigo Release</id>
       <url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
     </pluginRepository>
   </pluginRepositories>
+  
+  
+ 
+
+  
 
   <dependencies>
-    <dependency>
+     <dependency>
       <groupId>org.eclipse.acceleo</groupId>
-      <artifactId>maven</artifactId>
-      <version>3.2.1</version>
+      <artifactId>org.eclipse.acceleo.maven</artifactId>
+      <version>3.5.2</version>
     </dependency>
     
     <!--JSoup Dependency for JSoup-->
@@ -52,10 +62,14 @@
  <repositories>
   <!-- configure p2 repository to resolve against -->
  
+  
     <repository>
-      <id>Indigo Release</id>
-      <url>http://www.obeo.fr/download/acceleo/maven/releases/indigo</url>
+      <id>Eclipse - Acceleo Release</id>
+      <url>https://repo.eclipse.org/content/repositories/acceleo-releases</url>
     </repository>
+
+
+ 
   
   <repository>
       <id>luna</id>
@@ -75,11 +89,7 @@
   <url>https://hudson.polarsys.org/capella/job/capella-gerrit/lastSuccessfulBuild/artifact/result/publish/org.polarsys.capella/site.p2/</url>
  </repository>
  
- <repository>
-		<id>acceleo</id>
-		<layout>p2</layout>
-		<url>http://download.eclipse.org/acceleo/updates/releases/3.5/</url>
-	</repository>	
+
 	
  <repository>
 		<id>kitalpha </id>
@@ -96,6 +106,8 @@
  
  </repositories>
 
+
+ 
   <build>
         <plugins>
             <plugin>
