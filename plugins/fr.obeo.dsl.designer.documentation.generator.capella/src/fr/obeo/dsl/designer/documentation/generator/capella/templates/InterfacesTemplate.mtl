@@ -88,20 +88,22 @@
 	<p>This table presents the list of all bidirectional components exchanges connected to Component [ component.oclAsType(modellingcore::AbstractNamedElement).name /].</p>
 	[component.generateComponentExchangeTable(OrientationPortKind::INOUT)/]
 [/if] 
+[if (component.providedInterfaces->notEmpty())]
 <h4>Provided interfaces</h4>
 [for (interface : Interface | component.providedInterfaces)]
 
 	<li>[interface.cleanHTML('name')/]
 	[interface.generateDescriptionDivIfAny()/]
 [/for]
-
+[/if]
+[if (component.usedInterfaces->notEmpty())]
 <h4>Used interfaces</h4>
 [for (interface : Interface | component.usedInterfaces)]
 
 	<li>[interface.cleanHTML('name')/]
 	[interface.generateDescriptionDivIfAny()/]
 [/for]
-
+[/if]
 [/template]
 
 
