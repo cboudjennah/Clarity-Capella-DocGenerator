@@ -54,7 +54,9 @@
 [/template]
 
 [template public getComponentPath(component : cs::Component)]
-	[if (component.eContainer().oclIsKindOf(cs::Component))][component.eContainer().oclAsType(cs::Component).getComponentPath()/]/ [component.eContainer().oclAsType(cs::Component).insertLinkToObject('title',component.eContainer().oclAsType(LogicalComponent).oclAsType(modellingcore::AbstractNamedElement).name)/][/if]
+	[if (component.eContainer().oclIsKindOf(cs::Component))]
+[component.eContainer().oclAsType(cs::Component).getComponentPath()/]/ [component.eContainer().oclAsType(cs::Component).insertLinkToObject('title',component.eContainer().oclAsType(cs::Component).oclAsType(modellingcore::AbstractNamedElement).name)/]
+[/if]
 [/template]
 
 [template public generateChildComponents(c :cs::Component)]
